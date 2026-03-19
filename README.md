@@ -26,7 +26,7 @@
 
 Hardware acceleration researcher and full-stack developer specializing in **AI-driven systems** and **VLSI design**. Passionate about building energy-efficient ML accelerators and deploying production-grade intelligent systems for real-world impact.
 
-- 🔬 Researching **Binary Neural Network (BNN) accelerators** achieving 6.4 GOPS at 88mW power
+- 🔬 Researching **Binary Neural Network (BNN) accelerators** achieving 374.5 GOP/s at 92.8 GOP/s/W efficiency
 - 🏥 Developing **ML systems for medical diagnostics** (anemia classification, EMG processing)
 - 🔋 Building **AI-powered Battery Management Systems** with intelligent SoC estimation
 - 🌊 Creating **full-stack data platforms** for scientific research and government initiatives
