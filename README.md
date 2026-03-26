@@ -68,7 +68,7 @@ Hardware acceleration researcher and full-stack developer specializing in **AI-d
 **Energy-efficient neural network accelerator with custom XNOR-popcount architecture**
 
 - Designed **systolic array-based accelerator** replacing traditional MAC units with XNOR+popcount operations
-- Achieved **6.4 GOPS throughput** at **88mW power consumption** - optimized for edge deployment
+- Achieved **374.5 GOPS throughput** at **88mW power consumption** - optimized for edge deployment
 - Implemented in **SystemVerilog/Verilog** with complete RTL design and verification
 - Features: Sparsity exploitation, memory hierarchy optimization, pipelined datapath
 - **Impact**: 10x power reduction compared to conventional architectures
