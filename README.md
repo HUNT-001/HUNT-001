@@ -14,12 +14,12 @@
 
 ## 🎓 Education
 
-**Dual Degree Student** pursuing excellence in both Computer Science and Electrical Engineering:
+**Dual Degree Student** pursuing excellence in both Data science Science and Electronics Engineering:
 
 - 🎯 **BS in Data Science** - IIT Madras (Online Degree Program)
 - ⚡ **B.Tech in Electrical and Electronics Engineering** - Amrita Vishwa Vidyapeetham, Coimbatore
-- 📚 Certified in **Modern Computer Vision** & **Digital IC Design** (SWAYAM)
-
+- 📚 Certified in **Modern Computer Vision** & **Digital IC Design** (SWAYAM,NPTEL)
+- 📚 Certified in **Matlab Programming For Numerical Computation** (SWAYAM,NPTEL)
 ---
 
 ## 🚀 About Me
@@ -70,8 +70,8 @@ Hardware acceleration researcher and full-stack developer specializing in **AI-d
 - Designed **systolic array-based accelerator** replacing traditional MAC units with XNOR+popcount operations
 - Achieved **374.5 GOPS throughput** at **88mW power consumption** - optimized for edge deployment
 - Implemented in **SystemVerilog/Verilog** with complete RTL design and verification
-- Features: Sparsity exploitation, memory hierarchy optimization, pipelined datapath
-- **Impact**: 10x power reduction compared to conventional architectures
+- Features: 3 level Sparsity exploitation, memory hierarchy optimization, pipelined datapath
+- **Impact**: 10.67x power reduction compared to conventional architectures
 - **Tech Stack**: SystemVerilog, Verilog, Vivado, Python (model training), Hardware-Software Co-Design
 
 ---
@@ -90,10 +90,10 @@ Hardware acceleration researcher and full-stack developer specializing in **AI-d
 **AI-driven SoC estimation and active cell balancing for Li-ion packs**
 
 - Developed for **startup pitch competition** - presented to industry judges
-- Implemented **ML-based State of Charge (SoC) estimation** with 98%+ accuracy
+- Implemented **ML-based State of Charge (SoC) estimation Using PINN's** with 98%+ accuracy
 - Designed **active cell balancing** control logic for extended battery lifespan
 - Real-time monitoring and safety control for lithium-ion battery packs
-- **Tech Stack**: Python, Control Systems, Embedded Systems, ML Regression Models
+- **Tech Stack**: Python, Control Systems, Embedded Systems, Deep Learning
 
 ---
 
@@ -169,7 +169,7 @@ Hardware acceleration researcher and full-stack developer specializing in **AI-d
 - 📝 **Publishing research** on novel BNN accelerator architectures for energy-efficient AI
 - 🔧 Exploring **PUF-based security** mechanisms for hardware systems
 - 🩺 Building **production ML pipelines** for medical diagnostics and anomaly detection
-- 🎓 Completing **SWAYAM certifications** in Modern Computer Vision and Digital IC Design
+- 🎓 Completing **SWAYAM certifications** in Modern Computer Vision , Digital IC Design and Matlab Programming
 - 🚀 Contributing to **open-source hardware design tools** and ML frameworks
 
 ---
