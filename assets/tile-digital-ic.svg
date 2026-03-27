@@ -1,0 +1,7 @@
+<svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="76" height="76" rx="16" fill="#1B2236"/>
+  <rect x="1" y="1" width="74" height="74" rx="15" stroke="#2E3B59" stroke-width="2"/>
+  <rect x="23" y="23" width="30" height="30" rx="5" fill="#8FD3FF" fill-opacity="0.12" stroke="#8FD3FF" stroke-width="2.5"/>
+  <path d="M18 28H23M18 38H23M18 48H23M53 28H58M53 38H58M53 48H58" stroke="#8FD3FF" stroke-width="2" stroke-linecap="round"/>
+  <text x="38" y="68" text-anchor="middle" fill="#E8F3FF" font-size="8.5" font-family="Segoe UI, Arial" font-weight="700">Digital IC</text>
+</svg>

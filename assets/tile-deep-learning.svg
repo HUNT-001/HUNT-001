@@ -1,0 +1,12 @@
+<svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="76" height="76" rx="16" fill="#1B2236"/>
+  <rect x="1" y="1" width="74" height="74" rx="15" stroke="#2E3B59" stroke-width="2"/>
+  <circle cx="24" cy="38" r="4" fill="#8FD3FF"/>
+  <circle cx="38" cy="26" r="4" fill="#8FD3FF"/>
+  <circle cx="38" cy="50" r="4" fill="#8FD3FF"/>
+  <circle cx="52" cy="20" r="4" fill="#8FD3FF"/>
+  <circle cx="52" cy="38" r="4" fill="#8FD3FF"/>
+  <circle cx="52" cy="56" r="4" fill="#8FD3FF"/>
+  <path d="M28 38L34 28M28 38L34 48M42 26L48 20M42 26L48 38M42 50L48 38M42 50L48 56" stroke="#8FD3FF" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="38" y="68" text-anchor="middle" fill="#E8F3FF" font-size="8.2" font-family="Segoe UI, Arial" font-weight="700">Deep Learning</text>
+</svg>

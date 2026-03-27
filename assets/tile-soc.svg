@@ -1,0 +1,7 @@
+<svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="76" height="76" rx="16" fill="#1B2236"/>
+  <rect x="1" y="1" width="74" height="74" rx="15" stroke="#2E3B59" stroke-width="2"/>
+  <rect x="24" y="24" width="28" height="28" rx="4" stroke="#8FD3FF" stroke-width="3"/>
+  <path d="M38 16V24M38 52V60M16 38H24M52 38H60M22 22L26 26M50 50L54 54M50 26L54 22M22 54L26 50" stroke="#8FD3FF" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="38" y="70" text-anchor="middle" fill="#E8F3FF" font-size="10" font-family="Segoe UI, Arial" font-weight="700">SoC</text>
+</svg>

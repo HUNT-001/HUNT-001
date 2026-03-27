@@ -1,0 +1,9 @@
+<svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="76" height="76" rx="16" fill="#1B2236"/>
+  <rect x="1" y="1" width="74" height="74" rx="15" stroke="#2E3B59" stroke-width="2"/>
+  <circle cx="26" cy="38" r="5" fill="#8FD3FF"/>
+  <circle cx="50" cy="26" r="5" fill="#8FD3FF"/>
+  <circle cx="50" cy="50" r="5" fill="#8FD3FF"/>
+  <path d="M30 38H45M46 29L30 36M46 47L30 40" stroke="#8FD3FF" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="38" y="68" text-anchor="middle" fill="#E8F3FF" font-size="8.5" font-family="Segoe UI, Arial" font-weight="700">Agentic AI</text>
+</svg>

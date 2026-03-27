@@ -1,0 +1,7 @@
+<svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="76" height="76" rx="16" fill="#1B2236"/>
+  <rect x="1" y="1" width="74" height="74" rx="15" stroke="#2E3B59" stroke-width="2"/>
+  <path d="M38 20V32M38 44V56M20 38H32M44 38H56M28 28H48M28 48H48M28 28V48M48 28V48" stroke="#8FD3FF" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="38" cy="38" r="4" fill="#8FD3FF"/>
+  <text x="38" y="68" text-anchor="middle" fill="#E8F3FF" font-size="9" font-family="Segoe UI, Arial" font-weight="700">Tableau</text>
+</svg>
