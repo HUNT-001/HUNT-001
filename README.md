@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/hero-name.svg" alt="Tanush Pavan Hero Banner" width="100%" />
+  <img src="assets/hero-name.svg" alt="Tanush Pavan Hero Banner" width="100%" />
 </p>
 
 <p align="center">
@@ -10,7 +10,7 @@
   <a href="https://github.com/HUNT-001">
     <img src="https://img.shields.io/badge/GitHub-HUNT--001-111827?style=for-the-badge&logo=github&logoColor=white" />
   </a>
-  <a href="https://www.linkedin.com/in/vakkalagadda-tanush-pavan-a37a20308/">
+  <a href="https://www.linkedin.com/in/vakkalagadda-tanush-pavan-a37a20308">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
   <a href="https://vtanushpavan.vercel.app/">
