@@ -11,7 +11,7 @@
     <img src="https://cdn.simpleicons.org/github/FFFFFF" alt="GitHub" height="34" />
   </a>
   &nbsp;&nbsp;&nbsp;
-  <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME/">
+  <a href="https://www.linkedin.com/in/vakkalagadda-tanush-pavan-a37a20308/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" height="28" />
   </a>
   &nbsp;&nbsp;&nbsp;
@@ -19,7 +19,7 @@
     <img src="https://cdn.simpleicons.org/vercel/FFFFFF" alt="Portfolio" height="34" />
   </a>
   &nbsp;&nbsp;&nbsp;
-  <a href="mailto:tanushpavan2006@gmail.com">
+  <a href="mailto:tanushpavanv@gmail.com">
     <img src="https://cdn.simpleicons.org/gmail/EA4335" alt="Email" height="34" />
   </a>
 </p>
@@ -27,7 +27,7 @@
 <p align="center">
   <a href="https://github.com/HUNT-001"><sub><b>GitHub</b></sub></a>
   &nbsp;•&nbsp;
-  <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME/"><sub><b>LinkedIn</b></sub></a>
+  <a href="https://www.linkedin.com/in/vakkalagadda-tanush-pavan-a37a20308/"><sub><b>LinkedIn</b></sub></a>
   &nbsp;•&nbsp;
   <a href="https://vtanushpavan.vercel.app/"><sub><b>Portfolio</b></sub></a>
   &nbsp;•&nbsp;
