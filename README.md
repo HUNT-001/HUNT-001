@@ -1,24 +1,33 @@
 <p align="center">
-  <img src="assets/hero-name.svg" alt="Tanush Pavan Hero Banner" width="100%" />
-</p>
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1400&color=7DD3FC&center=true&vCenter=true&width=950&lines=Building+intelligent+systems+across+hardware%2C+ML%2C+and+software;Focused+on+AI+accelerators%2C+verification%2C+and+efficient+deployment;Turning+research-driven+ideas+into+practical+engineering+systems" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&pause=1500&color=93C5FD&center=true&vCenter=true&width=980&lines=AI+accelerators+%E2%80%A2+Verification+%E2%80%A2+Edge+ML;Hardware-aware+ML+and+deployable+systems;Research-driven+ideas%2C+built+for+real+engineering" alt="Typing SVG" />
 </p>
 
 <p align="center">
   <a href="https://github.com/HUNT-001">
-    <img src="https://img.shields.io/badge/GitHub-HUNT--001-111827?style=for-the-badge&logo=github&logoColor=white" />
+    <img src="https://cdn.simpleicons.org/github/FFFFFF" alt="GitHub" height="34" />
   </a>
-  <a href="https://www.linkedin.com/in/vakkalagadda-tanush-pavan-a37a20308">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/vakkalagadda-tanush-pavan-a37a20308/">
+    <img src="https://cdn.simpleicons.org/linkedin/0A66C2" alt="LinkedIn" height="34" />
   </a>
+  &nbsp;&nbsp;&nbsp;
   <a href="https://vtanushpavan.vercel.app/">
-    <img src="https://img.shields.io/badge/Portfolio-Visit%20Site-0F766E?style=for-the-badge&logo=vercel&logoColor=white" />
+    <img src="https://cdn.simpleicons.org/vercel/FFFFFF" alt="Portfolio" height="34" />
   </a>
+  &nbsp;&nbsp;&nbsp;
   <a href="mailto:tanushpavanv@gmail.com">
-    <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+    <img src="https://cdn.simpleicons.org/gmail/EA4335" alt="Email" height="34" />
   </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/HUNT-001"><sub><b>GitHub</b></sub></a>
+  &nbsp;•&nbsp;
+  <a href="https://www.linkedin.com/in/vakkalagadda-tanush-pavan-a37a20308/"><sub><b>LinkedIn</b></sub></a>
+  &nbsp;•&nbsp;
+  <a href="https://vtanushpavan.vercel.app/"><sub><b>Portfolio</b></sub></a>
+  &nbsp;•&nbsp;
+  <a href="mailto:tanushpavanv@gmail.com"><sub><b>Email</b></sub></a>
 </p>
 
 <p align="center">
