@@ -1,23 +1,22 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&text=Tanush%20Pavan&fontAlign=50&fontAlignY=38&color=0:0f172a,50:1d4ed8,100:38bdf8&fontColor=ffffff&fontSize=50" />
+  <img src="./assets/hero-name.svg" alt="Tanush Pavan Hero Banner" width="100%" />
 </p>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&height=55&text=Hardware-Software%20Co-Design%20%E2%80%A2%20AI%20Systems%20%E2%80%A2%20VLSI%20%E2%80%A2%20Verification%20%E2%80%A2%20Edge%20ML&fontSize=22&color=0:111827,100:1f2937&fontColor=93c5fd" />
-</p>
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=20&pause=1400&color=60A5FA&center=true&vCenter=true&width=900&lines=Building+intelligent+systems+across+hardware%2C+ML%2C+and+software;Focused+on+AI+accelerators%2C+verification%2C+and+efficient+deployment;Turning+research-driven+ideas+into+practical+engineering+systems" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1400&color=7DD3FC&center=true&vCenter=true&width=950&lines=Building+intelligent+systems+across+hardware%2C+ML%2C+and+software;Focused+on+AI+accelerators%2C+verification%2C+and+efficient+deployment;Turning+research-driven+ideas+into+practical+engineering+systems" alt="Typing SVG" />
 </p>
 
 <p align="center">
   <a href="https://github.com/HUNT-001">
     <img src="https://img.shields.io/badge/GitHub-HUNT--001-111827?style=for-the-badge&logo=github&logoColor=white" />
   </a>
-  <a href="YOUR_LINKEDIN_LINK">
+  <a href="https://www.linkedin.com/in/vakkalagadda-tanush-pavan-a37a20308/">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
-  <a href="mailto:YOUR_EMAIL">
+  <a href="https://vtanushpavan.vercel.app/">
+    <img src="https://img.shields.io/badge/Portfolio-Visit%20Site-0F766E?style=for-the-badge&logo=vercel&logoColor=white" />
+  </a>
+  <a href="mailto:tanushpavanv@gmail.com">
     <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
 </p>
@@ -25,3 +24,88 @@
 <p align="center">
   I build intelligent systems across digital hardware, applied machine learning, embedded platforms, and deployable software.
 </p>
+
+---
+
+## About Me
+
+I'm a dual-degree student working at the intersection of **AI systems, digital hardware, verification, and applied machine learning**.
+
+- Building projects across **AI accelerators, RTL design, verification tooling, and edge ML**
+- Interested in **hardware-aware ML, binary/quantized neural networks, embedded intelligence, and scalable engineering systems**
+- Focused on combining **research depth, practical implementation, and real-world deployment value**
+
+---
+
+## Focus Areas
+
+- AI hardware and accelerator-oriented system design  
+- RTL design, verification, and hardware-software co-design  
+- Binary / quantized neural networks for efficient inference  
+- Embedded and edge intelligence systems  
+- Applied ML for engineering, healthcare, and energy systems  
+- Developer tooling and automation for hardware workflows  
+
+---
+
+## Featured Projects
+
+### [cocotb-v2-migration-helper](https://github.com/HUNT-001/cocotb-v2-migration-helper)
+A migration and automation tool for modernizing legacy **cocotb-based verification environments**.  
+Focused on reducing manual refactoring effort and improving maintainability for newer cocotb workflows.
+
+### [bnn-accelerator](https://github.com/HUNT-001/bnn-accelerator)
+A hardware-oriented project exploring **Binary Neural Networks** and accelerator-style design for efficient inference.  
+Built around low-cost computation strategies relevant to **edge AI, hardware-aware ML, and energy-efficient deployment**.
+
+### [Electro-thermal-modelling](https://github.com/HUNT-001/Electro-thermal-modelling)
+An applied ML project centered on **electro-thermal behavior modeling** for engineering systems.  
+Combines domain-driven modeling with practical workflows for thermal, battery, and performance analysis.
+
+### [solar-digital-twin](https://github.com/HUNT-001/solar-digital-twin)
+A digital-twin-style platform for monitoring and analyzing **solar-energy system behavior**.  
+Designed to combine software engineering, visualization, and system-level data interpretation in a practical deployment setting.
+
+---
+
+## Tech Stack
+
+**Hardware / Verification**  
+SystemVerilog • Verilog • RTL Design • Digital Design • cocotb • FPGA-oriented workflows
+
+**AI / Machine Learning**  
+Python • PyTorch • TensorFlow • scikit-learn • OpenCV • NumPy • Pandas
+
+**Software / Systems**  
+Go • FastAPI • React • TypeScript • PostgreSQL • Docker • REST APIs
+
+**Tools / Workflow**  
+Git • GitHub • Linux • Jupyter • VS Code
+
+---
+
+## Currently Exploring
+
+- Efficient AI accelerator architectures  
+- Verification tooling and hardware workflow automation  
+- Binary and quantized ML systems for edge deployment  
+- Applied ML systems for real-world engineering problems  
+- Open-source contributions in system design and verification ecosystems  
+
+---
+
+## Background
+
+- **BS in Data Science** — IIT Madras  
+- **B.Tech in Electrical and Electronics Engineering** — Amrita Vishwa Vidyapeetham  
+
+---
+
+## Connect
+
+- GitHub: [HUNT-001](https://github.com/HUNT-001)
+- Portfolio: [vtanushpavan.vercel.app](https://vtanushpavan.vercel.app/)
+- LinkedIn: [Add your LinkedIn link here](https://www.linkedin.com/in/vakkalagadda-tanush-pavan-a37a20308)
+- Email: **tanushpavanv@gmail.com**
+
+> Building efficient, intelligent systems where hardware, software, and learning meet.
