@@ -1,0 +1,23 @@
+<svg width="190" height="52" viewBox="0 0 190 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="190" y2="52" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A2235"/>
+      <stop offset="1" stop-color="#0B1221"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="190" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#60A5FA" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#C4F1FF"/>
+      <stop offset="1" stop-color="#60A5FA" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-40%" width="160%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect x="2" y="2" width="186" height="48" rx="12" fill="url(#bg)" stroke="#223251" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="16" y="10" width="1.5" height="32" fill="url(#line)" opacity="0.8"/>
+  <rect x="173" y="10" width="1.5" height="32" fill="url(#line)" opacity="0.8"/>
+
+  <path d="M42.7 16C36.79 16 32 20.79 32 26.7C32 31.43 35.07 35.44 39.33 36.85C39.87 36.95 40.06 36.62 40.06 36.34C40.06 36.09 40.05 35.42 40.04 34.54C37.06 35.18 36.43 33.26 36.43 33.26C35.94 32.01 35.23 31.67 35.23 31.67C34.25 31 35.31 31.01 35.31 31.01C36.39 31.09 36.96 32.12 36.96 32.12C37.93 33.77 39.5 33.29 40.11 33.01C40.21 32.31 40.49 31.83 40.8 31.55C38.42 31.28 35.92 30.36 35.92 26.25C35.92 25.08 36.34 24.12 37.02 23.36C36.91 23.09 36.54 22 37.12 20.54C37.12 20.54 38.03 20.25 40.02 21.61C40.89 21.37 41.82 21.25 42.75 21.24C43.68 21.25 44.61 21.37 45.48 21.61C47.47 20.25 48.38 20.54 48.38 20.54C48.96 22 48.59 23.09 48.48 23.36C49.16 24.12 49.58 25.08 49.58 26.25C49.58 30.37 47.08 31.27 44.69 31.54C45.08 31.87 45.42 32.53 45.42 33.55C45.42 35 45.41 36.01 45.41 36.34C45.41 36.62 45.6 36.96 46.15 36.85C50.41 35.44 53.48 31.43 53.48 26.7C53.48 20.79 48.69 16 42.7 16Z" fill="#F8FAFC"/>
+  <text x="112" y="31.5" text-anchor="middle" fill="#EAF2FF" font-size="16" font-family="Segoe UI, Arial, sans-serif" font-weight="700" letter-spacing="1.2">GITHUB</text>
+</svg>

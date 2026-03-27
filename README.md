@@ -8,34 +8,24 @@
 
 <p align="center">
   <a href="https://github.com/HUNT-001">
-    <img src="https://cdn.simpleicons.org/github/FFFFFF" alt="GitHub" height="34" />
+    <img src="assets/github-button.svg" alt="GitHub" height="46" />
   </a>
-  &nbsp;&nbsp;&nbsp;
+  &nbsp;
   <a href="https://www.linkedin.com/in/vakkalagadda-tanush-pavan-a37a20308/">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" height="28" />
+    <img src="assets/linkedin-button.svg" alt="LinkedIn" height="46" />
   </a>
-  &nbsp;&nbsp;&nbsp;
+  &nbsp;
   <a href="https://vtanushpavan.vercel.app/">
-    <img src="https://cdn.simpleicons.org/vercel/FFFFFF" alt="Portfolio" height="34" />
+    <img src="assets/portfolio-button.svg" alt="Portfolio" height="46" />
   </a>
-  &nbsp;&nbsp;&nbsp;
+  &nbsp;
   <a href="mailto:tanushpavanv@gmail.com">
-    <img src="https://cdn.simpleicons.org/gmail/EA4335" alt="Email" height="34" />
+    <img src="assets/email-button.svg" alt="Email" height="46" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/HUNT-001"><sub><b>GitHub</b></sub></a>
-  &nbsp;•&nbsp;
-  <a href="https://www.linkedin.com/in/vakkalagadda-tanush-pavan-a37a20308/"><sub><b>LinkedIn</b></sub></a>
-  &nbsp;•&nbsp;
-  <a href="https://vtanushpavan.vercel.app/"><sub><b>Portfolio</b></sub></a>
-  &nbsp;•&nbsp;
-  <a href="mailto:tanushpavan2006@gmail.com"><sub><b>Email</b></sub></a>
-</p>
-
-<p align="center">
-  I build intelligent systems across digital hardware, applied machine learning, embedded platforms, and deployable software.
+  <b>Designing efficient intelligent systems across hardware, ML, embedded platforms, and deployable software.</b>
 </p>
 
 ---
