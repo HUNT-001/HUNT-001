@@ -30,26 +30,92 @@
 
 ---
 
-## About Me
+---
 
-I'm a dual-degree student working at the intersection of **AI systems, digital hardware, verification, and applied machine learning**.
+<h2 align="center">👨‍💻 About Me</h2>
 
-- Building projects across **AI accelerators, RTL design, verification tooling, and edge ML**
-- Interested in **hardware-aware ML, binary/quantized neural networks, embedded intelligence, and scalable engineering systems**
-- Focused on combining **research depth, practical implementation, and real-world deployment value**
+<p align="center">
+I'm a dual-degree student building <b>efficient intelligent systems</b><br>
+at the intersection of <b>AI, digital hardware, verification, and deployable software</b>.
+</p>
+
+<p align="center">
+⚙️ AI accelerators • hardware-aware ML • RTL design • verification workflows
+</p>
+
+<p align="center">
+🧠 Binary / quantized neural networks • embedded intelligence • scalable system engineering
+</p>
+
+<p align="center">
+🚀 Research-driven ideas translated into practical engineering systems
+</p>
 
 ---
 
-## Focus Areas
+<h2 align="center">🎯 Focus Areas</h2>
 
-- AI hardware and accelerator-oriented system design  
-- RTL design, verification, and hardware-software co-design  
-- Binary / quantized neural networks for efficient inference  
-- Embedded and edge intelligence systems  
-- Applied ML for engineering, healthcare, and energy systems  
-- Developer tooling and automation for hardware workflows  
+<p align="center">
+🧩 AI hardware and accelerator-oriented design <br>
+🔧 RTL design, verification, and co-design workflows <br>
+⚡ Efficient inference with binary / quantized neural networks <br>
+📡 Embedded and edge intelligence systems <br>
+🩺 Applied ML for real-world engineering domains <br>
+🛠️ Tooling and automation for hardware development
+</p>
+---
 
 ---
+
+<h2 align="center">🛠️ Tech Stack</h2>
+
+<h3 align="center">Hardware / Verification</h3>
+
+<p align="center">
+  <img src="assets/tile-systemverilog.svg" height="72" />
+  <img src="assets/tile-rtl.svg" height="72" />
+  <img src="assets/tile-soc.svg" height="72" />
+  <img src="assets/tile-digital-ic.svg" height="72" />
+  <img src="assets/tile-uvm.svg" height="72" />
+  <img src="assets/tile-cocotb.svg" height="72" />
+</p>
+
+<h3 align="center">EDA / FPGA / Simulation</h3>
+
+<p align="center">
+  <img src="assets/tile-vivado.svg" height="72" />
+  <img src="assets/tile-ltspice.svg" height="72" />
+  <img src="https://skillicons.dev/icons?i=matlab" height="72" />
+</p>
+
+<h3 align="center">Programming</h3>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,c,java" height="72" />
+  <img src="assets/tile-embedded-c.svg" height="72" />
+</p>
+
+<h3 align="center">Machine Learning / AI</h3>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=pytorch,tensorflow" height="72" />
+  <img src="assets/tile-agentic-ai.svg" height="72" />
+  <img src="assets/tile-deep-learning.svg" height="72" />
+  <img src="assets/tile-machine-learning.svg" height="72" />
+</p>
+
+<h3 align="center">Data / Visualization</h3>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=r" height="72" />
+  <img src="assets/tile-tableau.svg" height="72" />
+</p>
+
+<h3 align="center">Cloud / Version Control</h3>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=aws,github" height="72" />
+</p>
 
 ## Featured Projects
 
