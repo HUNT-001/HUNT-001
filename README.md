@@ -61,6 +61,7 @@ at the intersection of <b>AI, digital hardware, verification, and deployable sof
 🩺 Applied ML for real-world engineering domains <br>
 🛠️ Tooling and automation for hardware development
 </p>
+
 ---
 
 <h2 align="center">🛠️ Tech Stack</h2>
