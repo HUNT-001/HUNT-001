@@ -1,10 +1,23 @@
 <svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="76" height="76" rx="16" fill="#1B2236"/>
-  <rect x="1" y="1" width="74" height="74" rx="15" stroke="#2E3B59" stroke-width="2"/>
-  <path d="M20 48L30 38L38 42L52 26" stroke="#8FD3FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="20" cy="48" r="3" fill="#8FD3FF"/>
-  <circle cx="30" cy="38" r="3" fill="#8FD3FF"/>
-  <circle cx="38" cy="42" r="3" fill="#8FD3FF"/>
-  <circle cx="52" cy="26" r="3" fill="#8FD3FF"/>
-  <text x="38" y="66" text-anchor="middle" fill="#E8F3FF" font-size="7.8" font-family="Segoe UI, Arial" font-weight="700">Machine Learning</text>
+  <rect width="76" height="76" rx="16" fill="#1A1000"/>
+  <rect x="1" y="1" width="74" height="74" rx="15" stroke="#B45309" stroke-width="2"/>
+  <!-- axes -->
+  <line x1="16" y1="54" x2="62" y2="54" stroke="#FBBF24" stroke-width="1.8" stroke-linecap="round" opacity="0.5"/>
+  <line x1="16" y1="15" x2="16" y2="54" stroke="#FBBF24" stroke-width="1.8" stroke-linecap="round" opacity="0.5"/>
+  <!-- axis arrow tips -->
+  <path d="M60 51 L63 54 L60 57" stroke="#FBBF24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.5" fill="none"/>
+  <path d="M13 18 L16 15 L19 18" stroke="#FBBF24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.5" fill="none"/>
+  <!-- decision boundary line -->
+  <line x1="16" y1="50" x2="58" y2="18" stroke="#FBBF24" stroke-width="1.8" stroke-dasharray="3 2.5" opacity="0.6" stroke-linecap="round"/>
+  <!-- cluster A (above/left of boundary) -->
+  <circle cx="23" cy="23" r="3.2" fill="#FBBF24"/>
+  <circle cx="30" cy="28" r="3.2" fill="#FBBF24"/>
+  <circle cx="26" cy="18" r="3.2" fill="#FBBF24"/>
+  <circle cx="21" cy="33" r="3.2" fill="#FBBF24"/>
+  <!-- cluster B (below/right of boundary) -->
+  <circle cx="46" cy="38" r="3.2" fill="#F59E0B" opacity="0.6"/>
+  <circle cx="52" cy="45" r="3.2" fill="#F59E0B" opacity="0.6"/>
+  <circle cx="56" cy="36" r="3.2" fill="#F59E0B" opacity="0.6"/>
+  <circle cx="44" cy="48" r="3.2" fill="#F59E0B" opacity="0.6"/>
+  <text x="38" y="68" text-anchor="middle" fill="#FEF3C7" font-size="7.8" font-family="Segoe UI, sans-serif" font-weight="700" letter-spacing="0.3">Machine Learning</text>
 </svg>

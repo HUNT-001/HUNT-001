@@ -1,7 +1,36 @@
 <svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="76" height="76" rx="16" fill="#1B2236"/>
-  <rect x="1" y="1" width="74" height="74" rx="15" stroke="#2E3B59" stroke-width="2"/>
-  <rect x="24" y="24" width="28" height="28" rx="4" stroke="#8FD3FF" stroke-width="3"/>
-  <path d="M38 16V24M38 52V60M16 38H24M52 38H60M22 22L26 26M50 50L54 54M50 26L54 22M22 54L26 50" stroke="#8FD3FF" stroke-width="2.5" stroke-linecap="round"/>
-  <text x="38" y="70" text-anchor="middle" fill="#E8F3FF" font-size="10" font-family="Segoe UI, Arial" font-weight="700">SoC</text>
+  <rect width="76" height="76" rx="16" fill="#08082A"/>
+  <rect x="1" y="1" width="74" height="74" rx="15" stroke="#4338CA" stroke-width="2"/>
+  <!-- outer chip body -->
+  <rect x="16" y="14" width="44" height="40" rx="4" fill="#818CF8" fill-opacity="0.1" stroke="#818CF8" stroke-width="2.2"/>
+  <!-- top pins (2) -->
+  <line x1="27" y1="8"  x2="27" y2="14" stroke="#818CF8" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="49" y1="8"  x2="49" y2="14" stroke="#818CF8" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- bottom pins (2) -->
+  <line x1="27" y1="54" x2="27" y2="60" stroke="#818CF8" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="49" y1="54" x2="49" y2="60" stroke="#818CF8" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- left pins (3) -->
+  <line x1="10" y1="23" x2="16" y2="23" stroke="#818CF8" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="10" y1="34" x2="16" y2="34" stroke="#818CF8" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="10" y1="45" x2="16" y2="45" stroke="#818CF8" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- right pins (3) -->
+  <line x1="60" y1="23" x2="66" y2="23" stroke="#818CF8" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="60" y1="34" x2="66" y2="34" stroke="#818CF8" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="60" y1="45" x2="66" y2="45" stroke="#818CF8" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- internal 2x2 functional blocks -->
+  <rect x="20" y="18" width="16" height="13" rx="2" fill="#818CF8" fill-opacity="0.22" stroke="#818CF8" stroke-width="1.4"/>
+  <rect x="40" y="18" width="16" height="13" rx="2" fill="#818CF8" fill-opacity="0.22" stroke="#818CF8" stroke-width="1.4"/>
+  <rect x="20" y="35" width="16" height="13" rx="2" fill="#818CF8" fill-opacity="0.22" stroke="#818CF8" stroke-width="1.4"/>
+  <rect x="40" y="35" width="16" height="13" rx="2" fill="#818CF8" fill-opacity="0.22" stroke="#818CF8" stroke-width="1.4"/>
+  <!-- block labels -->
+  <text x="28" y="27" fill="#C7D2FE" font-size="5.5" font-family="Segoe UI,sans-serif" font-weight="700" text-anchor="middle">CPU</text>
+  <text x="48" y="27" fill="#C7D2FE" font-size="5.5" font-family="Segoe UI,sans-serif" font-weight="700" text-anchor="middle">MEM</text>
+  <text x="28" y="44" fill="#C7D2FE" font-size="5.5" font-family="Segoe UI,sans-serif" font-weight="700" text-anchor="middle">DSP</text>
+  <text x="48" y="44" fill="#C7D2FE" font-size="5.5" font-family="Segoe UI,sans-serif" font-weight="700" text-anchor="middle">I/O</text>
+  <!-- internal bus lines -->
+  <line x1="36" y1="24" x2="40" y2="24" stroke="#818CF8" stroke-width="1.2" opacity="0.7"/>
+  <line x1="36" y1="41" x2="40" y2="41" stroke="#818CF8" stroke-width="1.2" opacity="0.7"/>
+  <line x1="28" y1="31" x2="28" y2="35" stroke="#818CF8" stroke-width="1.2" opacity="0.7"/>
+  <line x1="48" y1="31" x2="48" y2="35" stroke="#818CF8" stroke-width="1.2" opacity="0.7"/>
+  <text x="38" y="68" text-anchor="middle" fill="#E0E7FF" font-size="10" font-family="Segoe UI, sans-serif" font-weight="700" letter-spacing="0.3">SoC</text>
 </svg>

@@ -1,6 +1,14 @@
 <svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="76" height="76" rx="16" fill="#1B2236"/>
-  <rect x="1" y="1" width="74" height="74" rx="15" stroke="#2E3B59" stroke-width="2"/>
-  <text x="38" y="34" text-anchor="middle" fill="#8FD3FF" font-size="15" font-family="Segoe UI, Arial" font-weight="700">SV</text>
-  <text x="38" y="54" text-anchor="middle" fill="#E8F3FF" font-size="9" font-family="Segoe UI, Arial" font-weight="600">SystemVerilog</text>
+  <rect width="76" height="76" rx="16" fill="#000E24"/>
+  <rect x="1" y="1" width="74" height="74" rx="15" stroke="#1E40AF" stroke-width="2"/>
+  <!-- large SV monogram -->
+  <text x="38" y="37" text-anchor="middle" fill="#3B82F6" font-size="24" font-family="Segoe UI,sans-serif" font-weight="900" letter-spacing="-1">SV</text>
+  <!-- subtle underline highlight -->
+  <rect x="21" y="40" width="34" height="2.5" rx="1.2" fill="#3B82F6" opacity="0.35"/>
+  <!-- clock square-wave below monogram -->
+  <path d="M15 50 L15 55 L26 55 L26 50 L37 50 L37 55 L48 55 L48 50 L59 50 L59 55"
+        stroke="#93C5FD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+  <!-- assertion check tick at top-right -->
+  <path d="M55 18 L59 23 L66 14" stroke="#60A5FA" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="38" y="68" text-anchor="middle" fill="#BFDBFE" font-size="8.5" font-family="Segoe UI, sans-serif" font-weight="700" letter-spacing="0.3">SystemVerilog</text>
 </svg>

@@ -1,7 +1,24 @@
 <svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="76" height="76" rx="16" fill="#1B2236"/>
-  <rect x="1" y="1" width="74" height="74" rx="15" stroke="#2E3B59" stroke-width="2"/>
-  <rect x="23" y="23" width="30" height="30" rx="5" fill="#8FD3FF" fill-opacity="0.12" stroke="#8FD3FF" stroke-width="2.5"/>
-  <path d="M18 28H23M18 38H23M18 48H23M53 28H58M53 38H58M53 48H58" stroke="#8FD3FF" stroke-width="2" stroke-linecap="round"/>
-  <text x="38" y="68" text-anchor="middle" fill="#E8F3FF" font-size="8.5" font-family="Segoe UI, Arial" font-weight="700">Digital IC</text>
+  <rect width="76" height="76" rx="16" fill="#001820"/>
+  <rect x="1" y="1" width="74" height="74" rx="15" stroke="#0E7490" stroke-width="2"/>
+  <!-- IC body -->
+  <rect x="22" y="18" width="32" height="32" rx="3.5" fill="#22D3EE" fill-opacity="0.1" stroke="#22D3EE" stroke-width="2.2"/>
+  <!-- pin-1 dot (top-left corner of chip) -->
+  <circle cx="25" cy="21" r="1.8" fill="#22D3EE"/>
+  <!-- left pins (4) -->
+  <line x1="13" y1="25" x2="22" y2="25" stroke="#22D3EE" stroke-width="2" stroke-linecap="round"/>
+  <line x1="13" y1="32" x2="22" y2="32" stroke="#22D3EE" stroke-width="2" stroke-linecap="round"/>
+  <line x1="13" y1="39" x2="22" y2="39" stroke="#22D3EE" stroke-width="2" stroke-linecap="round"/>
+  <line x1="13" y1="46" x2="22" y2="46" stroke="#22D3EE" stroke-width="2" stroke-linecap="round"/>
+  <!-- right pins (4) -->
+  <line x1="54" y1="25" x2="63" y2="25" stroke="#22D3EE" stroke-width="2" stroke-linecap="round"/>
+  <line x1="54" y1="32" x2="63" y2="32" stroke="#22D3EE" stroke-width="2" stroke-linecap="round"/>
+  <line x1="54" y1="39" x2="63" y2="39" stroke="#22D3EE" stroke-width="2" stroke-linecap="round"/>
+  <line x1="54" y1="46" x2="63" y2="46" stroke="#22D3EE" stroke-width="2" stroke-linecap="round"/>
+  <!-- internal circuit trace (L-shaped routing) -->
+  <path d="M28 28 L38 28 L38 38 L48 38" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round" opacity="0.8"/>
+  <!-- junction dot at bend -->
+  <circle cx="38" cy="28" r="2.2" fill="#22D3EE"/>
+  <circle cx="38" cy="38" r="2.2" fill="#22D3EE"/>
+  <text x="38" y="68" text-anchor="middle" fill="#CFFAFE" font-size="8.5" font-family="Segoe UI, sans-serif" font-weight="700" letter-spacing="0.3">Digital IC</text>
 </svg>

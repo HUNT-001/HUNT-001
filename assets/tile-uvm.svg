@@ -1,7 +1,27 @@
 <svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="76" height="76" rx="16" fill="#1B2236"/>
-  <rect x="1" y="1" width="74" height="74" rx="15" stroke="#2E3B59" stroke-width="2"/>
-  <path d="M22 24V42C22 50 27 54 38 54C49 54 54 50 54 42V24" stroke="#8FD3FF" stroke-width="4" stroke-linecap="round"/>
-  <path d="M29 24V40M47 24V40" stroke="#8FD3FF" stroke-width="4" stroke-linecap="round"/>
-  <text x="38" y="67" text-anchor="middle" fill="#E8F3FF" font-size="10" font-family="Segoe UI, Arial" font-weight="700">UVM</text>
+  <rect width="76" height="76" rx="16" fill="#001A0F"/>
+  <rect x="1" y="1" width="74" height="74" rx="15" stroke="#065F46" stroke-width="2"/>
+  <!-- UVM layer blocks (top = Test, bottom = Interface) -->
+  <!-- Layer 1: Test (top, narrowest) -->
+  <rect x="27" y="13" width="22" height="9" rx="2.5" fill="#34D399" fill-opacity="0.9"/>
+  <text x="38" y="20.5" text-anchor="middle" fill="#001A0F" font-size="5.8" font-family="Segoe UI,sans-serif" font-weight="700">Test</text>
+  <!-- arrow down -->
+  <path d="M38 22 L38 25" stroke="#34D399" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M35 24 L38 27 L41 24" stroke="#34D399" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Layer 2: Environment -->
+  <rect x="20" y="27" width="36" height="9" rx="2.5" fill="#34D399" fill-opacity="0.7"/>
+  <text x="38" y="34.5" text-anchor="middle" fill="#001A0F" font-size="5.8" font-family="Segoe UI,sans-serif" font-weight="700">Environment</text>
+  <!-- arrow down -->
+  <path d="M38 36 L38 39" stroke="#34D399" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M35 38 L38 41 L41 38" stroke="#34D399" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Layer 3: Agent -->
+  <rect x="14" y="41" width="48" height="9" rx="2.5" fill="#34D399" fill-opacity="0.5"/>
+  <text x="38" y="48.5" text-anchor="middle" fill="#D1FAE5" font-size="5.8" font-family="Segoe UI,sans-serif" font-weight="700">Agent</text>
+  <!-- arrow down -->
+  <path d="M38 50 L38 53" stroke="#34D399" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M35 52 L38 55 L41 52" stroke="#34D399" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Layer 4: DUT (dashed, not part of UVM, device under test) -->
+  <rect x="17" y="55" width="42" height="8" rx="2.5" fill="none" stroke="#34D399" stroke-width="1.8" stroke-dasharray="3 2.5" opacity="0.6"/>
+  <text x="38" y="61.5" text-anchor="middle" fill="#6EE7B7" font-size="5.8" font-family="Segoe UI,sans-serif" font-weight="700">DUT</text>
+  <text x="38" y="68" text-anchor="middle" fill="#D1FAE5" font-size="10" font-family="Segoe UI, sans-serif" font-weight="700" letter-spacing="0.3">UVM</text>
 </svg>

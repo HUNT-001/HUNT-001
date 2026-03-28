@@ -1,7 +1,13 @@
 <svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="76" height="76" rx="16" fill="#1B2236"/>
-  <rect x="1" y="1" width="74" height="74" rx="15" stroke="#2E3B59" stroke-width="2"/>
-  <path d="M38 20V32M38 44V56M20 38H32M44 38H56M28 28H48M28 48H48M28 28V48M48 28V48" stroke="#8FD3FF" stroke-width="2.4" stroke-linecap="round"/>
-  <circle cx="38" cy="38" r="4" fill="#8FD3FF"/>
-  <text x="38" y="68" text-anchor="middle" fill="#E8F3FF" font-size="9" font-family="Segoe UI, Arial" font-weight="700">Tableau</text>
+  <rect width="76" height="76" rx="16" fill="#1A0800"/>
+  <rect x="1" y="1" width="74" height="74" rx="15" stroke="#C2410C" stroke-width="2"/>
+  <!-- Tableau cross logo: vertical center bar -->
+  <rect x="34" y="14" width="8" height="42" rx="3" fill="#FB923C"/>
+  <!-- horizontal bar (crossing the vertical) -->
+  <rect x="15" y="29" width="46" height="8" rx="3" fill="#FB923C" opacity="0.75"/>
+  <!-- top mini-bar accent (3 thin tick bars above) -->
+  <rect x="36" y="10" width="4" height="5" rx="1.5" fill="#FED7AA" opacity="0.5"/>
+  <!-- bottom mini-bar -->
+  <rect x="36" y="55" width="4" height="4" rx="1.5" fill="#FED7AA" opacity="0.4"/>
+  <text x="38" y="68" text-anchor="middle" fill="#FED7AA" font-size="9" font-family="Segoe UI, sans-serif" font-weight="700" letter-spacing="0.3">Tableau</text>
 </svg>

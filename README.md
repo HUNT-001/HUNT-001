@@ -30,8 +30,6 @@
 
 ---
 
----
-
 <h2 align="center">👨‍💻 About Me</h2>
 
 <p align="center">
@@ -65,57 +63,58 @@ at the intersection of <b>AI, digital hardware, verification, and deployable sof
 </p>
 ---
 
----
-
 <h2 align="center">🛠️ Tech Stack</h2>
 
 <h3 align="center">Hardware / Verification</h3>
 
 <p align="center">
-  <img src="assets/tile-systemverilog.svg" height="72" />
-  <img src="assets/tile-rtl.svg" height="72" />
-  <img src="assets/tile-soc.svg" height="72" />
-  <img src="assets/tile-digital-ic.svg" height="72" />
-  <img src="assets/tile-uvm.svg" height="72" />
-  <img src="assets/tile-cocotb.svg" height="72" />
+  <img src="assets/tile-systemverilog.svg" height="68" />
+  <img src="assets/tile-rtl.svg" height="68" />
+  <img src="assets/tile-soc.svg" height="68" />
+  <img src="assets/tile-digital-ic.svg" height="68" />
+  <img src="assets/tile-uvm.svg" height="68" />
+  <img src="assets/tile-cocotb.svg" height="68" />
 </p>
 
 <h3 align="center">EDA / FPGA / Simulation</h3>
 
 <p align="center">
-  <img src="assets/tile-vivado.svg" height="72" />
-  <img src="assets/tile-ltspice.svg" height="72" />
-  <img src="https://skillicons.dev/icons?i=matlab" height="72" />
+  <img src="assets/tile-vivado.svg" height="66" />
+  <img src="assets/tile-ltspice.svg" height="66" />
+  <img src="https://skillicons.dev/icons?i=matlab" height="66" />
 </p>
 
 <h3 align="center">Programming</h3>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,c,java" height="72" />
-  <img src="assets/tile-embedded-c.svg" height="72" />
+  <img src="https://skillicons.dev/icons?i=python,c,java" height="66" />
+  <img src="assets/tile-embedded-c.svg" height="68" />
 </p>
 
 <h3 align="center">Machine Learning / AI</h3>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=pytorch,tensorflow" height="72" />
-  <img src="assets/tile-agentic-ai.svg" height="72" />
-  <img src="assets/tile-deep-learning.svg" height="72" />
-  <img src="assets/tile-machine-learning.svg" height="72" />
+  <img src="https://skillicons.dev/icons?i=pytorch,tensorflow" height="66" />
+  <img src="assets/tile-agentic-ai.svg" height="66" />
+  <img src="assets/tile-deep-learning.svg" height="66" />
+  <img src="assets/tile-machine-learning.svg" height="66" />
 </p>
 
 <h3 align="center">Data / Visualization</h3>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=r" height="72" />
-  <img src="assets/tile-tableau.svg" height="72" />
+  <img src="https://skillicons.dev/icons?i=r" height="66" />
+  <img src="assets/tile-tableau.svg" height="68" />
 </p>
 
 <h3 align="center">Cloud / Version Control</h3>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=aws,github" height="72" />
+  <img src="assets/tile-git.svg" height="68" />
+  <img src="https://skillicons.dev/icons?i=aws,github" height="66" />
 </p>
+
+---
 
 ## Featured Projects
 

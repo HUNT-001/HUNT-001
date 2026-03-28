@@ -1,9 +1,26 @@
 <svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="76" height="76" rx="16" fill="#1B2236"/>
-  <rect x="1" y="1" width="74" height="74" rx="15" stroke="#2E3B59" stroke-width="2"/>
-  <circle cx="26" cy="38" r="5" fill="#8FD3FF"/>
-  <circle cx="50" cy="26" r="5" fill="#8FD3FF"/>
-  <circle cx="50" cy="50" r="5" fill="#8FD3FF"/>
-  <path d="M30 38H45M46 29L30 36M46 47L30 40" stroke="#8FD3FF" stroke-width="2.5" stroke-linecap="round"/>
-  <text x="38" y="68" text-anchor="middle" fill="#E8F3FF" font-size="8.5" font-family="Segoe UI, Arial" font-weight="700">Agentic AI</text>
+  <rect width="76" height="76" rx="16" fill="#170D2E"/>
+  <rect x="1" y="1" width="74" height="74" rx="15" stroke="#5B21B6" stroke-width="2"/>
+  <!-- dashed connector lines first (drawn behind) -->
+  <line x1="22" y1="22" x2="31" y2="27" stroke="#A78BFA" stroke-width="1.6" stroke-dasharray="2.5 2" opacity="0.7"/>
+  <line x1="54" y1="22" x2="45" y2="27" stroke="#A78BFA" stroke-width="1.6" stroke-dasharray="2.5 2" opacity="0.7"/>
+  <line x1="22" y1="44" x2="31" y2="37" stroke="#A78BFA" stroke-width="1.6" stroke-dasharray="2.5 2" opacity="0.7"/>
+  <line x1="54" y1="44" x2="45" y2="37" stroke="#A78BFA" stroke-width="1.6" stroke-dasharray="2.5 2" opacity="0.7"/>
+  <!-- central AI hub -->
+  <circle cx="38" cy="33" r="9.5" fill="#4C1D95" stroke="#A78BFA" stroke-width="2.2"/>
+  <!-- brain squiggle inside hub -->
+  <path d="M34 33 C34 30 36 28.5 38 29.5 C40 28.5 42 30 42 33 C42 35.5 40 37 38 36 C36 37 34 35.5 34 33Z"
+        stroke="#A78BFA" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+  <line x1="38" y1="29.5" x2="38" y2="36" stroke="#A78BFA" stroke-width="1.2"/>
+  <!-- 4 agent satellite nodes -->
+  <circle cx="20" cy="20" r="5.5" fill="#2D1580" stroke="#A78BFA" stroke-width="1.8"/>
+  <circle cx="56" cy="20" r="5.5" fill="#2D1580" stroke="#A78BFA" stroke-width="1.8"/>
+  <circle cx="20" cy="46" r="5.5" fill="#2D1580" stroke="#A78BFA" stroke-width="1.8"/>
+  <circle cx="56" cy="46" r="5.5" fill="#2D1580" stroke="#A78BFA" stroke-width="1.8"/>
+  <!-- tiny agent dot highlights -->
+  <circle cx="20" cy="20" r="2" fill="#C4B5FD"/>
+  <circle cx="56" cy="20" r="2" fill="#C4B5FD"/>
+  <circle cx="20" cy="46" r="2" fill="#C4B5FD"/>
+  <circle cx="56" cy="46" r="2" fill="#C4B5FD"/>
+  <text x="38" y="68" text-anchor="middle" fill="#DDD6FE" font-size="8.5" font-family="Segoe UI, sans-serif" font-weight="700" letter-spacing="0.3">Agentic AI</text>
 </svg>

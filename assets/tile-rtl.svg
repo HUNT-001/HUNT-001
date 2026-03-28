@@ -1,6 +1,25 @@
 <svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="76" height="76" rx="16" fill="#1B2236"/>
-  <rect x="1" y="1" width="74" height="74" rx="15" stroke="#2E3B59" stroke-width="2"/>
-  <path d="M22 45H54M22 38H54M22 31H54" stroke="#8FD3FF" stroke-width="3" stroke-linecap="round"/>
-  <text x="38" y="58" text-anchor="middle" fill="#E8F3FF" font-size="10" font-family="Segoe UI, Arial" font-weight="700">RTL</text>
+  <rect width="76" height="76" rx="16" fill="#001A1A"/>
+  <rect x="1" y="1" width="74" height="74" rx="15" stroke="#0D9488" stroke-width="2"/>
+  <!-- D flip-flop box -->
+  <rect x="25" y="17" width="28" height="34" rx="3" fill="#2DD4BF" fill-opacity="0.1" stroke="#2DD4BF" stroke-width="2.2"/>
+  <!-- D input line -->
+  <line x1="13" y1="28" x2="25" y2="28" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round"/>
+  <!-- "D" pin label -->
+  <text x="11" y="31.5" fill="#2DD4BF" font-size="7.5" font-family="Segoe UI,sans-serif" font-weight="700">D</text>
+  <!-- Q output line -->
+  <line x1="53" y1="28" x2="65" y2="28" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round"/>
+  <!-- "Q" pin label -->
+  <text x="63" y="31.5" fill="#2DD4BF" font-size="7.5" font-family="Segoe UI,sans-serif" font-weight="700">Q</text>
+  <!-- CLK input line (bottom) -->
+  <line x1="13" y1="43" x2="25" y2="43" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round"/>
+  <!-- rising-edge triangle (clock indicator) -->
+  <path d="M25 46 L25 40 L31 43 Z" fill="#2DD4BF"/>
+  <!-- "D" label and Q output arrow on schematic -->
+  <text x="30" y="31" fill="#2DD4BF" font-size="7" font-family="Segoe UI,sans-serif" opacity="0.6">D</text>
+  <text x="43" y="31" fill="#2DD4BF" font-size="7" font-family="Segoe UI,sans-serif" opacity="0.6">Q</text>
+  <!-- Clock waveform below (shows timing context) -->
+  <path d="M13 54 L13 59 L22 59 L22 54 L31 54 L31 59 L40 59 L40 54 L49 54"
+        stroke="#2DD4BF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+  <text x="38" y="68" text-anchor="middle" fill="#CCFBF1" font-size="10" font-family="Segoe UI, sans-serif" font-weight="700" letter-spacing="0.3">RTL</text>
 </svg>

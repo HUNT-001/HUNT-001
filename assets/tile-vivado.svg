@@ -1,8 +1,13 @@
 <svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="76" height="76" rx="16" fill="#1B2236"/>
-  <rect x="1" y="1" width="74" height="74" rx="15" stroke="#2E3B59" stroke-width="2"/>
-  <path d="M24 24L38 18L52 24L38 30L24 24Z" fill="#FFB457"/>
-  <path d="M24 34L38 28L52 34L38 40L24 34Z" fill="#FF9E2C"/>
-  <path d="M24 44L38 38L52 44L38 50L24 44Z" fill="#FF8A00"/>
-  <text x="38" y="66" text-anchor="middle" fill="#E8F3FF" font-size="9.5" font-family="Segoe UI, Arial" font-weight="700">Vivado</text>
+  <rect width="76" height="76" rx="16" fill="#200A00"/>
+  <rect x="1" y="1" width="74" height="74" rx="15" stroke="#9A3412" stroke-width="2"/>
+  <path d="M24 13 L31 20 L24 27 L17 20 Z" fill="#C2410C" stroke="#FCA5A5" stroke-width="1.6"/>
+  <path d="M38 13 L45 20 L38 27 L31 20 Z" fill="#C2410C" stroke="#FCA5A5" stroke-width="1.6"/>
+  <path d="M52 13 L59 20 L52 27 L45 20 Z" fill="#C2410C" stroke="#FCA5A5" stroke-width="1.6"/>
+  <path d="M31 26 L38 33 L31 40 L24 33 Z" fill="#EA580C" stroke="#FCA5A5" stroke-width="1.6"/>
+  <path d="M45 26 L52 33 L45 40 L38 33 Z" fill="#EA580C" stroke="#FCA5A5" stroke-width="1.6"/>
+  <path d="M24 39 L31 46 L24 53 L17 46 Z" fill="#9A3412" stroke="#FCA5A5" stroke-width="1.6" opacity="0.75"/>
+  <path d="M38 39 L45 46 L38 53 L31 46 Z" fill="#9A3412" stroke="#FCA5A5" stroke-width="1.6" opacity="0.75"/>
+  <path d="M52 39 L59 46 L52 53 L45 46 Z" fill="#9A3412" stroke="#FCA5A5" stroke-width="1.6" opacity="0.75"/>
+  <text x="38" y="68" text-anchor="middle" fill="#FED7AA" font-size="9.5" font-family="Segoe UI, sans-serif" font-weight="700" letter-spacing="0.3">Vivado</text>
 </svg>

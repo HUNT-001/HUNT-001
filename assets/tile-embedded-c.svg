@@ -1,7 +1,25 @@
 <svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="76" height="76" rx="16" fill="#1B2236"/>
-  <rect x="1" y="1" width="74" height="74" rx="15" stroke="#2E3B59" stroke-width="2"/>
-  <rect x="24" y="22" width="28" height="24" rx="4" stroke="#8FD3FF" stroke-width="2.5"/>
-  <path d="M29 18V22M38 18V22M47 18V22M29 46V50M38 46V50M47 46V50M20 27H24M20 34H24M20 41H24M52 27H56M52 34H56M52 41H56" stroke="#8FD3FF" stroke-width="2" stroke-linecap="round"/>
-  <text x="38" y="66" text-anchor="middle" fill="#E8F3FF" font-size="8.5" font-family="Segoe UI, Arial" font-weight="700">Embedded C</text>
+  <rect width="76" height="76" rx="16" fill="#00102B"/>
+  <rect x="1" y="1" width="74" height="74" rx="15" stroke="#1D4ED8" stroke-width="2"/>
+  <!-- MCU chip body -->
+  <rect x="20" y="16" width="36" height="36" rx="4" fill="#60A5FA" fill-opacity="0.1" stroke="#60A5FA" stroke-width="2.2"/>
+  <!-- top pins (3) -->
+  <line x1="28" y1="10" x2="28" y2="16" stroke="#60A5FA" stroke-width="2" stroke-linecap="round"/>
+  <line x1="38" y1="10" x2="38" y2="16" stroke="#60A5FA" stroke-width="2" stroke-linecap="round"/>
+  <line x1="48" y1="10" x2="48" y2="16" stroke="#60A5FA" stroke-width="2" stroke-linecap="round"/>
+  <!-- bottom pins (3) -->
+  <line x1="28" y1="52" x2="28" y2="58" stroke="#60A5FA" stroke-width="2" stroke-linecap="round"/>
+  <line x1="38" y1="52" x2="38" y2="58" stroke="#60A5FA" stroke-width="2" stroke-linecap="round"/>
+  <line x1="48" y1="52" x2="48" y2="58" stroke="#60A5FA" stroke-width="2" stroke-linecap="round"/>
+  <!-- left pins (3) -->
+  <line x1="14" y1="24" x2="20" y2="24" stroke="#60A5FA" stroke-width="2" stroke-linecap="round"/>
+  <line x1="14" y1="34" x2="20" y2="34" stroke="#60A5FA" stroke-width="2" stroke-linecap="round"/>
+  <line x1="14" y1="44" x2="20" y2="44" stroke="#60A5FA" stroke-width="2" stroke-linecap="round"/>
+  <!-- right pins (3) -->
+  <line x1="56" y1="24" x2="62" y2="24" stroke="#60A5FA" stroke-width="2" stroke-linecap="round"/>
+  <line x1="56" y1="34" x2="62" y2="34" stroke="#60A5FA" stroke-width="2" stroke-linecap="round"/>
+  <line x1="56" y1="44" x2="62" y2="44" stroke="#60A5FA" stroke-width="2" stroke-linecap="round"/>
+  <!-- bold "C" arc centred in chip (opens right) -->
+  <path d="M44.5 25 A10 10 0 1 0 44.5 43" stroke="#93C5FD" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <text x="38" y="68" text-anchor="middle" fill="#BFDBFE" font-size="8.5" font-family="Segoe UI, sans-serif" font-weight="700" letter-spacing="0.3">Embedded C</text>
 </svg>
