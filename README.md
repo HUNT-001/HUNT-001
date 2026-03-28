@@ -116,23 +116,42 @@ at the intersection of <b>AI, digital hardware, verification, and deployable sof
 
 ---
 
-## Featured Projects
+<h2 align="center">🚀 Featured Projects</h2>
 
-### [cocotb-v2-migration-helper](https://github.com/HUNT-001/cocotb-v2-migration-helper)
-A migration and automation tool for modernizing legacy **cocotb-based verification environments**.  
-Focused on reducing manual refactoring effort and improving maintainability for newer cocotb workflows.
+<p align="center">
+  A selection of projects across verification, AI hardware, applied machine learning, and system-level engineering.
+</p>
 
-### [bnn-accelerator](https://github.com/HUNT-001/bnn-accelerator)
-A hardware-oriented project exploring **Binary Neural Networks** and accelerator-style design for efficient inference.  
-Built around low-cost computation strategies relevant to **edge AI, hardware-aware ML, and energy-efficient deployment**.
-
-### [Electro-thermal-modelling](https://github.com/HUNT-001/Electro-thermal-modelling)
-An applied ML project centered on **electro-thermal behavior modeling** for engineering systems.  
-Combines domain-driven modeling with practical workflows for thermal, battery, and performance analysis.
-
-### [solar-digital-twin](https://github.com/HUNT-001/solar-digital-twin)
-A digital-twin-style platform for monitoring and analyzing **solar-energy system behavior**.  
-Designed to combine software engineering, visualization, and system-level data interpretation in a practical deployment setting.
+<table align="center">
+  <tr>
+    <td width="50%" valign="top">
+      <h3 align="center">⚙️ <a href="https://github.com/HUNT-001/cocotb-v2-migration-helper">cocotb-v2-migration-helper</a></h3>
+      <p align="center">
+        Migration and automation tooling for modernizing legacy <b>cocotb</b>-based verification workflows.
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center">🧠 <a href="https://github.com/HUNT-001/bnn-accelerator">bnn-accelerator</a></h3>
+      <p align="center">
+        Hardware-oriented exploration of <b>Binary Neural Networks</b> for efficient inference and edge AI deployment.
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3 align="center">🌡️ <a href="https://github.com/HUNT-001/Electro-thermal-modelling">Electro-thermal-modelling</a></h3>
+      <p align="center">
+        Applied ML project focused on <b>electro-thermal behavior modeling</b> for engineering systems.
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center">☀️ <a href="https://github.com/HUNT-001/solar-digital-twin">solar-digital-twin</a></h3>
+      <p align="center">
+        Digital-twin-style platform for monitoring, visualization, and system-level solar energy analysis.
+      </p>
+    </td>
+  </tr>
+</table>
 
 ---
 
