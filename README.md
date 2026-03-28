@@ -115,84 +115,55 @@ at the intersection of <b>AI, digital hardware, verification, and deployable sof
 </p>
 
 ---
+---
 
-<h2 align="center">🚀 Featured Projects</h2>
+<h2 align="center">🎯 Current Focus</h2>
 
 <p align="center">
-  A selection of projects across verification, AI hardware, applied machine learning, and system-level engineering.
+  Building toward efficient, deployable, and research-driven intelligent systems.
 </p>
 
-<table align="center">
-  <tr>
-    <td width="50%" valign="top">
-      <h3 align="center">⚙️ <a href="https://github.com/HUNT-001/cocotb-v2-migration-helper">cocotb-v2-migration-helper</a></h3>
-      <p align="center">
-        Migration and automation tooling for modernizing legacy <b>cocotb</b>-based verification workflows.
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h3 align="center">🧠 <a href="https://github.com/HUNT-001/bnn-accelerator">bnn-accelerator</a></h3>
-      <p align="center">
-        Hardware-oriented exploration of <b>Binary Neural Networks</b> for efficient inference and edge AI deployment.
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3 align="center">🌡️ <a href="https://github.com/HUNT-001/Electro-thermal-modelling">Electro-thermal-modelling</a></h3>
-      <p align="center">
-        Applied ML project focused on <b>electro-thermal behavior modeling</b> for engineering systems.
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h3 align="center">☀️ <a href="https://github.com/HUNT-001/solar-digital-twin">solar-digital-twin</a></h3>
-      <p align="center">
-        Digital-twin-style platform for monitoring, visualization, and system-level solar energy analysis.
-      </p>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  ⚙️ AI accelerator architectures and co-design workflows <br>
+  🔍 Verification automation and modern tooling <br>
+  🧠 Binary / quantized neural networks for efficient inference <br>
+  📡 Embedded intelligence for real-world deployment <br>
+  🚀 Open-source engineering across AI and hardware systems
+</p>
 
 ---
 
-## Tech Stack
+<h2 align="center">🎓 Background</h2>
 
-**Hardware / Verification**  
-SystemVerilog • Verilog • RTL Design • Digital Design • cocotb • FPGA-oriented workflows
-
-**AI / Machine Learning**  
-Python • PyTorch • TensorFlow • scikit-learn • OpenCV • NumPy • Pandas
-
-**Software / Systems**  
-Go • FastAPI • React • TypeScript • PostgreSQL • Docker • REST APIs
-
-**Tools / Workflow**  
-Git • GitHub • Linux • Jupyter • VS Code
+<p align="center">
+  <b>BS in Data Science</b> — IIT Madras <br>
+  <b>B.Tech in Electrical and Electronics Engineering</b> — Amrita Vishwa Vidyapeetham
+</p>
 
 ---
 
-## Currently Exploring
+<h2 align="center">🌐 Connect</h2>
 
-- Efficient AI accelerator architectures  
-- Verification tooling and hardware workflow automation  
-- Binary and quantized ML systems for edge deployment  
-- Applied ML systems for real-world engineering problems  
-- Open-source contributions in system design and verification ecosystems  
+<p align="center">
+  <a href="https://github.com/HUNT-001">GitHub</a> •
+  <a href="https://www.linkedin.com/in/vakkalagadda-tanush-pavan-a37a20308/">LinkedIn</a> •
+  <a href="https://vtanushpavan.vercel.app/">Portfolio</a> •
+  <a href="mailto:tanushpavanv@gmail.com">Email</a>
+</p>
 
----
-
-## Background
-
-- **BS in Data Science** — IIT Madras  
-- **B.Tech in Electrical and Electronics Engineering** — Amrita Vishwa Vidyapeetham  
+<p align="center">
+  <i>Building efficient, intelligent systems where hardware, software, and learning meet.</i>
+</p>
 
 ---
 
-## Connect
+<h2 align="center">📊 GitHub Stats</h2>
 
-- GitHub: [HUNT-001](https://github.com/HUNT-001)
-- Portfolio: [vtanushpavan.vercel.app](https://vtanushpavan.vercel.app/)
-- LinkedIn: [Add your LinkedIn link here](https://www.linkedin.com/in/vakkalagadda-tanush-pavan-a37a20308)
-- Email: **tanushpavanv@gmail.com**
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=HUNT-001&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" height="170" />
+  <img src="https://streak-stats.demolab.com?user=HUNT-001&theme=tokyonight&hide_border=true" height="170" />
+</p>
 
-> Building efficient, intelligent systems where hardware, software, and learning meet.
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HUNT-001&layout=compact&theme=tokyonight&hide_border=true" height="160" />
+</p>
