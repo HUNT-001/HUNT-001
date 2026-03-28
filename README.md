@@ -115,7 +115,6 @@ at the intersection of <b>AI, digital hardware, verification, and deployable sof
 </p>
 
 ---
----
 
 <h2 align="center">🎯 Current Focus</h2>
 
