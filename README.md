@@ -125,7 +125,7 @@ at the intersection of <b>AI, digital hardware, verification, and deployable sof
 
 <p align="center">
   ⚙️ AI accelerator architectures and co-design workflows <br>
-  🔍 Verification automation and modern tooling <br>
+  🔍 Verification automation and modern tools <br>
   🧠 Binary / quantized neural networks for efficient inference <br>
   📡 Embedded intelligence for real-world deployment <br>
   🚀 Open-source engineering across AI and hardware systems
