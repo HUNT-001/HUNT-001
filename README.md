@@ -28,9 +28,13 @@
   <b>Designing efficient intelligent systems across hardware, ML, embedded platforms, and deployable software.</b>
 </p>
 
----
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=HUNT-001&style=for-the-badge&color=93C5FD&label=PROFILE+VIEWS" alt="Profile Views" />
+  <img src="https://img.shields.io/github/followers/HUNT-001?style=for-the-badge&color=1E293B&labelColor=000000&logo=github&logoColor=white&label=FOLLOWERS" alt="Followers" />
+</p>
 
-<h2 align="center">👨‍💻 About Me</h2>
+<!-- ═══════ ABOUT ═══════ -->
+<img src="https://capsule-render.vercel.app/api?type=rounded&color=gradient&customColorList=6,11,20&height=100&section=header&text=ABOUT%20ME&fontSize=26&fontColor=fff&animation=fadeIn" width="100%"/>
 
 <p align="center">
 I'm a dual-degree student building <b>efficient intelligent systems</b><br>
@@ -49,9 +53,43 @@ at the intersection of <b>AI, digital hardware, verification, and deployable sof
 🚀 Research-driven ideas translated into practical engineering systems
 </p>
 
----
+<details>
+<summary><b>View Profile Summary (Click to expand)</b></summary>
 
-<h2 align="center">🎯 Focus Areas</h2>
+```python
+class Engineer:
+    def __init__(self):
+        self.identity = {
+            "name": "Tanush Pavan",
+            "degrees": [
+                "BS, Data Science — IIT Madras",
+                "B.Tech, Electrical & Electronics Engineering — Amrita Vishwa Vidyapeetham"
+            ],
+            "domain": "AI accelerators, verification, and edge ML"
+        }
+
+        self.experience = [
+            "AI Engineer Intern @ Wipro",
+            "Edge AI Intern @ ADRIN (ISRO)"
+        ]
+
+        self.focus_areas = [
+            "AI hardware and accelerator-oriented design",
+            "RTL design, verification, and co-design workflows",
+            "Efficient inference with binary / quantized neural networks",
+            "Embedded and edge intelligence systems",
+            "Applied ML for real-world engineering domains",
+            "Tooling and automation for hardware development"
+        ]
+
+    def philosophy(self):
+        return "Efficient, deployable, research-driven intelligent systems."
+```
+
+</details>
+
+<!-- ═══════ FOCUS AREAS ═══════ -->
+<img src="https://capsule-render.vercel.app/api?type=rounded&color=gradient&customColorList=6,11,20&height=100&section=header&text=FOCUS%20AREAS&fontSize=26&fontColor=fff&animation=fadeIn" width="100%"/>
 
 <p align="center">
 🧩 AI hardware and accelerator-oriented design <br>
@@ -62,9 +100,74 @@ at the intersection of <b>AI, digital hardware, verification, and deployable sof
 🛠️ Tooling and automation for hardware development
 </p>
 
----
+<!-- ═══════ EXPERIENCE ═══════ -->
+<img src="https://capsule-render.vercel.app/api?type=rounded&color=gradient&customColorList=6,11,20&height=100&section=header&text=EXPERIENCE&fontSize=26&fontColor=fff&animation=fadeIn" width="100%"/>
 
-<h2 align="center">🛠️ Tech Stack</h2>
+<table align="center">
+<tr>
+<td width="50%" valign="top">
+
+### WIPRO
+**`AI Engineer Intern | 2 Months`**
+```yaml
+Role: Applied AI/ML engineering
+Focus:
+  - Model development and evaluation workflows
+  - Data pipelines and automation
+  - Cross-functional delivery of AI-driven solutions
+```
+*Add specific projects, tools, and measurable outcomes here.*
+
+</td>
+<td width="50%" valign="top">
+
+### ADRIN (Advanced Data Processing Research Institute, NMRCE, ISRO)
+**`Edge AI Intern | 45 Days`**
+```yaml
+Role: Edge intelligence for applied ML workflows
+Focus:
+  - On-device / edge deployment of ML models
+  - Model optimization for resource-constrained hardware
+  - Applied ML for real-world sensing and data pipelines
+```
+*Add specific projects, tools, and measurable outcomes here.*
+
+</td>
+</tr>
+</table>
+
+<!-- ═══════ CERTIFICATIONS ═══════ -->
+<img src="https://capsule-render.vercel.app/api?type=rounded&color=gradient&customColorList=6,11,20&height=100&section=header&text=CERTIFICATIONS&fontSize=26&fontColor=fff&animation=fadeIn" width="100%"/>
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="20%">
+        <img src="https://img.shields.io/badge/GOOGLE-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google Gen AI"/>
+        <br/><sub><b>Generative AI</b></sub>
+      </td>
+      <td align="center" width="20%">
+        <img src="https://img.shields.io/badge/DATA_ANALYTICS-34A853?style=for-the-badge" alt="Data Analytics"/>
+        <br/><sub><b>Data Analytics</b></sub>
+      </td>
+      <td align="center" width="20%">
+        <img src="https://img.shields.io/badge/AZURE_DP--800-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Azure DP-800"/>
+        <br/><sub><b>Microsoft Azure</b></sub>
+      </td>
+      <td align="center" width="20%">
+        <img src="https://img.shields.io/badge/ORACLE-F80000?style=for-the-badge&logo=oracle&logoColor=white" alt="Oracle"/>
+        <br/><sub><b>Agentic AI Associate</b></sub>
+      </td>
+      <td align="center" width="20%">
+        <img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS"/>
+        <br/><sub><b>Cloud Developer Engineer</b></sub>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<!-- ═══════ TECH STACK ═══════ -->
+<img src="https://capsule-render.vercel.app/api?type=rounded&color=gradient&customColorList=6,11,20&height=100&section=header&text=TECH%20STACK&fontSize=26&fontColor=fff&animation=fadeIn" width="100%"/>
 
 <h3 align="center">Hardware / Verification</h3>
 
@@ -115,13 +218,8 @@ at the intersection of <b>AI, digital hardware, verification, and deployable sof
   <img src="https://skillicons.dev/icons?i=aws,github" height="70" />
 </p>
 
----
-
-<h2 align="center">🎯 Current Focus</h2>
-
-<p align="center">
-  Building toward efficient, deployable, and research-driven intelligent systems.
-</p>
+<!-- ═══════ CURRENT FOCUS ═══════ -->
+<img src="https://capsule-render.vercel.app/api?type=rounded&color=gradient&customColorList=6,11,20&height=100&section=header&text=CURRENT%20FOCUS&fontSize=26&fontColor=fff&animation=fadeIn" width="100%"/>
 
 <p align="center">
   ⚙️ AI accelerator architectures and co-design workflows <br>
@@ -131,33 +229,16 @@ at the intersection of <b>AI, digital hardware, verification, and deployable sof
   🚀 Open-source engineering across AI and hardware systems
 </p>
 
----
-
-<h2 align="center">🎓 Background</h2>
+<!-- ═══════ BACKGROUND ═══════ -->
+<img src="https://capsule-render.vercel.app/api?type=rounded&color=gradient&customColorList=6,11,20&height=100&section=header&text=BACKGROUND&fontSize=26&fontColor=fff&animation=fadeIn" width="100%"/>
 
 <p align="center">
   <b>BS in Data Science</b> — IIT Madras <br>
   <b>B.Tech in Electrical and Electronics Engineering</b> — Amrita Vishwa Vidyapeetham
 </p>
 
----
-
-<h2 align="center">🌐 Connect</h2>
-
-<p align="center">
-  <a href="https://github.com/HUNT-001">GitHub</a> •
-  <a href="https://www.linkedin.com/in/vakkalagadda-tanush-pavan-a37a20308/">LinkedIn</a> •
-  <a href="https://vtanushpavan.vercel.app/">Portfolio</a> •
-  <a href="mailto:tanushpavanv@gmail.com">Email</a>
-</p>
-
-<p align="center">
-  <i>Building efficient, intelligent systems where hardware, software, and learning meet.</i>
-</p>
-
----
-
-<h2 align="center">📊 GitHub Stats</h2>
+<!-- ═══════ GITHUB STATS ═══════ -->
+<img src="https://capsule-render.vercel.app/api?type=rounded&color=gradient&customColorList=6,11,20&height=100&section=header&text=GITHUB%20STATS&fontSize=26&fontColor=fff&animation=fadeIn" width="100%"/>
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=HUNT-001&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" height="170" />
@@ -167,3 +248,33 @@ at the intersection of <b>AI, digital hardware, verification, and deployable sof
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HUNT-001&layout=compact&theme=tokyonight&hide_border=true" height="160" />
 </p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=HUNT-001&theme=tokyonight" width="32%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=HUNT-001&theme=tokyonight" width="32%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=HUNT-001&theme=tokyonight&utcOffset=5.5" width="32%" />
+</p>
+
+<!-- ═══════ CONNECT ═══════ -->
+<img src="https://capsule-render.vercel.app/api?type=rounded&color=gradient&customColorList=6,11,20&height=100&section=header&text=CONNECT&fontSize=26&fontColor=fff&animation=fadeIn" width="100%"/>
+
+<p align="center">
+  <a href="https://github.com/HUNT-001">
+    <img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=000000" alt="GitHub"/>
+  </a>
+  <a href="https://www.linkedin.com/in/vakkalagadda-tanush-pavan-a37a20308/">
+    <img src="https://img.shields.io/badge/LINKEDIN-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=000000" alt="LinkedIn"/>
+  </a>
+  <a href="https://vtanushpavan.vercel.app/">
+    <img src="https://img.shields.io/badge/PORTFOLIO-93C5FD?style=for-the-badge&logo=vercel&logoColor=000000&labelColor=000000" alt="Portfolio"/>
+  </a>
+  <a href="mailto:tanushpavanv@gmail.com">
+    <img src="https://img.shields.io/badge/EMAIL-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=000000" alt="Email"/>
+  </a>
+</p>
+
+<p align="center">
+  <i>Building efficient, intelligent systems where hardware, software, and learning meet.</i>
+</p>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer&animation=twinkling" width="100%"/>
