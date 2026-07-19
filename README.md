@@ -147,7 +147,7 @@ Focus:
         <br/><sub><b>Generative AI</b></sub>
       </td>
       <td align="center" width="20%">
-        <img src="https://img.shields.io/badge/DATA_ANALYTICS-34A853?style=for-the-badge" alt="Data Analytics"/>
+        <img src="https://img.shields.io/badge/DATA_ANALYTICS-34A853?style=for-the-badge" alt="IBM"/>
         <br/><sub><b>Data Analytics</b></sub>
       </td>
       <td align="center" width="20%">
