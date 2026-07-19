@@ -255,6 +255,14 @@ Focus:
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=HUNT-001&theme=tokyonight&utcOffset=5.5" width="32%" />
 </p>
 
+<p align="center">
+  <img src="./profile-3d-contrib/profile-night-view.svg" alt="3D Contribution Graph" width="100%" />
+</p>
+
+<p align="center">
+  <img src="./assets/snake-dark.svg" alt="Contribution Snake" width="100%" />
+</p>
+
 <!-- ═══════ CONNECT ═══════ -->
 <img src="https://capsule-render.vercel.app/api?type=rounded&color=gradient&customColorList=6,11,20&height=100&section=header&text=CONNECT&fontSize=26&fontColor=fff&animation=fadeIn" width="100%"/>
 
