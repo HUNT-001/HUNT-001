@@ -147,8 +147,8 @@ Focus:
         <br/><sub><b>Generative AI</b></sub>
       </td>
       <td align="center" width="20%">
-        <img src="https://img.shields.io/badge/DATA_ANALYTICS-34A853?style=for-the-badge" alt="IBM"/>
-        <br/><sub><b>Data Analytics</b></sub>
+        <img src="https://img.shields.io/badge/IBM-34A853?style=for-the-badge" alt="IBM"/>
+        <br/><sub><b>Data analytics</b></sub>
       </td>
       <td align="center" width="20%">
         <img src="https://img.shields.io/badge/AZURE_DP--800-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Azure DP-800"/>
