@@ -128,7 +128,6 @@ Focus:
   - Data pipelines and automation
   - Cross-functional delivery of AI-driven solutions
 ```
-*Add specific projects, tools, and measurable outcomes here.*
 
 </td>
 <td width="50%" valign="top">
@@ -142,7 +141,6 @@ Focus:
   - Model optimization for resource-constrained hardware
   - Applied ML for real-world sensing and data pipelines
 ```
-*Add specific projects, tools, and measurable outcomes here.*
 
 </td>
 </tr>
