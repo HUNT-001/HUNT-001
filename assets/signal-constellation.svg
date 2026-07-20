@@ -1,0 +1,96 @@
+<svg width="1400" height="260" viewBox="0 0 1400 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#030811"/>
+      <stop offset="50%"  stop-color="#071226"/>
+      <stop offset="100%" stop-color="#0C1D3E"/>
+    </linearGradient>
+    <pattern id="dotGrid" x="0" y="0" width="36" height="36" patternUnits="userSpaceOnUse">
+      <circle cx="18" cy="18" r="0.7" fill="#4A90D9" fill-opacity="0.10"/>
+    </pattern>
+    <clipPath id="clip"><rect width="1400" height="260" rx="16"/></clipPath>
+  </defs>
+
+  <rect width="1400" height="260" rx="16" fill="url(#bg)"/>
+  <g clip-path="url(#clip)">
+    <rect width="1400" height="260" fill="url(#dotGrid)"/>
+    
+    <line x1="220" y1="90" x2="480" y2="180" stroke="#1E3F72" stroke-width="1" opacity="0.6"/>
+    <circle r="2" fill="#60A5FA">
+      <animateMotion dur="3.5s" repeatCount="indefinite" path="M220,90 L480,180"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <line x1="480" y1="180" x2="700" y2="70" stroke="#1E3F72" stroke-width="1" opacity="0.6"/>
+    <circle r="2" fill="#60A5FA">
+      <animateMotion dur="3.5s" repeatCount="indefinite" path="M480,180 L700,70"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <line x1="700" y1="70" x2="950" y2="180" stroke="#1E3F72" stroke-width="1" opacity="0.6"/>
+    <circle r="2" fill="#60A5FA">
+      <animateMotion dur="3.5s" repeatCount="indefinite" path="M700,70 L950,180"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <line x1="950" y1="180" x2="1180" y2="90" stroke="#1E3F72" stroke-width="1" opacity="0.6"/>
+    <circle r="2" fill="#60A5FA">
+      <animateMotion dur="3.5s" repeatCount="indefinite" path="M950,180 L1180,90"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <line x1="220" y1="90" x2="700" y2="70" stroke="#1E3F72" stroke-width="1" opacity="0.6"/>
+    <circle r="2" fill="#60A5FA">
+      <animateMotion dur="3.5s" repeatCount="indefinite" path="M220,90 L700,70"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <line x1="700" y1="70" x2="1180" y2="90" stroke="#1E3F72" stroke-width="1" opacity="0.6"/>
+    <circle r="2" fill="#60A5FA">
+      <animateMotion dur="3.5s" repeatCount="indefinite" path="M700,70 L1180,90"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    
+    <g>
+      <circle cx="220" cy="90" r="34" fill="#060F22" fill-opacity="0.7" stroke="#1A3D7A" stroke-width="1"/>
+      <circle cx="220" cy="90" r="34" fill="none" stroke="#38BDF8" stroke-width="1" opacity="0.5">
+        <animate attributeName="r" values="34;38;34" dur="4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.5;0.1;0.5" dur="4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="220" cy="90" r="4" fill="#67E8F9"/>
+      <text x="220" y="146" text-anchor="middle" fill="#9DC4F5" font-size="12" font-family="Consolas, monospace" letter-spacing="0.5">Hardware / RTL</text>
+    </g>
+    <g>
+      <circle cx="480" cy="180" r="34" fill="#060F22" fill-opacity="0.7" stroke="#1A3D7A" stroke-width="1"/>
+      <circle cx="480" cy="180" r="34" fill="none" stroke="#38BDF8" stroke-width="1" opacity="0.5">
+        <animate attributeName="r" values="34;38;34" dur="4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.5;0.1;0.5" dur="4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="480" cy="180" r="4" fill="#67E8F9"/>
+      <text x="480" y="236" text-anchor="middle" fill="#9DC4F5" font-size="12" font-family="Consolas, monospace" letter-spacing="0.5">Verification</text>
+    </g>
+    <g>
+      <circle cx="700" cy="70" r="34" fill="#060F22" fill-opacity="0.7" stroke="#1A3D7A" stroke-width="1"/>
+      <circle cx="700" cy="70" r="34" fill="none" stroke="#38BDF8" stroke-width="1" opacity="0.5">
+        <animate attributeName="r" values="34;38;34" dur="4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.5;0.1;0.5" dur="4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="700" cy="70" r="4" fill="#67E8F9"/>
+      <text x="700" y="126" text-anchor="middle" fill="#9DC4F5" font-size="12" font-family="Consolas, monospace" letter-spacing="0.5">ML / AI</text>
+    </g>
+    <g>
+      <circle cx="950" cy="180" r="34" fill="#060F22" fill-opacity="0.7" stroke="#1A3D7A" stroke-width="1"/>
+      <circle cx="950" cy="180" r="34" fill="none" stroke="#38BDF8" stroke-width="1" opacity="0.5">
+        <animate attributeName="r" values="34;38;34" dur="4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.5;0.1;0.5" dur="4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="950" cy="180" r="4" fill="#67E8F9"/>
+      <text x="950" y="236" text-anchor="middle" fill="#9DC4F5" font-size="12" font-family="Consolas, monospace" letter-spacing="0.5">Embedded / Edge</text>
+    </g>
+    <g>
+      <circle cx="1180" cy="90" r="34" fill="#060F22" fill-opacity="0.7" stroke="#1A3D7A" stroke-width="1"/>
+      <circle cx="1180" cy="90" r="34" fill="none" stroke="#38BDF8" stroke-width="1" opacity="0.5">
+        <animate attributeName="r" values="34;38;34" dur="4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.5;0.1;0.5" dur="4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1180" cy="90" r="4" fill="#67E8F9"/>
+      <text x="1180" y="146" text-anchor="middle" fill="#9DC4F5" font-size="12" font-family="Consolas, monospace" letter-spacing="0.5">Cloud / Tools</text>
+    </g>
+    <rect x="1" y="1" width="1398" height="258" rx="15.5" fill="none" stroke="#162F5C" stroke-width="1" opacity="0.6"/>
+  </g>
+</svg>

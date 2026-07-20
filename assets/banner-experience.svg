@@ -1,0 +1,74 @@
+<svg width="1400" height="100" viewBox="0 0 1400 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#030811"/>
+      <stop offset="45%"  stop-color="#071226"/>
+      <stop offset="100%" stop-color="#0C1D3E"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(700.0 50.0) scale(420 90)">
+      <stop offset="0%"   stop-color="#1D4ED8" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#1D4ED8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="1400" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#2563EB" stop-opacity="0"/>
+      <stop offset="22%"  stop-color="#60A5FA" stop-opacity="0.6"/>
+      <stop offset="50%"  stop-color="#E0F2FE" stop-opacity="0.85"/>
+      <stop offset="78%"  stop-color="#22D3EE" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0284C7" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="dotGrid" x="0" y="0" width="36" height="36" patternUnits="userSpaceOnUse">
+      <circle cx="18" cy="18" r="0.7" fill="#4A90D9" fill-opacity="0.10"/>
+    </pattern>
+    <filter id="textGlow" x="-20%" y="-60%" width="140%" height="220%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#38BDF8" flood-opacity="0.35"/>
+    </filter>
+    <filter id="cornerGlow" x="-60%" y="-60%" width="280%" height="280%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#60A5FA" flood-opacity="0.5"/>
+    </filter>
+    <clipPath id="clip"><rect width="1400" height="100" rx="16"/></clipPath>
+  </defs>
+
+  <rect width="1400" height="100" rx="16" fill="url(#bg)"/>
+  <rect width="1400" height="100" rx="16" fill="url(#glow)"/>
+
+  <g clip-path="url(#clip)">
+    <rect width="1400" height="100" fill="url(#dotGrid)"/>
+
+    <rect x="0" y="10" width="1400" height="1" fill="url(#lineGrad)" opacity="0.75"/>
+    <rect x="0" y="90" width="1400" height="1" fill="url(#lineGrad)" opacity="0.55"/>
+
+    <g filter="url(#cornerGlow)" opacity="0.85">
+      <path d="M22 20 L22 40 M22 20 L42 20" stroke="#38BDF8" stroke-width="1.6" stroke-linecap="round"/>
+      <circle cx="22" cy="20" r="2" fill="#60A5FA"/>
+    </g>
+    <g filter="url(#cornerGlow)" opacity="0.85">
+      <path d="M1378 20 L1378 40 M1378 20 L1358 20" stroke="#38BDF8" stroke-width="1.6" stroke-linecap="round"/>
+      <circle cx="1378" cy="20" r="2" fill="#60A5FA"/>
+    </g>
+    <g filter="url(#cornerGlow)" opacity="0.85">
+      <path d="M22 80 L22 60 M22 80 L42 80" stroke="#22D3EE" stroke-width="1.6" stroke-linecap="round"/>
+      <circle cx="22" cy="80" r="2" fill="#22D3EE"/>
+    </g>
+    <g filter="url(#cornerGlow)" opacity="0.85">
+      <path d="M1378 80 L1378 60 M1378 80 L1358 80" stroke="#22D3EE" stroke-width="1.6" stroke-linecap="round"/>
+      <circle cx="1378" cy="80" r="2" fill="#22D3EE"/>
+    </g>
+
+    <text x="523.0" y="59.0" fill="#3B6EA8" font-size="18" font-family="Consolas, monospace" opacity="0.55">&#8249;</text>
+    <text x="861.0" y="59.0" fill="#3B6EA8" font-size="18" font-family="Consolas, monospace" opacity="0.55">&#8250;</text>
+
+    <text x="700.0" y="59.0"
+          text-anchor="middle"
+          fill="#C8E0F8"
+          font-size="30"
+          font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+          font-weight="700"
+          letter-spacing="10"
+          filter="url(#textGlow)">
+      EXPERIENCE
+    </text>
+
+    <rect x="1" y="1" width="1398" height="98" rx="15.5" fill="none" stroke="#162F5C" stroke-width="1" opacity="0.6"/>
+  </g>
+</svg>

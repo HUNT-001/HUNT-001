@@ -1,0 +1,42 @@
+<svg width="1400" height="28" viewBox="0 0 1400 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="1400" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#2563EB" stop-opacity="0"/>
+      <stop offset="20%"  stop-color="#60A5FA" stop-opacity="0.55"/>
+      <stop offset="50%"  stop-color="#E0F2FE" stop-opacity="0.9"/>
+      <stop offset="80%"  stop-color="#22D3EE" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#0284C7" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-10%" y="-300%" width="120%" height="700%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="13" width="1400" height="1.4" fill="url(#lineGrad)" filter="url(#glow)" opacity="0.5"/>
+  <rect x="0" y="13" width="1400" height="1" fill="url(#lineGrad)"/>
+
+  <!-- circuit stubs -->
+  <g stroke="#3B82F6" stroke-width="1" opacity="0.55">
+    <path d="M300 14 L300 5 L320 5"/>
+    <path d="M620 14 L620 23 L640 23"/>
+    <path d="M900 14 L900 5 L880 5"/>
+    <path d="M1120 14 L1120 23 L1100 23"/>
+  </g>
+  <circle cx="320" cy="5" r="1.6" fill="#60A5FA"/>
+  <circle cx="640" cy="23" r="1.6" fill="#22D3EE"/>
+  <circle cx="880" cy="5" r="1.6" fill="#60A5FA"/>
+  <circle cx="1100" cy="23" r="1.6" fill="#22D3EE"/>
+
+  <!-- center marker -->
+  <path d="M700 9 L705.5 14 L700 19 L694.5 14 Z" fill="#E0F2FE" opacity="0.85"/>
+
+  <!-- traveling pulse -->
+  <circle r="2.4" fill="#67E8F9">
+    <animateMotion dur="5s" repeatCount="indefinite" path="M0,14 L1400,14"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="2" fill="#93C5FD">
+    <animateMotion dur="5s" begin="2.5s" repeatCount="indefinite" path="M1400,14 L0,14"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="5s" begin="2.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>
