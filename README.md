@@ -33,8 +33,12 @@
   <img src="https://img.shields.io/github/followers/HUNT-001?style=for-the-badge&color=1E293B&labelColor=000000&logo=github&logoColor=white&label=FOLLOWERS" alt="Followers" />
 </p>
 
+<p align="center">
+  <img src="assets/terminal-boot.svg" alt="Boot Sequence Terminal" width="100%" />
+</p>
+
 <!-- ═══════ ABOUT ═══════ -->
-<img src="https://capsule-render.vercel.app/api?type=rounded&color=gradient&customColorList=6,11,20&height=100&section=header&text=ABOUT%20ME&fontSize=26&fontColor=fff&animation=fadeIn" width="100%"/>
+<img src="assets/banner-about.svg" alt="About Me" width="100%" />
 
 <p align="center">
 I'm a dual-degree student building <b>efficient intelligent systems</b><br>
@@ -88,8 +92,12 @@ class Engineer:
 
 </details>
 
+<p align="center">
+  <img src="assets/circuit-pulse-divider.svg" alt="divider" width="100%" />
+</p>
+
 <!-- ═══════ FOCUS AREAS ═══════ -->
-<img src="https://capsule-render.vercel.app/api?type=rounded&color=gradient&customColorList=6,11,20&height=100&section=header&text=FOCUS%20AREAS&fontSize=26&fontColor=fff&animation=fadeIn" width="100%"/>
+<img src="assets/banner-focus.svg" alt="Focus Areas" width="100%" />
 
 <p align="center">
 🧩 AI hardware and accelerator-oriented design <br>
@@ -100,8 +108,12 @@ class Engineer:
 🛠️ Tooling and automation for hardware development
 </p>
 
+<p align="center">
+  <img src="assets/circuit-pulse-divider.svg" alt="divider" width="100%" />
+</p>
+
 <!-- ═══════ EXPERIENCE ═══════ -->
-<img src="https://capsule-render.vercel.app/api?type=rounded&color=gradient&customColorList=6,11,20&height=100&section=header&text=EXPERIENCE&fontSize=26&fontColor=fff&animation=fadeIn" width="100%"/>
+<img src="assets/banner-experience.svg" alt="Experience" width="100%" />
 
 <table align="center">
 <tr>
@@ -136,8 +148,12 @@ Focus:
 </tr>
 </table>
 
+<p align="center">
+  <img src="assets/circuit-pulse-divider.svg" alt="divider" width="100%" />
+</p>
+
 <!-- ═══════ CERTIFICATIONS ═══════ -->
-<img src="https://capsule-render.vercel.app/api?type=rounded&color=gradient&customColorList=6,11,20&height=100&section=header&text=CERTIFICATIONS&fontSize=26&fontColor=fff&animation=fadeIn" width="100%"/>
+<img src="assets/banner-certifications.svg" alt="Certifications" width="100%" />
 
 <div align="center">
   <table>
@@ -147,8 +163,8 @@ Focus:
         <br/><sub><b>Generative AI</b></sub>
       </td>
       <td align="center" width="20%">
-        <img src="https://img.shields.io/badge/IBM-34A853?style=for-the-badge" alt="IBM"/>
-        <br/><sub><b>Data analytics</b></sub>
+        <img src="https://img.shields.io/badge/DATA_ANALYTICS-34A853?style=for-the-badge" alt="Data Analytics"/>
+        <br/><sub><b>Data Analytics</b></sub>
       </td>
       <td align="center" width="20%">
         <img src="https://img.shields.io/badge/AZURE_DP--800-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Azure DP-800"/>
@@ -166,8 +182,16 @@ Focus:
   </table>
 </div>
 
+<p align="center">
+  <img src="assets/circuit-pulse-divider.svg" alt="divider" width="100%" />
+</p>
+
 <!-- ═══════ TECH STACK ═══════ -->
-<img src="https://capsule-render.vercel.app/api?type=rounded&color=gradient&customColorList=6,11,20&height=100&section=header&text=TECH%20STACK&fontSize=26&fontColor=fff&animation=fadeIn" width="100%"/>
+<img src="assets/banner-tech-stack.svg" alt="Tech Stack" width="100%" />
+
+<p align="center">
+  <img src="assets/signal-constellation.svg" alt="Signal Constellation — Tech Overview" width="100%" />
+</p>
 
 <h3 align="center">Hardware / Verification</h3>
 
@@ -218,8 +242,12 @@ Focus:
   <img src="https://skillicons.dev/icons?i=aws,github" height="70" />
 </p>
 
+<p align="center">
+  <img src="assets/circuit-pulse-divider.svg" alt="divider" width="100%" />
+</p>
+
 <!-- ═══════ CURRENT FOCUS ═══════ -->
-<img src="https://capsule-render.vercel.app/api?type=rounded&color=gradient&customColorList=6,11,20&height=100&section=header&text=CURRENT%20FOCUS&fontSize=26&fontColor=fff&animation=fadeIn" width="100%"/>
+<img src="assets/banner-current-focus.svg" alt="Current Focus" width="100%" />
 
 <p align="center">
   ⚙️ AI accelerator architectures and co-design workflows <br>
@@ -229,16 +257,24 @@ Focus:
   🚀 Open-source engineering across AI and hardware systems
 </p>
 
+<p align="center">
+  <img src="assets/circuit-pulse-divider.svg" alt="divider" width="100%" />
+</p>
+
 <!-- ═══════ BACKGROUND ═══════ -->
-<img src="https://capsule-render.vercel.app/api?type=rounded&color=gradient&customColorList=6,11,20&height=100&section=header&text=BACKGROUND&fontSize=26&fontColor=fff&animation=fadeIn" width="100%"/>
+<img src="assets/banner-background.svg" alt="Background" width="100%" />
 
 <p align="center">
   <b>BS in Data Science</b> — IIT Madras <br>
   <b>B.Tech in Electrical and Electronics Engineering</b> — Amrita Vishwa Vidyapeetham
 </p>
 
+<p align="center">
+  <img src="assets/circuit-pulse-divider.svg" alt="divider" width="100%" />
+</p>
+
 <!-- ═══════ GITHUB STATS ═══════ -->
-<img src="https://capsule-render.vercel.app/api?type=rounded&color=gradient&customColorList=6,11,20&height=100&section=header&text=GITHUB%20STATS&fontSize=26&fontColor=fff&animation=fadeIn" width="100%"/>
+<img src="assets/banner-github-stats.svg" alt="GitHub Stats" width="100%" />
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=HUNT-001&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" height="170" />
@@ -263,8 +299,12 @@ Focus:
   <img src="./assets/snake-dark.svg" alt="Contribution Snake" width="100%" />
 </p>
 
+<p align="center">
+  <img src="assets/circuit-pulse-divider.svg" alt="divider" width="100%" />
+</p>
+
 <!-- ═══════ CONNECT ═══════ -->
-<img src="https://capsule-render.vercel.app/api?type=rounded&color=gradient&customColorList=6,11,20&height=100&section=header&text=CONNECT&fontSize=26&fontColor=fff&animation=fadeIn" width="100%"/>
+<img src="assets/banner-connect.svg" alt="Connect" width="100%" />
 
 <p align="center">
   <a href="https://github.com/HUNT-001">
@@ -285,4 +325,4 @@ Focus:
   <i>Building efficient, intelligent systems where hardware, software, and learning meet.</i>
 </p>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer&animation=twinkling" width="100%"/>
+<img src="assets/circuit-pulse-divider.svg" alt="" width="100%" />
