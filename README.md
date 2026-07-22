@@ -93,6 +93,14 @@ class Engineer:
 </details>
 
 <p align="center">
+  <img src="assets/signal-constellation.svg" alt="Identity Broadcast — Mission & Domains" width="100%" />
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&pause=2400&color=7DD3FC&center=true&vCenter=true&width=1200&separator=;&lines=Every+circuit+carries+a+question.+Every+model%2C+an+answer+waiting+to+evolve.;I+don%27t+just+train+models+-+I+architect+the+substrate+they+think+on.;Consciousness+isn%27t+summoned.+It%27s+engineered%2C+layer+by+layer%2C+gate+by+gate.;The+next+intelligence+won%27t+live+in+the+cloud.+It%27ll+be+etched+into+silicon.;Somewhere+between+hardware+and+cognition+-+that%27s+where+I+build." alt="Signal Log" />
+</p>
+
+<p align="center">
   <img src="assets/circuit-pulse-divider.svg" alt="divider" width="100%" />
 </p>
 
@@ -124,9 +132,9 @@ class Engineer:
 ```yaml
 Role: Applied AI/ML engineering
 Focus:
-  - Model development and evaluation workflows
-  - Data pipelines and automation
-  - Cross-functional delivery of AI-driven solutions
+  - Built and evaluated machine learning models for real-world deployment scenarios
+  - Explored reinforcement learning approaches for sequential decision-making problems
+  - Assessed model performance, robustness, and production-readiness across experiments
 ```
 
 </td>
@@ -135,11 +143,12 @@ Focus:
 ### ADRIN (Advanced Data Processing Research Institute, NMRCE, ISRO)
 **`Edge AI Intern | 45 Days`**
 ```yaml
-Role: Edge intelligence for applied ML workflows
+Role: Edge AI / hardware-software co-design
 Focus:
-  - On-device / edge deployment of ML models
-  - Model optimization for resource-constrained hardware
-  - Applied ML for real-world sensing and data pipelines
+  - Designed a custom HLS-based datapath for deploying MobileViTv2
+    (vision transformer) on the AMD Versal ACAP series (VCK-190)
+  - Hardware-aware optimization of a transformer workload for edge inference
+  - Applied ML for real-world sensing and remote data pipelines
 ```
 
 </td>
@@ -150,35 +159,36 @@ Focus:
   <img src="assets/circuit-pulse-divider.svg" alt="divider" width="100%" />
 </p>
 
+<!-- ═══════ PROJECTS ═══════ -->
+<img src="assets/banner-projects.svg" alt="Projects" width="100%" />
+
+<p align="center">
+  <a href="https://github.com/HUNT-001/cocotb-v2-migration-helper">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=HUNT-001&repo=cocotb-v2-migration-helper&bg_color=0C1D3E&title_color=7DD3FC&text_color=9DC4F5&icon_color=38BDF8&border_color=1A3D7A&border_radius=16" width="48%" />
+  </a>
+  <a href="https://github.com/HUNT-001/solar-digital-twin">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=HUNT-001&repo=solar-digital-twin&bg_color=0C1D3E&title_color=7DD3FC&text_color=9DC4F5&icon_color=38BDF8&border_color=1A3D7A&border_radius=16" width="48%" />
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/HUNT-001/Electro-thermal-modelling">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=HUNT-001&repo=Electro-thermal-modelling&bg_color=0C1D3E&title_color=7DD3FC&text_color=9DC4F5&icon_color=38BDF8&border_color=1A3D7A&border_radius=16" width="48%" />
+  </a>
+  <a href="https://github.com/HUNT-001/ai-chip-design-platform">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=HUNT-001&repo=ai-chip-design-platform&bg_color=0C1D3E&title_color=7DD3FC&text_color=9DC4F5&icon_color=38BDF8&border_color=1A3D7A&border_radius=16" width="48%" />
+  </a>
+</p>
+
+<p align="center">
+  <img src="assets/circuit-pulse-divider.svg" alt="divider" width="100%" />
+</p>
+
 <!-- ═══════ CERTIFICATIONS ═══════ -->
 <img src="assets/banner-certifications.svg" alt="Certifications" width="100%" />
 
-<div align="center">
-  <table>
-    <tr>
-      <td align="center" width="20%">
-        <img src="https://img.shields.io/badge/GOOGLE-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google Gen AI"/>
-        <br/><sub><b>Generative AI</b></sub>
-      </td>
-      <td align="center" width="20%">
-        <img src="https://img.shields.io/badge/DATA_ANALYTICS-34A853?style=for-the-badge" alt="Data Analytics"/>
-        <br/><sub><b>Data Analytics</b></sub>
-      </td>
-      <td align="center" width="20%">
-        <img src="https://img.shields.io/badge/AZURE_DP--800-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Azure DP-800"/>
-        <br/><sub><b>Microsoft Azure</b></sub>
-      </td>
-      <td align="center" width="20%">
-        <img src="https://img.shields.io/badge/ORACLE-F80000?style=for-the-badge&logo=oracle&logoColor=white" alt="Oracle"/>
-        <br/><sub><b>Agentic AI Associate</b></sub>
-      </td>
-      <td align="center" width="20%">
-        <img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS"/>
-        <br/><sub><b>Cloud Developer Engineer</b></sub>
-      </td>
-    </tr>
-  </table>
-</div>
+<p align="center">
+  <img src="assets/certifications-panel.svg" alt="Certifications" width="100%" />
+</p>
 
 <p align="center">
   <img src="assets/circuit-pulse-divider.svg" alt="divider" width="100%" />
@@ -186,10 +196,6 @@ Focus:
 
 <!-- ═══════ TECH STACK ═══════ -->
 <img src="assets/banner-tech-stack.svg" alt="Tech Stack" width="100%" />
-
-<p align="center">
-  <img src="assets/signal-constellation.svg" alt="Signal Constellation — Tech Overview" width="100%" />
-</p>
 
 <h3 align="center">Hardware / Verification</h3>
 
