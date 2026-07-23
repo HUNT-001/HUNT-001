@@ -50,7 +50,7 @@ at the intersection of <b>AI, digital hardware, verification, and deployable sof
 </p>
 
 <p align="center">
-🧠 Binary / quantized neural networks • embedded intelligence • scalable system engineering
+🧠 Binary / quantized neural network • embedded intelligence • scalable system engineering • Unified World Models • Dreamer algorithms
 </p>
 
 <p align="center">
