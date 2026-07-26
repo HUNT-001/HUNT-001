@@ -1,0 +1,93 @@
+<svg width="1400" height="490" viewBox="0 0 1400 490" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="490" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#030811"/><stop offset="45%" stop-color="#071226"/>
+      <stop offset="100%" stop-color="#0C1D3E"/>
+    </linearGradient>
+    <radialGradient id="amb" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(700.0 245.0) scale(630.0 343.0)">
+      <stop offset="0%" stop-color="#4C1D95" stop-opacity="0.17"/>
+      <stop offset="100%" stop-color="#4C1D95" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dotGrid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <circle cx="18" cy="18" r="0.7" fill="#4A90D9" fill-opacity="0.09"/>
+    </pattern>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#38BDF8" flood-opacity="0.32"/>
+    </filter>
+    <filter id="softv" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#A78BFA" flood-opacity="0.35"/>
+    </filter>
+    <clipPath id="clip"><rect width="1400" height="490" rx="18"/></clipPath>
+
+  </defs>
+  <rect width="1400" height="490" rx="18" fill="url(#bg)"/>
+  <rect width="1400" height="490" rx="18" fill="url(#amb)"/>
+  <g clip-path="url(#clip)">
+    <rect width="1400" height="490" fill="url(#dotGrid)"/>
+<text x="700.0" y="44" text-anchor="middle" fill="#C8E0F8" font-size="21" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" letter-spacing="7" filter="url(#softv)">RESEARCH SURFACE</text>
+<text x="700.0" y="68" text-anchor="middle" fill="#7FA6D4" font-size="11.5" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="3" opacity="0.75">where the reading, the maths, and the silicon actually overlap</text>
+<polygon points="350.0,241.0 376.2,251.8 387.0,278.0 376.2,304.2 350.0,315.0 323.8,304.2 313.0,278.0 323.8,251.8" fill="none" stroke="#60A5FA" stroke-width="0.8" opacity="0.16"/>
+<polygon points="350.0,204.0 402.3,225.7 424.0,278.0 402.3,330.3 350.0,352.0 297.7,330.3 276.0,278.0 297.7,225.7" fill="none" stroke="#60A5FA" stroke-width="0.8" opacity="0.16"/>
+<polygon points="350.0,167.0 428.5,199.5 461.0,278.0 428.5,356.5 350.0,389.0 271.5,356.5 239.0,278.0 271.5,199.5" fill="none" stroke="#60A5FA" stroke-width="0.8" opacity="0.16"/>
+<polygon points="350.0,130.0 454.7,173.3 498.0,278.0 454.7,382.7 350.0,426.0 245.3,382.7 202.0,278.0 245.3,173.3" fill="none" stroke="#60A5FA" stroke-width="0.8" opacity="0.16"/>
+<line x1="350" y1="278" x2="350.0" y2="130.0" stroke="#60A5FA" stroke-width="0.7" opacity="0.2"/>
+<text x="350.0" y="103.5" text-anchor="middle" fill="#7FA6D4" font-size="9.6" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="1.4" opacity="0.9">WORLD MODELS</text>
+<line x1="350" y1="278" x2="454.7" y2="173.3" stroke="#60A5FA" stroke-width="0.7" opacity="0.2"/>
+<text x="475.9" y="155.6" text-anchor="start" fill="#7FA6D4" font-size="9.6" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="1.4" opacity="0.9">MODEL-BASED RL</text>
+<line x1="350" y1="278" x2="498.0" y2="278.0" stroke="#60A5FA" stroke-width="0.7" opacity="0.2"/>
+<text x="528.0" y="281.5" text-anchor="start" fill="#7FA6D4" font-size="9.6" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="1.4" opacity="0.9">AGENTIC AI</text>
+<line x1="350" y1="278" x2="454.7" y2="382.7" stroke="#60A5FA" stroke-width="0.7" opacity="0.2"/>
+<text x="475.9" y="407.4" text-anchor="start" fill="#7FA6D4" font-size="9.6" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="1.4" opacity="0.9">GRAPH NEURAL NETS</text>
+<line x1="350" y1="278" x2="350.0" y2="426.0" stroke="#60A5FA" stroke-width="0.7" opacity="0.2"/>
+<text x="350.0" y="459.5" text-anchor="middle" fill="#7FA6D4" font-size="9.6" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="1.4" opacity="0.9">QUANTUM ML</text>
+<line x1="350" y1="278" x2="245.3" y2="382.7" stroke="#60A5FA" stroke-width="0.7" opacity="0.2"/>
+<text x="224.1" y="407.4" text-anchor="end" fill="#7FA6D4" font-size="9.6" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="1.4" opacity="0.9">FORMAL VERIF.</text>
+<line x1="350" y1="278" x2="202.0" y2="278.0" stroke="#60A5FA" stroke-width="0.7" opacity="0.2"/>
+<text x="172.0" y="281.5" text-anchor="end" fill="#7FA6D4" font-size="9.6" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="1.4" opacity="0.9">RTL / ARCH</text>
+<line x1="350" y1="278" x2="245.3" y2="173.3" stroke="#60A5FA" stroke-width="0.7" opacity="0.2"/>
+<text x="224.1" y="155.6" text-anchor="end" fill="#7FA6D4" font-size="9.6" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="1.4" opacity="0.9">QUANTIZED EDGE ML</text>
+<polygon points="350.0,137.4 446.3,181.7 480.2,278.0 433.7,361.7 350.0,375.7 272.6,355.4 222.7,278.0 255.8,183.8" fill="#A78BFA" fill-opacity="0.16" stroke="#C084FC" stroke-width="1.8" filter="url(#softv)"><animate attributeName="fill-opacity" values="0.10;0.24;0.10" dur="5s" repeatCount="indefinite"/></polygon>
+<circle cx="350.0" cy="137.4" r="3.4" fill="#E9D5FF"/>
+<circle cx="446.3" cy="181.7" r="3.4" fill="#E9D5FF"/>
+<circle cx="480.2" cy="278.0" r="3.4" fill="#E9D5FF"/>
+<circle cx="433.7" cy="361.7" r="3.4" fill="#E9D5FF"/>
+<circle cx="350.0" cy="375.7" r="3.4" fill="#E9D5FF"/>
+<circle cx="272.6" cy="355.4" r="3.4" fill="#E9D5FF"/>
+<circle cx="222.7" cy="278.0" r="3.4" fill="#E9D5FF"/>
+<circle cx="255.8" cy="183.8" r="3.4" fill="#E9D5FF"/>
+<text x="700" y="112" fill="#C8E0F8" font-size="12.5" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" letter-spacing="4">ACTIVE THREADS</text>
+<rect x="700" y="136" width="620" height="38" rx="8" fill="#08152B" fill-opacity="0.8" stroke="#38BDF8" stroke-width="0.9" stroke-opacity="0.38"/>
+<rect x="700" y="136" width="3" height="38" rx="1.5" fill="#38BDF8" opacity="0.9"/>
+<text x="718" y="152" fill="#C8E0F8" font-size="11" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="1.8">WORLD MODELS</text>
+<text x="718" y="167" fill="#7FA6D4" font-size="10" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.8">latent dynamics you can plan inside</text>
+<circle cx="1300" cy="155" r="3" fill="#38BDF8" opacity="0.9"><animate attributeName="r" values="2;4;2" dur="2.6s" begin="0.00s" repeatCount="indefinite"/></circle>
+<rect x="700" y="184" width="620" height="38" rx="8" fill="#08152B" fill-opacity="0.8" stroke="#38BDF8" stroke-width="0.9" stroke-opacity="0.38"/>
+<rect x="700" y="184" width="3" height="38" rx="1.5" fill="#38BDF8" opacity="0.9"/>
+<text x="718" y="200" fill="#C8E0F8" font-size="11" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="1.8">MODEL-BASED RL</text>
+<text x="718" y="215" fill="#7FA6D4" font-size="10" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.8">Dreamer-style imagination rollouts</text>
+<circle cx="1300" cy="203" r="3" fill="#38BDF8" opacity="0.9"><animate attributeName="r" values="2;4;2" dur="2.6s" begin="0.35s" repeatCount="indefinite"/></circle>
+<rect x="700" y="232" width="620" height="38" rx="8" fill="#08152B" fill-opacity="0.8" stroke="#A78BFA" stroke-width="0.9" stroke-opacity="0.38"/>
+<rect x="700" y="232" width="3" height="38" rx="1.5" fill="#A78BFA" opacity="0.9"/>
+<text x="718" y="248" fill="#C8E0F8" font-size="11" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="1.8">AGENTIC AI</text>
+<text x="718" y="263" fill="#7FA6D4" font-size="10" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.8">planner / critic / tool-use loops</text>
+<circle cx="1300" cy="251" r="3" fill="#A78BFA" opacity="0.9"><animate attributeName="r" values="2;4;2" dur="2.6s" begin="0.70s" repeatCount="indefinite"/></circle>
+<rect x="700" y="280" width="620" height="38" rx="8" fill="#08152B" fill-opacity="0.8" stroke="#22D3EE" stroke-width="0.9" stroke-opacity="0.38"/>
+<rect x="700" y="280" width="3" height="38" rx="1.5" fill="#22D3EE" opacity="0.9"/>
+<text x="718" y="296" fill="#C8E0F8" font-size="11" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="1.8">GRAPH NEURAL NETS</text>
+<text x="718" y="311" fill="#7FA6D4" font-size="10" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.8">netlists and circuits are graphs</text>
+<circle cx="1300" cy="299" r="3" fill="#22D3EE" opacity="0.9"><animate attributeName="r" values="2;4;2" dur="2.6s" begin="1.05s" repeatCount="indefinite"/></circle>
+<rect x="700" y="328" width="620" height="38" rx="8" fill="#08152B" fill-opacity="0.8" stroke="#C084FC" stroke-width="0.9" stroke-opacity="0.38"/>
+<rect x="700" y="328" width="3" height="38" rx="1.5" fill="#C084FC" opacity="0.9"/>
+<text x="718" y="344" fill="#C8E0F8" font-size="11" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="1.8">QUANTUM</text>
+<text x="718" y="359" fill="#7FA6D4" font-size="10" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.8">variational circuits, Hilbert-space intuition</text>
+<circle cx="1300" cy="347" r="3" fill="#C084FC" opacity="0.9"><animate attributeName="r" values="2;4;2" dur="2.6s" begin="1.40s" repeatCount="indefinite"/></circle>
+<rect x="700" y="376" width="620" height="38" rx="8" fill="#08152B" fill-opacity="0.8" stroke="#22D3EE" stroke-width="0.9" stroke-opacity="0.38"/>
+<rect x="700" y="376" width="3" height="38" rx="1.5" fill="#22D3EE" opacity="0.9"/>
+<text x="718" y="392" fill="#C8E0F8" font-size="11" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="1.8">FORMAL VERIFICATION</text>
+<text x="718" y="407" fill="#7FA6D4" font-size="10" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.8">proofs where simulation runs out</text>
+<circle cx="1300" cy="395" r="3" fill="#22D3EE" opacity="0.9"><animate attributeName="r" values="2;4;2" dur="2.6s" begin="1.75s" repeatCount="indefinite"/></circle>
+<text x="1320" y="462" text-anchor="end" fill="#7FA6D4" font-size="10" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.5">radar values are self-assessed depth, not credentials</text>
+    <rect x="1" y="1" width="1398" height="488" rx="17.5" fill="none" stroke="#1B3566" stroke-width="1" opacity="0.7"/>
+  </g>
+</svg>

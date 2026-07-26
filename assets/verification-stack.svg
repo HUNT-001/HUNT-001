@@ -1,0 +1,74 @@
+<svg width="1400" height="410" viewBox="0 0 1400 410" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="410" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#030811"/><stop offset="45%" stop-color="#071226"/>
+      <stop offset="100%" stop-color="#0C1D3E"/>
+    </linearGradient>
+    <radialGradient id="amb" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(700.0 205.0) scale(630.0 287.0)">
+      <stop offset="0%" stop-color="#1D4ED8" stop-opacity="0.17"/>
+      <stop offset="100%" stop-color="#1D4ED8" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dotGrid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <circle cx="18" cy="18" r="0.7" fill="#4A90D9" fill-opacity="0.09"/>
+    </pattern>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#38BDF8" flood-opacity="0.32"/>
+    </filter>
+    <filter id="softv" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#A78BFA" flood-opacity="0.35"/>
+    </filter>
+    <clipPath id="clip"><rect width="1400" height="410" rx="18"/></clipPath>
+
+  </defs>
+  <rect width="1400" height="410" rx="18" fill="url(#bg)"/>
+  <rect width="1400" height="410" rx="18" fill="url(#amb)"/>
+  <g clip-path="url(#clip)">
+    <rect width="1400" height="410" fill="url(#dotGrid)"/>
+<text x="700.0" y="46" text-anchor="middle" fill="#C8E0F8" font-size="21" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" letter-spacing="7" filter="url(#soft)">HOW I CONVINCE MYSELF IT WORKS</text>
+<text x="700.0" y="70" text-anchor="middle" fill="#7FA6D4" font-size="11.5" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="3" opacity="0.75">70% of silicon effort is verification &#8212; so it deserves 70% of the README</text>
+<rect x="208.6" y="100" width="332.8" height="44" rx="7" fill="#A78BFA" fill-opacity="0.14" stroke="#A78BFA" stroke-width="1" stroke-opacity="0.55"/>
+<text x="375.0" y="119" text-anchor="middle" fill="#EAF4FF" font-size="11.2" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="1.6">FORMAL / MODEL CHECKING</text>
+<text x="375.0" y="134" text-anchor="middle" fill="#7FA6D4" font-size="9" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.85">exhaustive over the state space; no stimulus to write</text>
+<rect x="170.2" y="155" width="409.6" height="44" rx="7" fill="#C084FC" fill-opacity="0.14" stroke="#C084FC" stroke-width="1" stroke-opacity="0.55"/>
+<text x="375.0" y="174" text-anchor="middle" fill="#EAF4FF" font-size="11.2" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="1.6">ASSERTIONS  ·  SVA</text>
+<text x="375.0" y="189" text-anchor="middle" fill="#7FA6D4" font-size="9" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.85">properties that fail loudly, close to the bug</text>
+<rect x="131.8" y="210" width="486.4" height="44" rx="7" fill="#38BDF8" fill-opacity="0.14" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.55"/>
+<text x="375.0" y="229" text-anchor="middle" fill="#EAF4FF" font-size="11.2" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="1.6">CONSTRAINED-RANDOM  ·  UVM</text>
+<text x="375.0" y="244" text-anchor="middle" fill="#7FA6D4" font-size="9" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.85">agents, sequencers, scoreboards, functional coverage</text>
+<rect x="93.4" y="265" width="563.2" height="44" rx="7" fill="#22D3EE" fill-opacity="0.14" stroke="#22D3EE" stroke-width="1" stroke-opacity="0.55"/>
+<text x="375.0" y="284" text-anchor="middle" fill="#EAF4FF" font-size="11.2" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="1.6">DIRECTED + PYTHON  ·  cocotb</text>
+<text x="375.0" y="299" text-anchor="middle" fill="#7FA6D4" font-size="9" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.85">fast iteration, real testbench code, CI-friendly</text>
+<rect x="55.0" y="320" width="640.0" height="44" rx="7" fill="#60A5FA" fill-opacity="0.14" stroke="#60A5FA" stroke-width="1" stroke-opacity="0.55"/>
+<text x="375.0" y="339" text-anchor="middle" fill="#EAF4FF" font-size="11.2" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="1.6">LINT  ·  CDC  ·  RDC</text>
+<text x="375.0" y="354" text-anchor="middle" fill="#7FA6D4" font-size="9" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.85">cheapest bugs to find are the ones found before sim</text>
+<text x="375" y="401" text-anchor="middle" fill="#7FA6D4" font-size="9.6" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.6" letter-spacing="2">narrow = strong guarantee, expensive  &#183;  wide = cheap, shallow</text>
+<text x="770" y="112" fill="#C8E0F8" font-size="12.5" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" letter-spacing="4">COVERAGE CLOSURE</text>
+<text x="770" y="151" fill="#7FA6D4" font-size="10" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="1.6">LINE</text>
+<rect x="890" y="141" width="380" height="13" rx="6.5" fill="#0A1830" stroke="#60A5FA" stroke-width="0.7" stroke-opacity="0.3"/>
+<rect x="890" y="141" width="0" height="13" rx="6.5" fill="#38BDF8" fill-opacity="0.75"><animate attributeName="width" values="0;369" dur="1.8s" begin="0.00s" fill="freeze"/></rect>
+<text x="1286" y="151" text-anchor="end" fill="#22D3EE" font-size="10" font-family="Consolas, 'JetBrains Mono', monospace">97%</text>
+<text x="770" y="185" fill="#7FA6D4" font-size="10" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="1.6">BRANCH</text>
+<rect x="890" y="175" width="380" height="13" rx="6.5" fill="#0A1830" stroke="#60A5FA" stroke-width="0.7" stroke-opacity="0.3"/>
+<rect x="890" y="175" width="0" height="13" rx="6.5" fill="#38BDF8" fill-opacity="0.75"><animate attributeName="width" values="0;353" dur="1.8s" begin="0.16s" fill="freeze"/></rect>
+<text x="1286" y="185" text-anchor="end" fill="#22D3EE" font-size="10" font-family="Consolas, 'JetBrains Mono', monospace">93%</text>
+<text x="770" y="219" fill="#7FA6D4" font-size="10" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="1.6">TOGGLE</text>
+<rect x="890" y="209" width="380" height="13" rx="6.5" fill="#0A1830" stroke="#60A5FA" stroke-width="0.7" stroke-opacity="0.3"/>
+<rect x="890" y="209" width="0" height="13" rx="6.5" fill="#38BDF8" fill-opacity="0.75"><animate attributeName="width" values="0;334" dur="1.8s" begin="0.32s" fill="freeze"/></rect>
+<text x="1286" y="219" text-anchor="end" fill="#22D3EE" font-size="10" font-family="Consolas, 'JetBrains Mono', monospace">88%</text>
+<text x="770" y="253" fill="#7FA6D4" font-size="10" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="1.6">FSM STATE</text>
+<rect x="890" y="243" width="380" height="13" rx="6.5" fill="#0A1830" stroke="#60A5FA" stroke-width="0.7" stroke-opacity="0.3"/>
+<rect x="890" y="243" width="0" height="13" rx="6.5" fill="#38BDF8" fill-opacity="0.75"><animate attributeName="width" values="0;361" dur="1.8s" begin="0.48s" fill="freeze"/></rect>
+<text x="1286" y="253" text-anchor="end" fill="#22D3EE" font-size="10" font-family="Consolas, 'JetBrains Mono', monospace">95%</text>
+<text x="770" y="287" fill="#7FA6D4" font-size="10" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="1.6">FUNCTIONAL</text>
+<rect x="890" y="277" width="380" height="13" rx="6.5" fill="#0A1830" stroke="#60A5FA" stroke-width="0.7" stroke-opacity="0.3"/>
+<rect x="890" y="277" width="0" height="13" rx="6.5" fill="#38BDF8" fill-opacity="0.75"><animate attributeName="width" values="0;319" dur="1.8s" begin="0.64s" fill="freeze"/></rect>
+<text x="1286" y="287" text-anchor="end" fill="#22D3EE" font-size="10" font-family="Consolas, 'JetBrains Mono', monospace">84%</text>
+<text x="770" y="321" fill="#7FA6D4" font-size="10" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="1.6">ASSERTION</text>
+<rect x="890" y="311" width="380" height="13" rx="6.5" fill="#0A1830" stroke="#60A5FA" stroke-width="0.7" stroke-opacity="0.3"/>
+<rect x="890" y="311" width="0" height="13" rx="6.5" fill="#38BDF8" fill-opacity="0.75"><animate attributeName="width" values="0;346" dur="1.8s" begin="0.80s" fill="freeze"/></rect>
+<text x="1286" y="321" text-anchor="end" fill="#22D3EE" font-size="10" font-family="Consolas, 'JetBrains Mono', monospace">91%</text>
+<text x="770" y="366" fill="#7FA6D4" font-size="9.6" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.55">illustrative targets &#8212; the number that matters is the one you had to argue for in review</text>
+    <rect x="1" y="1" width="1398" height="408" rx="17.5" fill="none" stroke="#1B3566" stroke-width="1" opacity="0.7"/>
+  </g>
+</svg>

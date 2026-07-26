@@ -1,0 +1,183 @@
+<svg width="1400" height="300" viewBox="0 0 1400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#030811"/><stop offset="45%" stop-color="#071226"/>
+      <stop offset="100%" stop-color="#0C1D3E"/>
+    </linearGradient>
+    <radialGradient id="amb" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(700.0 150.0) scale(630.0 210.0)">
+      <stop offset="0%" stop-color="#1D4ED8" stop-opacity="0.17"/>
+      <stop offset="100%" stop-color="#1D4ED8" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dotGrid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <circle cx="18" cy="18" r="0.7" fill="#4A90D9" fill-opacity="0.09"/>
+    </pattern>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#38BDF8" flood-opacity="0.32"/>
+    </filter>
+    <filter id="softv" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#A78BFA" flood-opacity="0.35"/>
+    </filter>
+    <clipPath id="clip"><rect width="1400" height="300" rx="18"/></clipPath>
+
+  </defs>
+  <rect width="1400" height="300" rx="18" fill="url(#bg)"/>
+  <rect width="1400" height="300" rx="18" fill="url(#amb)"/>
+  <g clip-path="url(#clip)">
+    <rect width="1400" height="300" fill="url(#dotGrid)"/>
+<text x="700.0" y="46" text-anchor="middle" fill="#C8E0F8" font-size="21" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" letter-spacing="7" filter="url(#soft)">RTL &#8594; GDSII &#160; &#8212; &#160; THE FLOW I BUILD INSIDE</text>
+<text x="700.0" y="70" text-anchor="middle" fill="#7FA6D4" font-size="11.5" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="3.4" opacity="0.75">every stage below is a place where a design can die &#8212; and where verification earns its keep</text>
+<rect x="30" y="143.5" width="1340" height="1" fill="#60A5FA" opacity="0.20"/>
+
+    <g>
+      <rect x="30.0" y="96" width="118" height="96" rx="11" fill="#08152B" fill-opacity="0.92"
+            stroke="#38BDF8" stroke-width="1.1" stroke-opacity="0.55"/>
+      <rect x="30.0" y="96" width="118" height="3" rx="1.5" fill="#38BDF8" opacity="0.85"/>
+      <text x="89.0" y="123" text-anchor="middle" fill="#38BDF8" font-size="10"
+            font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="2" opacity="0.8">01</text>
+      <text x="89.0" y="148" text-anchor="middle" fill="#C8E0F8" font-size="12.5"
+            font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" letter-spacing="0.6">SPEC</text>
+      <text x="89.0" y="168" text-anchor="middle" fill="#7FA6D4" font-size="9.2"
+            font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.8">arch  ·  budget</text>
+      <animate attributeName="opacity" values="0.55;1;0.55" dur="6s" begin="0.00s" repeatCount="indefinite"/>
+    </g>
+<path d="M151.9 140.0 L159.9 144.0 L151.9 148.0 Z" fill="#60A5FA" opacity="0.55"/>
+
+    <g>
+      <rect x="165.8" y="96" width="118" height="96" rx="11" fill="#08152B" fill-opacity="0.92"
+            stroke="#38BDF8" stroke-width="1.1" stroke-opacity="0.55"/>
+      <rect x="165.8" y="96" width="118" height="3" rx="1.5" fill="#38BDF8" opacity="0.85"/>
+      <text x="224.8" y="123" text-anchor="middle" fill="#38BDF8" font-size="10"
+            font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="2" opacity="0.8">02</text>
+      <text x="224.8" y="148" text-anchor="middle" fill="#C8E0F8" font-size="12.5"
+            font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" letter-spacing="0.6">RTL</text>
+      <text x="224.8" y="168" text-anchor="middle" fill="#7FA6D4" font-size="9.2"
+            font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.8">SystemVerilog</text>
+      <animate attributeName="opacity" values="0.55;1;0.55" dur="6s" begin="0.33s" repeatCount="indefinite"/>
+    </g>
+<path d="M287.7 140.0 L295.7 144.0 L287.7 148.0 Z" fill="#60A5FA" opacity="0.55"/>
+
+    <g>
+      <rect x="301.6" y="96" width="118" height="96" rx="11" fill="#08152B" fill-opacity="0.92"
+            stroke="#38BDF8" stroke-width="1.1" stroke-opacity="0.55"/>
+      <rect x="301.6" y="96" width="118" height="3" rx="1.5" fill="#38BDF8" opacity="0.85"/>
+      <text x="360.6" y="123" text-anchor="middle" fill="#38BDF8" font-size="10"
+            font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="2" opacity="0.8">03</text>
+      <text x="360.6" y="148" text-anchor="middle" fill="#C8E0F8" font-size="12.5"
+            font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" letter-spacing="0.6">LINT / CDC</text>
+      <text x="360.6" y="168" text-anchor="middle" fill="#7FA6D4" font-size="9.2"
+            font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.8">Spyglass  ·  rules</text>
+      <animate attributeName="opacity" values="0.55;1;0.55" dur="6s" begin="0.67s" repeatCount="indefinite"/>
+    </g>
+<path d="M423.4 140.0 L431.4 144.0 L423.4 148.0 Z" fill="#60A5FA" opacity="0.55"/>
+
+    <g>
+      <rect x="437.3" y="96" width="118" height="96" rx="11" fill="#08152B" fill-opacity="0.92"
+            stroke="#38BDF8" stroke-width="1.1" stroke-opacity="0.55"/>
+      <rect x="437.3" y="96" width="118" height="3" rx="1.5" fill="#38BDF8" opacity="0.85"/>
+      <text x="496.3" y="123" text-anchor="middle" fill="#38BDF8" font-size="10"
+            font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="2" opacity="0.8">04</text>
+      <text x="496.3" y="148" text-anchor="middle" fill="#C8E0F8" font-size="12.5"
+            font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" letter-spacing="0.6">VERIFY</text>
+      <text x="496.3" y="168" text-anchor="middle" fill="#7FA6D4" font-size="9.2"
+            font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.8">UVM  ·  cocotb</text>
+      <animate attributeName="opacity" values="0.55;1;0.55" dur="6s" begin="1.00s" repeatCount="indefinite"/>
+    </g>
+<path d="M559.2 140.0 L567.2 144.0 L559.2 148.0 Z" fill="#60A5FA" opacity="0.55"/>
+
+    <g>
+      <rect x="573.1" y="96" width="118" height="96" rx="11" fill="#08152B" fill-opacity="0.92"
+            stroke="#38BDF8" stroke-width="1.1" stroke-opacity="0.55"/>
+      <rect x="573.1" y="96" width="118" height="3" rx="1.5" fill="#38BDF8" opacity="0.85"/>
+      <text x="632.1" y="123" text-anchor="middle" fill="#38BDF8" font-size="10"
+            font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="2" opacity="0.8">05</text>
+      <text x="632.1" y="148" text-anchor="middle" fill="#C8E0F8" font-size="12.5"
+            font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" letter-spacing="0.6">SYNTH</text>
+      <text x="632.1" y="168" text-anchor="middle" fill="#7FA6D4" font-size="9.2"
+            font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.8">gate netlist</text>
+      <animate attributeName="opacity" values="0.55;1;0.55" dur="6s" begin="1.33s" repeatCount="indefinite"/>
+    </g>
+<path d="M695.0 140.0 L703.0 144.0 L695.0 148.0 Z" fill="#60A5FA" opacity="0.55"/>
+
+    <g>
+      <rect x="708.9" y="96" width="118" height="96" rx="11" fill="#08152B" fill-opacity="0.92"
+            stroke="#22D3EE" stroke-width="1.1" stroke-opacity="0.55"/>
+      <rect x="708.9" y="96" width="118" height="3" rx="1.5" fill="#22D3EE" opacity="0.85"/>
+      <text x="767.9" y="123" text-anchor="middle" fill="#22D3EE" font-size="10"
+            font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="2" opacity="0.8">06</text>
+      <text x="767.9" y="148" text-anchor="middle" fill="#C8E0F8" font-size="12.5"
+            font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" letter-spacing="0.6">FLOORPLAN</text>
+      <text x="767.9" y="168" text-anchor="middle" fill="#7FA6D4" font-size="9.2"
+            font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.8">macro  ·  power</text>
+      <animate attributeName="opacity" values="0.55;1;0.55" dur="6s" begin="1.67s" repeatCount="indefinite"/>
+    </g>
+<path d="M830.8 140.0 L838.8 144.0 L830.8 148.0 Z" fill="#60A5FA" opacity="0.55"/>
+
+    <g>
+      <rect x="844.7" y="96" width="118" height="96" rx="11" fill="#08152B" fill-opacity="0.92"
+            stroke="#22D3EE" stroke-width="1.1" stroke-opacity="0.55"/>
+      <rect x="844.7" y="96" width="118" height="3" rx="1.5" fill="#22D3EE" opacity="0.85"/>
+      <text x="903.7" y="123" text-anchor="middle" fill="#22D3EE" font-size="10"
+            font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="2" opacity="0.8">07</text>
+      <text x="903.7" y="148" text-anchor="middle" fill="#C8E0F8" font-size="12.5"
+            font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" letter-spacing="0.6">CTS + P&amp;R</text>
+      <text x="903.7" y="168" text-anchor="middle" fill="#7FA6D4" font-size="9.2"
+            font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.8">clock  ·  route</text>
+      <animate attributeName="opacity" values="0.55;1;0.55" dur="6s" begin="2.00s" repeatCount="indefinite"/>
+    </g>
+<path d="M966.6 140.0 L974.6 144.0 L966.6 148.0 Z" fill="#60A5FA" opacity="0.55"/>
+
+    <g>
+      <rect x="980.4" y="96" width="118" height="96" rx="11" fill="#08152B" fill-opacity="0.92"
+            stroke="#22D3EE" stroke-width="1.1" stroke-opacity="0.55"/>
+      <rect x="980.4" y="96" width="118" height="3" rx="1.5" fill="#22D3EE" opacity="0.85"/>
+      <text x="1039.4" y="123" text-anchor="middle" fill="#22D3EE" font-size="10"
+            font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="2" opacity="0.8">08</text>
+      <text x="1039.4" y="148" text-anchor="middle" fill="#C8E0F8" font-size="12.5"
+            font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" letter-spacing="0.6">STA / SI</text>
+      <text x="1039.4" y="168" text-anchor="middle" fill="#7FA6D4" font-size="9.2"
+            font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.8">timing signoff</text>
+      <animate attributeName="opacity" values="0.55;1;0.55" dur="6s" begin="2.33s" repeatCount="indefinite"/>
+    </g>
+<path d="M1102.3 140.0 L1110.3 144.0 L1102.3 148.0 Z" fill="#60A5FA" opacity="0.55"/>
+
+    <g>
+      <rect x="1116.2" y="96" width="118" height="96" rx="11" fill="#08152B" fill-opacity="0.92"
+            stroke="#A78BFA" stroke-width="1.1" stroke-opacity="0.55"/>
+      <rect x="1116.2" y="96" width="118" height="3" rx="1.5" fill="#A78BFA" opacity="0.85"/>
+      <text x="1175.2" y="123" text-anchor="middle" fill="#A78BFA" font-size="10"
+            font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="2" opacity="0.8">09</text>
+      <text x="1175.2" y="148" text-anchor="middle" fill="#C8E0F8" font-size="12.5"
+            font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" letter-spacing="0.6">DRC / LVS</text>
+      <text x="1175.2" y="168" text-anchor="middle" fill="#7FA6D4" font-size="9.2"
+            font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.8">physical signoff</text>
+      <animate attributeName="opacity" values="0.55;1;0.55" dur="6s" begin="2.67s" repeatCount="indefinite"/>
+    </g>
+<path d="M1238.1 140.0 L1246.1 144.0 L1238.1 148.0 Z" fill="#60A5FA" opacity="0.55"/>
+
+    <g>
+      <rect x="1252.0" y="96" width="118" height="96" rx="11" fill="#08152B" fill-opacity="0.92"
+            stroke="#A78BFA" stroke-width="1.1" stroke-opacity="0.55"/>
+      <rect x="1252.0" y="96" width="118" height="3" rx="1.5" fill="#A78BFA" opacity="0.85"/>
+      <text x="1311.0" y="123" text-anchor="middle" fill="#A78BFA" font-size="10"
+            font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="2" opacity="0.8">10</text>
+      <text x="1311.0" y="148" text-anchor="middle" fill="#C8E0F8" font-size="12.5"
+            font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" letter-spacing="0.6">GDSII</text>
+      <text x="1311.0" y="168" text-anchor="middle" fill="#7FA6D4" font-size="9.2"
+            font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.8">tapeout</text>
+      <animate attributeName="opacity" values="0.55;1;0.55" dur="6s" begin="3.00s" repeatCount="indefinite"/>
+    </g>
+
+    <circle r="4" fill="#67E8F9" filter="url(#soft)">
+      <animateMotion dur="9s" repeatCount="indefinite" path="M30,144.0 L1370,144.0"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="9s" repeatCount="indefinite"/>
+    </circle>
+<rect x="30" y="220" width="1340" height="1" fill="#60A5FA" opacity="0.14"/>
+<text x="60" y="238" fill="#7FA6D4" font-size="10" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="4" opacity="0.6">BEHAVIOURAL</text>
+<text x="430" y="238" fill="#7FA6D4" font-size="10" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="4" opacity="0.6">STRUCTURAL</text>
+<text x="800" y="238" fill="#7FA6D4" font-size="10" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="4" opacity="0.6">PHYSICAL</text>
+<text x="1150" y="238" fill="#7FA6D4" font-size="10" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="4" opacity="0.6">SILICON</text>
+<text x="1370" y="266" text-anchor="end" fill="#7FA6D4" font-size="10" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.5" letter-spacing="2">abstraction descends left &#8594; right; cost of a bug rises with it</text>
+    <rect x="1" y="1" width="1398" height="298" rx="17.5" fill="none" stroke="#1B3566" stroke-width="1" opacity="0.7"/>
+  </g>
+</svg>

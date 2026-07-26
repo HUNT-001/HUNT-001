@@ -1,0 +1,111 @@
+<svg width="1400" height="500" viewBox="0 0 1400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#030811"/><stop offset="45%" stop-color="#071226"/>
+      <stop offset="100%" stop-color="#0C1D3E"/>
+    </linearGradient>
+    <radialGradient id="amb" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(700.0 250.0) scale(630.0 350.0)">
+      <stop offset="0%" stop-color="#1D4ED8" stop-opacity="0.17"/>
+      <stop offset="100%" stop-color="#1D4ED8" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dotGrid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <circle cx="18" cy="18" r="0.7" fill="#4A90D9" fill-opacity="0.09"/>
+    </pattern>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#38BDF8" flood-opacity="0.32"/>
+    </filter>
+    <filter id="softv" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#A78BFA" flood-opacity="0.35"/>
+    </filter>
+    <clipPath id="clip"><rect width="1400" height="500" rx="18"/></clipPath>
+
+  </defs>
+  <rect width="1400" height="500" rx="18" fill="url(#bg)"/>
+  <rect width="1400" height="500" rx="18" fill="url(#amb)"/>
+  <g clip-path="url(#clip)">
+    <rect width="1400" height="500" fill="url(#dotGrid)"/>
+<text x="700.0" y="44" text-anchor="middle" fill="#C8E0F8" font-size="21" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" letter-spacing="7" filter="url(#soft)">FROM LAYOUT TO ATOMS</text>
+<text x="700.0" y="68" text-anchor="middle" fill="#7FA6D4" font-size="11.5" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="3" opacity="0.75">a die cross-section &#8212; what the GDSII actually becomes</text>
+<rect x="60" y="88" width="660" height="22" rx="3" fill="#1E3A5F" fill-opacity="0.55" stroke="#38BDF8" stroke-width="0.7" stroke-opacity="0.35"/>
+<text x="72" y="102.6" fill="#C8E0F8" font-size="9.6" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.85" letter-spacing="1.2">PASSIVATION</text>
+<rect x="60" y="112" width="660" height="20" rx="3" fill="#2563EB" fill-opacity="0.6" stroke="#38BDF8" stroke-width="0.7" stroke-opacity="0.35"/>
+<text x="72" y="125.6" fill="#C8E0F8" font-size="9.6" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.85" letter-spacing="1.2">M9  ·  global</text>
+<rect x="60" y="134" width="660" height="20" rx="3" fill="#1D4ED8" fill-opacity="0.55" stroke="#38BDF8" stroke-width="0.7" stroke-opacity="0.35"/>
+<text x="72" y="147.6" fill="#C8E0F8" font-size="9.6" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.85" letter-spacing="1.2">M6-M8  ·  semi-global</text>
+<rect x="60" y="156" width="660" height="20" rx="3" fill="#1E40AF" fill-opacity="0.5" stroke="#38BDF8" stroke-width="0.7" stroke-opacity="0.35"/>
+<text x="72" y="169.6" fill="#C8E0F8" font-size="9.6" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.85" letter-spacing="1.2">M2-M5  ·  intermediate</text>
+<rect x="60" y="178" width="660" height="18" rx="3" fill="#3B82F6" fill-opacity="0.55" stroke="#38BDF8" stroke-width="0.7" stroke-opacity="0.35"/>
+<text x="72" y="190.6" fill="#C8E0F8" font-size="9.6" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.85" letter-spacing="1.2">M1  ·  local</text>
+<rect x="60" y="198" width="660" height="16" rx="3" fill="#0EA5E9" fill-opacity="0.45" stroke="#38BDF8" stroke-width="0.7" stroke-opacity="0.35"/>
+<text x="72" y="209.6" fill="#C8E0F8" font-size="9.6" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.85" letter-spacing="1.2">CONTACT  ·  MOL</text>
+<rect x="140" y="105" width="4" height="105" fill="#22D3EE" fill-opacity="0.45"/>
+<rect x="202" y="105" width="4" height="105" fill="#22D3EE" fill-opacity="0.45"/>
+<rect x="264" y="105" width="4" height="105" fill="#22D3EE" fill-opacity="0.45"/>
+<rect x="326" y="105" width="4" height="105" fill="#22D3EE" fill-opacity="0.45"/>
+<rect x="388" y="105" width="4" height="105" fill="#22D3EE" fill-opacity="0.45"/>
+<rect x="450" y="105" width="4" height="105" fill="#22D3EE" fill-opacity="0.45"/>
+<rect x="512" y="105" width="4" height="105" fill="#22D3EE" fill-opacity="0.45"/>
+<rect x="574" y="105" width="4" height="105" fill="#22D3EE" fill-opacity="0.45"/>
+<rect x="636" y="105" width="4" height="105" fill="#22D3EE" fill-opacity="0.45"/>
+<rect x="698" y="105" width="4" height="105" fill="#22D3EE" fill-opacity="0.45"/>
+<rect x="60" y="214" width="660" height="46" fill="#0B1F3A" stroke="#38BDF8" stroke-width="0.7" stroke-opacity="0.35"/>
+<text x="72" y="240" fill="#C8E0F8" font-size="9.6" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.85" letter-spacing="1.2">FEOL  ·  HKMG GATE STACK  /  FinFET &#8594; GAA NANOSHEET</text>
+<rect x="468" y="222" width="9" height="30" rx="2" fill="#22D3EE" fill-opacity="0.55"/>
+<rect x="462" y="218" width="21" height="10" rx="2" fill="#A78BFA" fill-opacity="0.45"/>
+<rect x="510" y="222" width="9" height="30" rx="2" fill="#22D3EE" fill-opacity="0.55"/>
+<rect x="504" y="218" width="21" height="10" rx="2" fill="#A78BFA" fill-opacity="0.45"/>
+<rect x="552" y="222" width="9" height="30" rx="2" fill="#22D3EE" fill-opacity="0.55"/>
+<rect x="546" y="218" width="21" height="10" rx="2" fill="#A78BFA" fill-opacity="0.45"/>
+<rect x="594" y="222" width="9" height="30" rx="2" fill="#22D3EE" fill-opacity="0.55"/>
+<rect x="588" y="218" width="21" height="10" rx="2" fill="#A78BFA" fill-opacity="0.45"/>
+<rect x="636" y="222" width="9" height="30" rx="2" fill="#22D3EE" fill-opacity="0.55"/>
+<rect x="630" y="218" width="21" height="10" rx="2" fill="#A78BFA" fill-opacity="0.45"/>
+<rect x="678" y="222" width="9" height="30" rx="2" fill="#22D3EE" fill-opacity="0.55"/>
+<rect x="672" y="218" width="21" height="10" rx="2" fill="#A78BFA" fill-opacity="0.45"/>
+<rect x="60" y="262" width="660" height="34" fill="#050D1C" stroke="#38BDF8" stroke-width="0.7" stroke-opacity="0.3"/>
+<text x="72" y="283" fill="#7FA6D4" font-size="9.6" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.8" letter-spacing="1.2">p-TYPE Si SUBSTRATE  ·  STI ISOLATION  ·  &#10216;100&#10217; WAFER</text>
+<path d="M734 88 L742 88 L742 210 L734 210" fill="none" stroke="#60A5FA" stroke-width="1" opacity="0.5"/>
+<text x="750" y="152" fill="#60A5FA" font-size="10" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.7">BEOL</text>
+<path d="M734 214 L742 214 L742 296 L734 296" fill="none" stroke="#A78BFA" stroke-width="1" opacity="0.5"/>
+<text x="750" y="258" fill="#A78BFA" font-size="10" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.7">FEOL</text>
+<text x="880" y="104" fill="#C8E0F8" font-size="12.5" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" letter-spacing="4">PATTERNING</text>
+<rect x="880" y="128" width="440" height="32" rx="7" fill="#08152B" fill-opacity="0.85" stroke="#38BDF8" stroke-width="0.9" stroke-opacity="0.4"/>
+<circle cx="898" cy="144" r="3.4" fill="#22D3EE" opacity="0.9"><animate attributeName="opacity" values="0.25;1;0.25" dur="3.2s" begin="0.00s" repeatCount="indefinite"/></circle>
+<text x="914" y="148" fill="#C8E0F8" font-size="10.6" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="1.4">EUV SOURCE</text>
+<text x="1310" y="148" text-anchor="end" fill="#7FA6D4" font-size="9.6" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.8">&#955; = 13.5 nm  ·  Sn plasma</text>
+<path d="M898 160 L898 170" stroke="#60A5FA" stroke-width="1" opacity="0.35"/>
+<rect x="880" y="170" width="440" height="32" rx="7" fill="#08152B" fill-opacity="0.85" stroke="#38BDF8" stroke-width="0.9" stroke-opacity="0.4"/>
+<circle cx="898" cy="186" r="3.4" fill="#22D3EE" opacity="0.9"><animate attributeName="opacity" values="0.25;1;0.25" dur="3.2s" begin="0.45s" repeatCount="indefinite"/></circle>
+<text x="914" y="190" fill="#C8E0F8" font-size="10.6" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="1.4">RETICLE</text>
+<text x="1310" y="190" text-anchor="end" fill="#7FA6D4" font-size="9.6" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.8">4&#215; reduction photomask</text>
+<path d="M898 202 L898 212" stroke="#60A5FA" stroke-width="1" opacity="0.35"/>
+<rect x="880" y="212" width="440" height="32" rx="7" fill="#08152B" fill-opacity="0.85" stroke="#38BDF8" stroke-width="0.9" stroke-opacity="0.4"/>
+<circle cx="898" cy="228" r="3.4" fill="#22D3EE" opacity="0.9"><animate attributeName="opacity" values="0.25;1;0.25" dur="3.2s" begin="0.90s" repeatCount="indefinite"/></circle>
+<text x="914" y="232" fill="#C8E0F8" font-size="10.6" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="1.4">PROJECTION OPTICS</text>
+<text x="1310" y="232" text-anchor="end" fill="#7FA6D4" font-size="9.6" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.8">NA 0.33 &#8594; High-NA 0.55</text>
+<path d="M898 244 L898 254" stroke="#60A5FA" stroke-width="1" opacity="0.35"/>
+<rect x="880" y="254" width="440" height="32" rx="7" fill="#08152B" fill-opacity="0.85" stroke="#38BDF8" stroke-width="0.9" stroke-opacity="0.4"/>
+<circle cx="898" cy="270" r="3.4" fill="#22D3EE" opacity="0.9"><animate attributeName="opacity" values="0.25;1;0.25" dur="3.2s" begin="1.35s" repeatCount="indefinite"/></circle>
+<text x="914" y="274" fill="#C8E0F8" font-size="10.6" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="1.4">RESIST + DEVELOP</text>
+<text x="1310" y="274" text-anchor="end" fill="#7FA6D4" font-size="9.6" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.8">chemically amplified</text>
+<path d="M898 286 L898 296" stroke="#60A5FA" stroke-width="1" opacity="0.35"/>
+<rect x="880" y="296" width="440" height="32" rx="7" fill="#08152B" fill-opacity="0.85" stroke="#38BDF8" stroke-width="0.9" stroke-opacity="0.4"/>
+<circle cx="898" cy="312" r="3.4" fill="#22D3EE" opacity="0.9"><animate attributeName="opacity" values="0.25;1;0.25" dur="3.2s" begin="1.80s" repeatCount="indefinite"/></circle>
+<text x="914" y="316" fill="#C8E0F8" font-size="10.6" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="1.4">ETCH / DEPOSITION</text>
+<text x="1310" y="316" text-anchor="end" fill="#7FA6D4" font-size="9.6" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.8">RIE  ·  ALD  ·  CMP</text>
+<path d="M898 328 L898 338" stroke="#60A5FA" stroke-width="1" opacity="0.35"/>
+<rect x="880" y="338" width="440" height="32" rx="7" fill="#08152B" fill-opacity="0.85" stroke="#38BDF8" stroke-width="0.9" stroke-opacity="0.4"/>
+<circle cx="898" cy="354" r="3.4" fill="#22D3EE" opacity="0.9"><animate attributeName="opacity" values="0.25;1;0.25" dur="3.2s" begin="2.25s" repeatCount="indefinite"/></circle>
+<text x="914" y="358" fill="#C8E0F8" font-size="10.6" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="1.4">METROLOGY + YIELD</text>
+<text x="1310" y="358" text-anchor="end" fill="#7FA6D4" font-size="9.6" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.8">overlay  ·  D0 defectivity</text>
+<rect x="60" y="392" width="1280" height="76" rx="11" fill="#06101F" fill-opacity="0.7" stroke="#A78BFA" stroke-width="0.9" stroke-opacity="0.35"/>
+<text x="86" y="418" fill="#C084FC" font-size="10.5" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="3" opacity="0.85">RESOLUTION LIMIT &#8212; RAYLEIGH</text>
+<text x="86" y="452" fill="#E6F1FF" font-size="23" font-family="'Cambria Math', 'Latin Modern Math', Georgia, serif" font-style="italic" filter="url(#softv)">CD = k<tspan font-size="14" dy="5">1</tspan><tspan dy="-5"> &#183; &#955; / NA</tspan></text>
+<text x="470" y="424" fill="#7FA6D4" font-size="11" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.85">&#955; 13.5 nm &#183; NA 0.33 &#8594; ~13 nm half-pitch, single exposure</text>
+<text x="470" y="448" fill="#7FA6D4" font-size="11" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.85">below that: multi-patterning (LELE / SADP / SAQP), or High-NA 0.55</text>
+<text x="1314" y="424" text-anchor="end" fill="#22D3EE" font-size="10.6" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.72">physics sets the floor;</text>
+<text x="1314" y="448" text-anchor="end" fill="#22D3EE" font-size="10.6" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.72">architecture decides what you do with it</text>
+    <rect x="1" y="1" width="1398" height="498" rx="17.5" fill="none" stroke="#1B3566" stroke-width="1" opacity="0.7"/>
+  </g>
+</svg>

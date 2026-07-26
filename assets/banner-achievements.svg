@@ -1,0 +1,84 @@
+<svg width="1400" height="100" viewBox="0 0 1400 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#030811"/>
+      <stop offset="45%"  stop-color="#071226"/>
+      <stop offset="100%" stop-color="#0C1D3E"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(700.0 50) scale(420 90)">
+      <stop offset="0%"   stop-color="#3730A3" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#3730A3" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="1400" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#60A5FA" stop-opacity="0"/>
+      <stop offset="22%"  stop-color="#60A5FA" stop-opacity="0.6"/>
+      <stop offset="50%"  stop-color="#E0F2FE" stop-opacity="0.85"/>
+      <stop offset="78%"  stop-color="#A78BFA" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#38BDF8" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#E0F2FE" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="dotGrid" x="0" y="0" width="36" height="36" patternUnits="userSpaceOnUse">
+      <circle cx="18" cy="18" r="0.7" fill="#4A90D9" fill-opacity="0.10"/>
+    </pattern>
+    <filter id="textGlow" x="-20%" y="-60%" width="140%" height="220%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#38BDF8" flood-opacity="0.38"/>
+    </filter>
+    <filter id="cornerGlow" x="-60%" y="-60%" width="280%" height="280%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#60A5FA" flood-opacity="0.5"/>
+    </filter>
+    <clipPath id="clip"><rect width="1400" height="100" rx="16"/></clipPath>
+  </defs>
+
+  <rect width="1400" height="100" rx="16" fill="url(#bg)"/>
+  <rect width="1400" height="100" rx="16" fill="url(#glow)"/>
+
+  <g clip-path="url(#clip)">
+    <rect width="1400" height="100" fill="url(#dotGrid)"/>
+
+    <rect x="0" y="10" width="1400" height="1" fill="url(#lineGrad)" opacity="0.75"/>
+    <rect x="0" y="90" width="1400" height="1" fill="url(#lineGrad)" opacity="0.55"/>
+
+    <rect x="120" y="36" width="11" height="11" fill="none" stroke="#38BDF8" stroke-width="0.7" opacity="0.22"/><rect x="120" y="51" width="11" height="11" fill="none" stroke="#38BDF8" stroke-width="0.7" opacity="0.22"/><rect x="120" y="66" width="11" height="11" fill="none" stroke="#38BDF8" stroke-width="0.7" opacity="0.22"/><rect x="135" y="36" width="11" height="11" fill="none" stroke="#38BDF8" stroke-width="0.7" opacity="0.22"/><rect x="135" y="51" width="11" height="11" fill="none" stroke="#38BDF8" stroke-width="0.7" opacity="0.22"/><rect x="135" y="66" width="11" height="11" fill="none" stroke="#38BDF8" stroke-width="0.7" opacity="0.22"/><rect x="150" y="36" width="11" height="11" fill="none" stroke="#38BDF8" stroke-width="0.7" opacity="0.22"/><rect x="150" y="51" width="11" height="11" fill="none" stroke="#38BDF8" stroke-width="0.7" opacity="0.22"/><rect x="150" y="66" width="11" height="11" fill="none" stroke="#38BDF8" stroke-width="0.7" opacity="0.22"/><rect x="165" y="36" width="11" height="11" fill="none" stroke="#38BDF8" stroke-width="0.7" opacity="0.22"/><rect x="165" y="51" width="11" height="11" fill="none" stroke="#38BDF8" stroke-width="0.7" opacity="0.22"/><rect x="165" y="66" width="11" height="11" fill="none" stroke="#38BDF8" stroke-width="0.7" opacity="0.22"/><rect x="1235" y="36" width="11" height="11" fill="none" stroke="#38BDF8" stroke-width="0.7" opacity="0.22"/><rect x="1235" y="51" width="11" height="11" fill="none" stroke="#38BDF8" stroke-width="0.7" opacity="0.22"/><rect x="1235" y="66" width="11" height="11" fill="none" stroke="#38BDF8" stroke-width="0.7" opacity="0.22"/><rect x="1250" y="36" width="11" height="11" fill="none" stroke="#38BDF8" stroke-width="0.7" opacity="0.22"/><rect x="1250" y="51" width="11" height="11" fill="none" stroke="#38BDF8" stroke-width="0.7" opacity="0.22"/><rect x="1250" y="66" width="11" height="11" fill="none" stroke="#38BDF8" stroke-width="0.7" opacity="0.22"/><rect x="1265" y="36" width="11" height="11" fill="none" stroke="#38BDF8" stroke-width="0.7" opacity="0.22"/><rect x="1265" y="51" width="11" height="11" fill="none" stroke="#38BDF8" stroke-width="0.7" opacity="0.22"/><rect x="1265" y="66" width="11" height="11" fill="none" stroke="#38BDF8" stroke-width="0.7" opacity="0.22"/><rect x="1280" y="36" width="11" height="11" fill="none" stroke="#38BDF8" stroke-width="0.7" opacity="0.22"/><rect x="1280" y="51" width="11" height="11" fill="none" stroke="#38BDF8" stroke-width="0.7" opacity="0.22"/><rect x="1280" y="66" width="11" height="11" fill="none" stroke="#38BDF8" stroke-width="0.7" opacity="0.22"/>
+
+    <rect x="-200" y="0" width="200" height="100" fill="url(#scan)" opacity="0.55">
+      <animate attributeName="x" values="-200;1400" dur="7s" repeatCount="indefinite"/>
+    </rect>
+
+    <g filter="url(#cornerGlow)" opacity="0.85">
+      <path d="M22 20 L22 40 M22 20 L42 20" stroke="#38BDF8" stroke-width="1.6" stroke-linecap="round"/>
+      <circle cx="22" cy="20" r="2" fill="#60A5FA"/>
+    </g>
+    <g filter="url(#cornerGlow)" opacity="0.85">
+      <path d="M1378 20 L1378 40 M1378 20 L1358 20" stroke="#38BDF8" stroke-width="1.6" stroke-linecap="round"/>
+      <circle cx="1378" cy="20" r="2" fill="#60A5FA"/>
+    </g>
+    <g filter="url(#cornerGlow)" opacity="0.85">
+      <path d="M22 80 L22 60 M22 80 L42 80" stroke="#A78BFA" stroke-width="1.6" stroke-linecap="round"/>
+      <circle cx="22" cy="80" r="2" fill="#A78BFA"/>
+    </g>
+    <g filter="url(#cornerGlow)" opacity="0.85">
+      <path d="M1378 80 L1378 60 M1378 80 L1358 80" stroke="#A78BFA" stroke-width="1.6" stroke-linecap="round"/>
+      <circle cx="1378" cy="80" r="2" fill="#A78BFA"/>
+    </g>
+
+    <text x="489.2" y="52.0" fill="#60A5FA" font-size="18" font-family="Consolas, monospace" opacity="0.55">&#8249;</text>
+    <text x="896.8" y="52.0" fill="#60A5FA" font-size="18" font-family="Consolas, monospace" opacity="0.55">&#8250;</text>
+
+    <text x="700.0" y="52.0"
+          text-anchor="middle"
+          fill="#C8E0F8"
+          font-size="30"
+          font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+          font-weight="700"
+          letter-spacing="10"
+          filter="url(#textGlow)">ACHIEVEMENTS</text>
+    <text x="700.0" y="76" text-anchor="middle" fill="#60A5FA" font-size="11.5" font-family="Consolas, monospace" letter-spacing="4.5" opacity="0.62">NATIONAL  FINALS  &amp;  PODIUMS</text>
+
+    <rect x="1" y="1" width="1398" height="98" rx="15.5" fill="none" stroke="#1E2A5C" stroke-width="1" opacity="0.6"/>
+  </g>
+</svg>

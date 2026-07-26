@@ -1,0 +1,20 @@
+<svg width="1400" height="34" viewBox="0 0 1400 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="wg" x1="0" y1="0" x2="1400" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0"/>
+      <stop offset="18%" stop-color="#60A5FA" stop-opacity="0.75"/>
+      <stop offset="50%" stop-color="#E0F2FE" stop-opacity="0.95"/>
+      <stop offset="82%" stop-color="#22D3EE" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="wgl" x="-5%" y="-200%" width="110%" height="500%">
+      <feGaussianBlur stdDeviation="2.2"/>
+    </filter>
+  </defs>
+  <path d="M0 9 L46.7 9 L46.7 9 L46.7 25 L93.3 25 L93.3 25 L93.3 9 L140.0 9 L186.7 9 L186.7 9 L186.7 25 L233.3 25 L233.3 25 L233.3 9 L280.0 9 L280.0 9 L280.0 25 L326.7 25 L373.3 25 L373.3 25 L373.3 9 L420.0 9 L466.7 9 L466.7 9 L466.7 25 L513.3 25 L513.3 25 L513.3 9 L560.0 9 L606.7 9 L606.7 9 L606.7 25 L653.3 25 L653.3 25 L653.3 9 L700.0 9 L700.0 9 L700.0 25 L746.7 25 L746.7 25 L746.7 9 L793.3 9 L840.0 9 L840.0 9 L840.0 25 L886.7 25 L933.3 25 L933.3 25 L933.3 9 L980.0 9 L980.0 9 L980.0 25 L1026.7 25 L1026.7 25 L1026.7 9 L1073.3 9 L1120.0 9 L1120.0 9 L1120.0 25 L1166.7 25 L1166.7 25 L1166.7 9 L1213.3 9 L1213.3 9 L1213.3 25 L1260.0 25 L1260.0 25 L1260.0 9 L1306.7 9 L1353.3 9 L1353.3 9 L1353.3 25 L1400.0 25" stroke="url(#wg)" stroke-width="2.6" fill="none" filter="url(#wgl)" opacity="0.55"/>
+  <path d="M0 9 L46.7 9 L46.7 9 L46.7 25 L93.3 25 L93.3 25 L93.3 9 L140.0 9 L186.7 9 L186.7 9 L186.7 25 L233.3 25 L233.3 25 L233.3 9 L280.0 9 L280.0 9 L280.0 25 L326.7 25 L373.3 25 L373.3 25 L373.3 9 L420.0 9 L466.7 9 L466.7 9 L466.7 25 L513.3 25 L513.3 25 L513.3 9 L560.0 9 L606.7 9 L606.7 9 L606.7 25 L653.3 25 L653.3 25 L653.3 9 L700.0 9 L700.0 9 L700.0 25 L746.7 25 L746.7 25 L746.7 9 L793.3 9 L840.0 9 L840.0 9 L840.0 25 L886.7 25 L933.3 25 L933.3 25 L933.3 9 L980.0 9 L980.0 9 L980.0 25 L1026.7 25 L1026.7 25 L1026.7 9 L1073.3 9 L1120.0 9 L1120.0 9 L1120.0 25 L1166.7 25 L1166.7 25 L1166.7 9 L1213.3 9 L1213.3 9 L1213.3 25 L1260.0 25 L1260.0 25 L1260.0 9 L1306.7 9 L1353.3 9 L1353.3 9 L1353.3 25 L1400.0 25" stroke="url(#wg)" stroke-width="1.5" fill="none"/>
+  <rect x="-140" y="0" width="140" height="34" fill="#67E8F9" opacity="0.10">
+    <animate attributeName="x" values="-140;1400" dur="6s" repeatCount="indefinite"/>
+  </rect>
+  <text x="10" y="31" fill="#7FA6D4" font-size="7.5" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.35">clk</text>
+</svg>

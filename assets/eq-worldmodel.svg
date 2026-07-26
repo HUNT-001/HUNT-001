@@ -1,0 +1,65 @@
+<svg width="1400" height="250" viewBox="0 0 1400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="250" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#030811"/><stop offset="45%" stop-color="#071226"/>
+      <stop offset="100%" stop-color="#0C1D3E"/>
+    </linearGradient>
+    <radialGradient id="amb" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(700.0 125.0) scale(630.0 175.0)">
+      <stop offset="0%" stop-color="#1D4ED8" stop-opacity="0.17"/>
+      <stop offset="100%" stop-color="#1D4ED8" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dotGrid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <circle cx="18" cy="18" r="0.7" fill="#4A90D9" fill-opacity="0.09"/>
+    </pattern>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#38BDF8" flood-opacity="0.32"/>
+    </filter>
+    <filter id="softv" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#A78BFA" flood-opacity="0.35"/>
+    </filter>
+    <clipPath id="clip"><rect width="1400" height="250" rx="18"/></clipPath>
+
+  </defs>
+  <rect width="1400" height="250" rx="18" fill="url(#bg)"/>
+  <rect width="1400" height="250" rx="18" fill="url(#amb)"/>
+  <g clip-path="url(#clip)">
+    <rect width="1400" height="250" fill="url(#dotGrid)"/>
+<text x="70" y="52" fill="#22D3EE" font-size="11" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="4.5" opacity="0.85">RECURRENT STATE-SPACE MODEL &#8212; VARIATIONAL OBJECTIVE</text>
+<text x="70" y="118" fill="#EAF4FF" font-size="30" font-family="'Cambria Math', 'Latin Modern Math', Georgia, serif" font-style="italic" filter="url(#soft)">&#8466; = &#120124;<tspan font-size="17" dy="6">q</tspan><tspan dy="-6"> [ &#8721;</tspan><tspan font-size="17" dy="6">t</tspan><tspan dy="-6"> ( ln p(o</tspan><tspan font-size="17" dy="6">t</tspan><tspan dy="-6"> | h</tspan><tspan font-size="17" dy="6">t</tspan><tspan dy="-6">, z</tspan><tspan font-size="17" dy="6">t</tspan><tspan dy="-6">) + ln p(r</tspan><tspan font-size="17" dy="6">t</tspan><tspan dy="-6"> | h</tspan><tspan font-size="17" dy="6">t</tspan><tspan dy="-6">, z</tspan><tspan font-size="17" dy="6">t</tspan><tspan dy="-6">) &#8722; &#946; D</tspan><tspan font-size="17" dy="6">KL</tspan><tspan dy="-6"> ) ]</tspan></text>
+<text x="70" y="166" fill="#BCD9F7" font-size="21" font-family="'Cambria Math', 'Latin Modern Math', Georgia, serif" font-style="italic" opacity="0.92">D<tspan font-size="13" dy="5">KL</tspan><tspan dy="-5"> = KL[ q(z</tspan><tspan font-size="13" dy="5">t</tspan><tspan dy="-5"> | h</tspan><tspan font-size="13" dy="5">t</tspan><tspan dy="-5">, o</tspan><tspan font-size="13" dy="5">t</tspan><tspan dy="-5">) &#8214; p(z</tspan><tspan font-size="13" dy="5">t</tspan><tspan dy="-5"> | h</tspan><tspan font-size="13" dy="5">t</tspan><tspan dy="-5">) ]&#160;&#160;&#160;&#160; h</tspan><tspan font-size="13" dy="5">t</tspan><tspan dy="-5"> = f(h</tspan><tspan font-size="13" dy="5">t&#8722;1</tspan><tspan dy="-5">, z</tspan><tspan font-size="13" dy="5">t&#8722;1</tspan><tspan dy="-5">, a</tspan><tspan font-size="13" dy="5">t&#8722;1</tspan><tspan dy="-5">)</tspan></text>
+<text x="70" y="206" fill="#7FA6D4" font-size="11.5" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.82">reconstruct the world, predict the reward, and pay a KL price for every bit of surprise you smuggle into the latent.</text>
+<text x="70" y="226" fill="#7FA6D4" font-size="11.5" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.62">&#946; is the whole argument: too low and the model memorises, too high and it stops dreaming.</text>
+<circle cx="1020" cy="70" r="9" fill="none" stroke="#38BDF8" stroke-width="1" opacity="0.45"/>
+<circle cx="1020" cy="70" r="3" fill="#22D3EE" opacity="0.8"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.8s" begin="0.0s" repeatCount="indefinite"/></circle>
+<line x1="1029" y1="70" x2="1067" y2="70" stroke="#60A5FA" stroke-width="0.9" opacity="0.35"/>
+<line x1="1020" y1="79" x2="1020" y2="104" stroke="#A78BFA" stroke-width="0.9" opacity="0.35"/>
+<rect x="1012" y="104" width="16" height="12" rx="3" fill="#A78BFA" fill-opacity="0.28" stroke="#A78BFA" stroke-width="0.8" stroke-opacity="0.5"/>
+<circle cx="1076" cy="70" r="9" fill="none" stroke="#38BDF8" stroke-width="1" opacity="0.45"/>
+<circle cx="1076" cy="70" r="3" fill="#22D3EE" opacity="0.8"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.8s" begin="0.3s" repeatCount="indefinite"/></circle>
+<line x1="1085" y1="70" x2="1123" y2="70" stroke="#60A5FA" stroke-width="0.9" opacity="0.35"/>
+<line x1="1076" y1="79" x2="1076" y2="104" stroke="#A78BFA" stroke-width="0.9" opacity="0.35"/>
+<rect x="1068" y="104" width="16" height="12" rx="3" fill="#A78BFA" fill-opacity="0.28" stroke="#A78BFA" stroke-width="0.8" stroke-opacity="0.5"/>
+<circle cx="1132" cy="70" r="9" fill="none" stroke="#38BDF8" stroke-width="1" opacity="0.45"/>
+<circle cx="1132" cy="70" r="3" fill="#22D3EE" opacity="0.8"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.8s" begin="0.6s" repeatCount="indefinite"/></circle>
+<line x1="1141" y1="70" x2="1179" y2="70" stroke="#60A5FA" stroke-width="0.9" opacity="0.35"/>
+<line x1="1132" y1="79" x2="1132" y2="104" stroke="#A78BFA" stroke-width="0.9" opacity="0.35"/>
+<rect x="1124" y="104" width="16" height="12" rx="3" fill="#A78BFA" fill-opacity="0.28" stroke="#A78BFA" stroke-width="0.8" stroke-opacity="0.5"/>
+<circle cx="1188" cy="70" r="9" fill="none" stroke="#38BDF8" stroke-width="1" opacity="0.45"/>
+<circle cx="1188" cy="70" r="3" fill="#22D3EE" opacity="0.8"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.8s" begin="0.9s" repeatCount="indefinite"/></circle>
+<line x1="1197" y1="70" x2="1235" y2="70" stroke="#60A5FA" stroke-width="0.9" opacity="0.35"/>
+<line x1="1188" y1="79" x2="1188" y2="104" stroke="#A78BFA" stroke-width="0.9" opacity="0.35"/>
+<rect x="1180" y="104" width="16" height="12" rx="3" fill="#A78BFA" fill-opacity="0.28" stroke="#A78BFA" stroke-width="0.8" stroke-opacity="0.5"/>
+<circle cx="1244" cy="70" r="9" fill="none" stroke="#38BDF8" stroke-width="1" opacity="0.45"/>
+<circle cx="1244" cy="70" r="3" fill="#22D3EE" opacity="0.8"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.8s" begin="1.2s" repeatCount="indefinite"/></circle>
+<line x1="1253" y1="70" x2="1291" y2="70" stroke="#60A5FA" stroke-width="0.9" opacity="0.35"/>
+<line x1="1244" y1="79" x2="1244" y2="104" stroke="#A78BFA" stroke-width="0.9" opacity="0.35"/>
+<rect x="1236" y="104" width="16" height="12" rx="3" fill="#A78BFA" fill-opacity="0.28" stroke="#A78BFA" stroke-width="0.8" stroke-opacity="0.5"/>
+<circle cx="1300" cy="70" r="9" fill="none" stroke="#38BDF8" stroke-width="1" opacity="0.45"/>
+<circle cx="1300" cy="70" r="3" fill="#22D3EE" opacity="0.8"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.8s" begin="1.5s" repeatCount="indefinite"/></circle>
+<line x1="1300" y1="79" x2="1300" y2="104" stroke="#A78BFA" stroke-width="0.9" opacity="0.35"/>
+<rect x="1292" y="104" width="16" height="12" rx="3" fill="#A78BFA" fill-opacity="0.28" stroke="#A78BFA" stroke-width="0.8" stroke-opacity="0.5"/>
+<text x="1020" y="140" fill="#7FA6D4" font-size="9.4" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.6" letter-spacing="1.6">deterministic h &#8593;  /  stochastic z &#8595;</text>
+    <rect x="1" y="1" width="1398" height="248" rx="17.5" fill="none" stroke="#1B3566" stroke-width="1" opacity="0.7"/>
+  </g>
+</svg>

@@ -1,0 +1,42 @@
+<svg width="1400" height="230" viewBox="0 0 1400 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="230" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#030811"/><stop offset="45%" stop-color="#071226"/>
+      <stop offset="100%" stop-color="#0C1D3E"/>
+    </linearGradient>
+    <radialGradient id="amb" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(700.0 115.0) scale(630.0 161.0)">
+      <stop offset="0%" stop-color="#4C1D95" stop-opacity="0.17"/>
+      <stop offset="100%" stop-color="#4C1D95" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dotGrid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <circle cx="18" cy="18" r="0.7" fill="#4A90D9" fill-opacity="0.09"/>
+    </pattern>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#38BDF8" flood-opacity="0.32"/>
+    </filter>
+    <filter id="softv" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#A78BFA" flood-opacity="0.35"/>
+    </filter>
+    <clipPath id="clip"><rect width="1400" height="230" rx="18"/></clipPath>
+
+  </defs>
+  <rect width="1400" height="230" rx="18" fill="url(#bg)"/>
+  <rect width="1400" height="230" rx="18" fill="url(#amb)"/>
+  <g clip-path="url(#clip)">
+    <rect width="1400" height="230" fill="url(#dotGrid)"/>
+<text x="70" y="52" fill="#C084FC" font-size="11" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="4.5" opacity="0.9">VARIATIONAL QUANTUM EIGENSOLVER &#8212; THE BOUND THAT MAKES IT WORK</text>
+<text x="70" y="116" fill="#F2ECFF" font-size="30" font-family="'Cambria Math', 'Latin Modern Math', Georgia, serif" font-style="italic" filter="url(#softv)">E<tspan font-size="18" dy="6">0</tspan><tspan dy="-6"> &#8804; E(&#952;) = &#10216;&#968;(&#952;)| H&#770; |&#968;(&#952;)&#10217;&#160;&#160;&#160; |&#968;(&#952;)&#10217; = U(&#952;) |0&#10217;</tspan><tspan font-size="18" dy="-10">&#8855;n</tspan></text>
+<text x="70" y="160" fill="#D6C7F5" font-size="20" font-family="'Cambria Math', 'Latin Modern Math', Georgia, serif" font-style="italic" opacity="0.92">H&#770; = &#8721;<tspan font-size="13" dy="5">&#945;</tspan><tspan dy="-5"> c</tspan><tspan font-size="13" dy="5">&#945;</tspan><tspan dy="-5"> P</tspan><tspan font-size="13" dy="5">&#945;</tspan><tspan dy="-5">,&#160; P</tspan><tspan font-size="13" dy="5">&#945;</tspan><tspan dy="-5"> &#8712; { I, X, Y, Z }<tspan font-size="13" dy="5">&#8855;n</tspan></tspan></text>
+<text x="70" y="198" fill="#7FA6D4" font-size="11.5" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.8">the variational principle guarantees you can never undershoot the ground state &#8212; so optimisation is safe, and only ever unfinished.</text>
+<circle cx="1180" cy="112" r="62" fill="none" stroke="#A78BFA" stroke-width="1.1" opacity="0.5"/>
+<ellipse cx="1180" cy="112" rx="62" ry="18.599999999999998" fill="none" stroke="#C084FC" stroke-width="0.9" opacity="0.35"/>
+<ellipse cx="1180" cy="112" rx="18.599999999999998" ry="62" fill="none" stroke="#C084FC" stroke-width="0.9" opacity="0.28"/>
+<line x1="1180" y1="40" x2="1180" y2="184" stroke="#A78BFA" stroke-width="0.7" opacity="0.3"/>
+<line x1="1108" y1="112" x2="1252" y2="112" stroke="#A78BFA" stroke-width="0.7" opacity="0.3"/>
+<g><line x1="1180" y1="112" x2="1224" y2="70" stroke="#F5F3FF" stroke-width="2" filter="url(#softv)"/><circle cx="1224" cy="70" r="4.5" fill="#F5F3FF"/><animateTransform attributeName="transform" type="rotate" from="0 1180 112" to="360 1180 112" dur="12s" repeatCount="indefinite"/></g>
+<text x="1180" y="32" text-anchor="middle" fill="#7FA6D4" font-size="10" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.7">|0&#12297;</text>
+<text x="1180" y="202" text-anchor="middle" fill="#7FA6D4" font-size="10" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.7">|1&#12297;</text>
+    <rect x="1" y="1" width="1398" height="228" rx="17.5" fill="none" stroke="#1B3566" stroke-width="1" opacity="0.7"/>
+  </g>
+</svg>
