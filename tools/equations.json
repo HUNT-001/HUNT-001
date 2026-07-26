@@ -1,0 +1,152 @@
+[
+  {
+    "id": "eq-01",
+    "tex": "h_t = f_\\theta\\!\\left(h_{t-1},\\, z_{t-1},\\, a_{t-1}\\right), \\qquad z_t \\sim q_\\phi\\!\\left(z_t \\mid h_t,\\, o_t\\right)",
+    "wPx": 432,
+    "hPx": 22
+  },
+  {
+    "id": "eq-02",
+    "tex": "\\mathcal{L}(\\theta,\\phi) \\;=\\; \\mathbb{E}_{q_\\phi}\\!\\left[\\sum_{t=1}^{T} \\underbrace{\\ln p_\\theta(o_t \\mid h_t, z_t)}_{\\text{reconstruction}} \\;+\\; \\underbrace{\\ln p_\\theta(r_t \\mid h_t, z_t)}_{\\text{reward}} \\;-\\; \\beta \\underbrace{\\mathrm{KL}\\!\\left[\\, q_\\phi(z_t \\mid h_t, o_t) \\,\\|\\, p_\\theta(z_t \\mid h_t) \\,\\right]}_{\\text{complexity}}\\right]",
+    "wPx": 817,
+    "hPx": 86
+  },
+  {
+    "id": "eq-03",
+    "tex": "V^{\\lambda}_t \\;=\\; r_t \\;+\\; \\gamma\\Big[(1-\\lambda)\\, v_\\psi(s_{t+1}) \\;+\\; \\lambda\\, V^{\\lambda}_{t+1}\\Big]",
+    "wPx": 383,
+    "hPx": 37
+  },
+  {
+    "id": "eq-04",
+    "tex": "Q^{*}(s,a) \\;=\\; \\mathbb{E}_{s' \\sim P}\\!\\left[\\, r + \\gamma \\max_{a'} Q^{*}(s', a') \\;\\middle|\\; s, a \\,\\right]",
+    "wPx": 413,
+    "hPx": 50
+  },
+  {
+    "id": "eq-05",
+    "tex": "\\nabla_\\theta J(\\theta) \\;=\\; \\mathbb{E}_{\\pi_\\theta}\\!\\left[\\, \\nabla_\\theta \\ln \\pi_\\theta(a_t \\mid s_t)\\, A^{\\pi}(s_t, a_t) \\,\\right]",
+    "wPx": 382,
+    "hPx": 21
+  },
+  {
+    "id": "eq-06",
+    "tex": "\\hat{A}^{\\mathrm{GAE}(\\gamma,\\lambda)}_t \\;=\\; \\sum_{l=0}^{\\infty} (\\gamma\\lambda)^{l}\\, \\delta_{t+l}, \\qquad \\delta_t = r_t + \\gamma V(s_{t+1}) - V(s_t)",
+    "wPx": 523,
+    "hPx": 59
+  },
+  {
+    "id": "eq-07",
+    "tex": "h_v^{(k+1)} \\;=\\; \\sigma\\!\\left( W^{(k)} h_v^{(k)} \\;+\\; \\bigoplus_{u \\in \\mathcal{N}(v)} \\frac{1}{c_{vu}}\\, M^{(k)}\\!\\left(h_u^{(k)},\\, e_{uv}\\right) \\right)",
+    "wPx": 488,
+    "hPx": 71
+  },
+  {
+    "id": "eq-08",
+    "tex": "H^{(k+1)} \\;=\\; \\sigma\\!\\left( \\tilde{D}^{-1/2} \\tilde{A}\\, \\tilde{D}^{-1/2} H^{(k)} W^{(k)} \\right), \\qquad \\tilde{A} = A + I",
+    "wPx": 489,
+    "hPx": 37
+  },
+  {
+    "id": "eq-09",
+    "tex": "\\alpha_{vu} = \\frac{\\exp\\!\\left(\\mathrm{LeakyReLU}\\!\\left(\\mathbf{a}^{\\top}[\\,W h_v \\,\\|\\, W h_u\\,]\\right)\\right)}{\\sum_{w \\in \\mathcal{N}(v)} \\exp\\!\\left(\\mathrm{LeakyReLU}\\!\\left(\\mathbf{a}^{\\top}[\\,W h_v \\,\\|\\, W h_w\\,]\\right)\\right)}",
+    "wPx": 469,
+    "hPx": 59
+  },
+  {
+    "id": "eq-10",
+    "tex": "a^{*} \\;=\\; \\arg\\max_{a \\in \\mathcal{A}} \\; \\mathbb{E}_{s' \\sim T}\\!\\left[\\, R(s, a, s') + \\gamma V(s') \\,\\right] \\;-\\; \\lambda\\, c(a)",
+    "wPx": 473,
+    "hPx": 35
+  },
+  {
+    "id": "eq-11",
+    "tex": "\\mathrm{UCT}(s,a) \\;=\\; Q(s,a) \\;+\\; c\\,\\sqrt{\\frac{\\ln N(s)}{N(s,a)}}",
+    "wPx": 339,
+    "hPx": 64
+  },
+  {
+    "id": "eq-12",
+    "tex": "\\hat{x} \\;=\\; s\\left(\\mathrm{clip}\\!\\left(\\left\\lfloor \\frac{x}{s} \\right\\rceil + z,\\; q_{\\min},\\; q_{\\max}\\right) - z\\right)",
+    "wPx": 364,
+    "hPx": 38
+  },
+  {
+    "id": "eq-13",
+    "tex": "\\frac{\\partial \\hat{x}}{\\partial x} \\;\\approx\\; \\mathbf{1}_{\\left\\{\\, q_{\\min} \\,\\le\\, x/s + z \\,\\le\\, q_{\\max} \\,\\right\\}}",
+    "wPx": 238,
+    "hPx": 46
+  },
+  {
+    "id": "eq-14",
+    "tex": "w_b = \\mathrm{sign}(w), \\qquad \\alpha = \\frac{\\lVert W \\rVert_1}{n}, \\qquad W \\approx \\alpha\\, w_b",
+    "wPx": 411,
+    "hPx": 45
+  },
+  {
+    "id": "eq-15",
+    "tex": "P_{\\text{attainable}} = \\min\\!\\left(P_{\\text{peak}},\\; I \\cdot B_{\\text{mem}}\\right), \\qquad I = \\frac{\\text{FLOPs}}{\\text{Bytes moved}}",
+    "wPx": 507,
+    "hPx": 47
+  },
+  {
+    "id": "eq-16",
+    "tex": "E_0 \\;\\le\\; E(\\boldsymbol{\\theta}) \\;=\\; \\langle \\psi(\\boldsymbol{\\theta}) \\vert \\hat{H} \\vert \\psi(\\boldsymbol{\\theta}) \\rangle, \\qquad \\vert \\psi(\\boldsymbol{\\theta}) \\rangle = U(\\boldsymbol{\\theta}) \\vert 0 \\rangle^{\\otimes n}",
+    "wPx": 500,
+    "hPx": 27
+  },
+  {
+    "id": "eq-17",
+    "tex": "\\hat{H} \\;=\\; \\sum_{\\alpha} c_\\alpha\\, P_\\alpha, \\qquad P_\\alpha \\in \\{ I, X, Y, Z \\}^{\\otimes n}",
+    "wPx": 370,
+    "hPx": 46
+  },
+  {
+    "id": "eq-18",
+    "tex": "\\frac{\\partial E}{\\partial \\theta_i} \\;=\\; \\frac{1}{2}\\left[ E\\!\\left(\\theta_i + \\tfrac{\\pi}{2}\\right) - E\\!\\left(\\theta_i - \\tfrac{\\pi}{2}\\right) \\right]",
+    "wPx": 328,
+    "hPx": 47
+  },
+  {
+    "id": "eq-19",
+    "tex": "T_{\\text{clk}} \\;\\ge\\; t_{cq} \\;+\\; t_{\\text{logic,max}} \\;+\\; t_{\\text{setup}} \\;-\\; t_{\\text{skew}} \\;+\\; t_{\\text{jitter}}",
+    "wPx": 437,
+    "hPx": 20
+  },
+  {
+    "id": "eq-20",
+    "tex": "t_{cq} \\;+\\; t_{\\text{logic,min}} \\;\\ge\\; t_{\\text{hold}} \\;+\\; t_{\\text{skew}}",
+    "wPx": 280,
+    "hPx": 19
+  },
+  {
+    "id": "eq-21",
+    "tex": "P_{\\text{total}} \\;=\\; \\underbrace{\\alpha\\, C_L\\, V_{DD}^{2}\\, f}_{\\text{switching}} \\;+\\; \\underbrace{V_{DD}\\, I_{\\text{leak}}}_{\\text{leakage}}",
+    "wPx": 300,
+    "hPx": 55
+  },
+  {
+    "id": "eq-22",
+    "tex": "S = \\frac{1}{(1 - p) + \\dfrac{p}{s}}",
+    "wPx": 158,
+    "hPx": 65
+  },
+  {
+    "id": "eq-23",
+    "tex": "\\mathbb{E}[N] \\;=\\; n \\sum_{k=1}^{n} \\frac{1}{k} \\;\\approx\\; n \\ln n + \\gamma n, \\qquad \\gamma \\approx 0.5772",
+    "wPx": 438,
+    "hPx": 59
+  },
+  {
+    "id": "eq-24",
+    "tex": "\\mathrm{CD} = k_1 \\frac{\\lambda}{\\mathrm{NA}}, \\qquad \\mathrm{DOF} = k_2 \\frac{\\lambda}{\\mathrm{NA}^{2}}",
+    "wPx": 313,
+    "hPx": 47
+  },
+  {
+    "id": "eq-25",
+    "tex": "Y = \\left( \\frac{1 - e^{-A D_0}}{A D_0} \\right)^{2}",
+    "wPx": 181,
+    "hPx": 56
+  }
+]
