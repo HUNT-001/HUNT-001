@@ -25,7 +25,7 @@
 </p>
 
 <p align="center">
-  <b>I build intelligent systems at both ends of the stack &mdash; the algorithm that decides, and the silicon it decides on.</b>
+  <b>I build intelligent systems at both ends of the stack — the algorithm that decides, and the silicon it decides on.</b>
 </p>
 
 <p align="center">
@@ -45,7 +45,7 @@
 <img src="assets/banner-about.svg" alt="About Me" width="100%" />
 
 <p align="center">
-I'm a dual-degree student working on <b>efficient intelligent systems</b> &mdash; the kind that have to survive<br>
+I'm a dual-degree student working on <b>efficient intelligent systems</b> — the kind that have to survive<br>
 both a loss curve and a timing report.
 </p>
 
@@ -55,13 +55,13 @@ A world model is only useful if something can run it. A datapath is only worth b
 </p>
 
 <p align="center">
-🧠 <b>Above the line</b> &mdash; world models, model-based RL, graph neural networks, agentic systems, quantum-inspired ML<br>
-⚙️ <b>Below the line</b> &mdash; RTL design, functional verification, AI accelerators, quantized inference, edge deployment<br>
-🔬 <b>Across it</b> &mdash; hardware-aware ML, HW/SW co-design, and my own algorithmic research
+🧠 <b>Above the line</b> — world models, model-based RL, graph neural networks, agentic systems, quantum-inspired ML<br>
+⚙️ <b>Below the line</b> — RTL design, functional verification, AI accelerators, quantized inference, edge deployment<br>
+🔬 <b>Across it</b> — hardware-aware ML, HW/SW co-design, and my own algorithmic research
 </p>
 
 <details>
-<summary><b>&nbsp;Profile summary &mdash; click to expand</b></summary>
+<summary><b>&nbsp;Profile summary — click to expand</b></summary>
 
 <br>
 
@@ -116,7 +116,7 @@ class Engineer:
 </p>
 
 <p align="center">
-<i>Six threads, one question: how do you build something that models its world well enough to act in it &mdash; cheaply enough to matter?</i>
+<i>Six threads, one question: how do you build something that models its world well enough to act in it — cheaply enough to matter?</i>
 </p>
 
 <img src="assets/divider-quantum.svg" alt="" width="100%" />
@@ -129,115 +129,145 @@ class Engineer:
 </p>
 
 <p align="center">
-<i>The formalism I actually work in. Not decoration &mdash; these are the objects I'm debugging when something doesn't converge.</i>
+<i>The formalism I actually work in. Not decoration — these are the objects I'm debugging when something doesn't converge.</i>
 </p>
 
 <details open>
-<summary><b>&nbsp;🌍 &nbsp;World Models &mdash; learning a latent you can plan inside</b></summary>
+<summary><b>&nbsp;🌍 &nbsp;World Models — learning a latent you can plan inside</b></summary>
 
 <br>
 
-A world model compresses observations into a latent state whose *dynamics* are learnable. The recurrent state-space model splits that state in two: a deterministic path $h_t$ that carries memory, and a stochastic path $z_t$ that carries uncertainty.
+A world model compresses observations into a latent state whose *dynamics* are learnable. The recurrent state-space model splits that state in two: a deterministic path $`h_t`$ that carries memory, and a stochastic path $`z_t`$ that carries uncertainty.
 
-$$h_t = f_\theta\!\left(h_{t-1},\, z_{t-1},\, a_{t-1}\right), \qquad z_t \sim q_\phi\!\left(z_t \mid h_t,\, o_t\right)$$
+```math
+h_t = f_\theta\!\left(h_{t-1},\, z_{t-1},\, a_{t-1}\right), \qquad z_t \sim q_\phi\!\left(z_t \mid h_t,\, o_t\right)
+```
 
-Training maximises the evidence lower bound &mdash; reconstruct the observation, predict the reward, and pay a KL price for every bit of surprise smuggled into the latent:
+Training maximises the evidence lower bound — reconstruct the observation, predict the reward, and pay a KL price for every bit of surprise smuggled into the latent:
 
-$$\mathcal{L}(\theta,\phi) \;=\; \mathbb{E}_{q_\phi}\!\left[\sum_{t=1}^{T} \underbrace{\ln p_\theta(o_t \mid h_t, z_t)}_{\text{reconstruction}} \;+\; \underbrace{\ln p_\theta(r_t \mid h_t, z_t)}_{\text{reward}} \;-\; \beta \underbrace{\mathrm{KL}\!\left[\, q_\phi(z_t \mid h_t, o_t) \,\|\, p_\theta(z_t \mid h_t) \,\right]}_{\text{complexity}}\right]$$
+```math
+\mathcal{L}(\theta,\phi) \;=\; \mathbb{E}_{q_\phi}\!\left[\sum_{t=1}^{T} \underbrace{\ln p_\theta(o_t \mid h_t, z_t)}_{\text{reconstruction}} \;+\; \underbrace{\ln p_\theta(r_t \mid h_t, z_t)}_{\text{reward}} \;-\; \beta \underbrace{\mathrm{KL}\!\left[\, q_\phi(z_t \mid h_t, o_t) \,\|\, p_\theta(z_t \mid h_t) \,\right]}_{\text{complexity}}\right]
+```
 
-Once the dynamics are learned, you never have to touch the environment again to improve the policy. You roll out *inside the model* and train on imagined trajectories, bootstrapped with a $\lambda$-return:
+Once the dynamics are learned, you never have to touch the environment again to improve the policy. You roll out *inside the model* and train on imagined trajectories, bootstrapped with a $`\lambda`$-return:
 
-$$V^{\lambda}_t \;=\; r_t \;+\; \gamma\Big[(1-\lambda)\, v_\psi(s_{t+1}) \;+\; \lambda\, V^{\lambda}_{t+1}\Big]$$
+```math
+V^{\lambda}_t \;=\; r_t \;+\; \gamma\Big[(1-\lambda)\, v_\psi(s_{t+1}) \;+\; \lambda\, V^{\lambda}_{t+1}\Big]
+```
 
-**The part that's genuinely hard:** $\beta$ is the whole argument. Too low and the model memorises pixels instead of learning consequence. Too high and the posterior collapses onto the prior &mdash; the model stops dreaming, and every rollout returns the same beige future.
+**The part that's genuinely hard:** $`\beta`$ is the whole argument. Too low and the model memorises pixels instead of learning consequence. Too high and the posterior collapses onto the prior — the model stops dreaming, and every rollout returns the same beige future.
 
 </details>
 
 <details>
-<summary><b>&nbsp;🎯 &nbsp;Reinforcement Learning &mdash; the objects underneath</b></summary>
+<summary><b>&nbsp;🎯 &nbsp;Reinforcement Learning — the objects underneath</b></summary>
 
 <br>
 
-An MDP is the tuple $\langle \mathcal{S}, \mathcal{A}, P, R, \gamma \rangle$, and everything else follows from wanting to maximise discounted return $G_t = \sum_{k\ge 0} \gamma^k r_{t+k}$.
+An MDP is the tuple $`\langle \mathcal{S}, \mathcal{A}, P, R, \gamma \rangle`$, and everything else follows from wanting to maximise discounted return $`G_t = \sum_{k\ge 0} \gamma^k r_{t+k}`$.
 
-**Bellman optimality** &mdash; the fixed point every value-based method is chasing:
+**Bellman optimality** — the fixed point every value-based method is chasing:
 
-$$Q^{*}(s,a) \;=\; \mathbb{E}_{s' \sim P}\!\left[\, r + \gamma \max_{a'} Q^{*}(s', a') \;\middle|\; s, a \,\right]$$
+```math
+Q^{*}(s,a) \;=\; \mathbb{E}_{s' \sim P}\!\left[\, r + \gamma \max_{a'} Q^{*}(s', a') \;\middle|\; s, a \,\right]
+```
 
-**Policy gradient** &mdash; when the action space stops being something you can argmax over:
+**Policy gradient** — when the action space stops being something you can argmax over:
 
-$$\nabla_\theta J(\theta) \;=\; \mathbb{E}_{\pi_\theta}\!\left[\, \nabla_\theta \ln \pi_\theta(a_t \mid s_t)\, A^{\pi}(s_t, a_t) \,\right]$$
+```math
+\nabla_\theta J(\theta) \;=\; \mathbb{E}_{\pi_\theta}\!\left[\, \nabla_\theta \ln \pi_\theta(a_t \mid s_t)\, A^{\pi}(s_t, a_t) \,\right]
+```
 
-**GAE** &mdash; the bias/variance dial on the advantage estimate:
+**GAE** — the bias/variance dial on the advantage estimate:
 
-$$\hat{A}^{\mathrm{GAE}(\gamma,\lambda)}_t \;=\; \sum_{l=0}^{\infty} (\gamma\lambda)^{l}\, \delta_{t+l}, \qquad \delta_t = r_t + \gamma V(s_{t+1}) - V(s_t)$$
+```math
+\hat{A}^{\mathrm{GAE}(\gamma,\lambda)}_t \;=\; \sum_{l=0}^{\infty} (\gamma\lambda)^{l}\, \delta_{t+l}, \qquad \delta_t = r_t + \gamma V(s_{t+1}) - V(s_t)
+```
 
-**Why model-based:** model-free RL pays for every gradient step in real environment interactions. A world model converts sample complexity into compute complexity &mdash; and compute is the thing I know how to make cheaper in hardware.
+**Why model-based:** model-free RL pays for every gradient step in real environment interactions. A world model converts sample complexity into compute complexity — and compute is the thing I know how to make cheaper in hardware.
 
 </details>
 
 <details>
-<summary><b>&nbsp;🕸️ &nbsp;Graph Neural Networks &mdash; because a netlist is a graph</b></summary>
+<summary><b>&nbsp;🕸️ &nbsp;Graph Neural Networks — because a netlist is a graph</b></summary>
 
 <br>
 
-Message passing in its general form &mdash; aggregate from the neighbourhood, update, repeat:
+Message passing in its general form — aggregate from the neighbourhood, update, repeat:
 
-$$h_v^{(k+1)} \;=\; \sigma\!\left( W^{(k)} h_v^{(k)} \;+\; \bigoplus_{u \in \mathcal{N}(v)} \frac{1}{c_{vu}}\, M^{(k)}\!\left(h_u^{(k)},\, e_{uv}\right) \right)$$
+```math
+h_v^{(k+1)} \;=\; \sigma\!\left( W^{(k)} h_v^{(k)} \;+\; \bigoplus_{u \in \mathcal{N}(v)} \frac{1}{c_{vu}}\, M^{(k)}\!\left(h_u^{(k)},\, e_{uv}\right) \right)
+```
 
-where $\bigoplus$ is any permutation-invariant aggregator. The spectral view, symmetrically normalised:
+where $`\bigoplus`$ is any permutation-invariant aggregator. The spectral view, symmetrically normalised:
 
-$$H^{(k+1)} \;=\; \sigma\!\left( \tilde{D}^{-1/2} \tilde{A}\, \tilde{D}^{-1/2} H^{(k)} W^{(k)} \right), \qquad \tilde{A} = A + I$$
+```math
+H^{(k+1)} \;=\; \sigma\!\left( \tilde{D}^{-1/2} \tilde{A}\, \tilde{D}^{-1/2} H^{(k)} W^{(k)} \right), \qquad \tilde{A} = A + I
+```
 
 Attention as a learned aggregator, which is where GNNs and transformers turn out to be the same idea wearing different clothes:
 
-$$\alpha_{vu} = \frac{\exp\!\left(\mathrm{LeakyReLU}\!\left(\mathbf{a}^{\top}[\,W h_v \,\|\, W h_u\,]\right)\right)}{\sum_{w \in \mathcal{N}(v)} \exp\!\left(\mathrm{LeakyReLU}\!\left(\mathbf{a}^{\top}[\,W h_v \,\|\, W h_w\,]\right)\right)}$$
+```math
+\alpha_{vu} = \frac{\exp\!\left(\mathrm{LeakyReLU}\!\left(\mathbf{a}^{\top}[\,W h_v \,\|\, W h_u\,]\right)\right)}{\sum_{w \in \mathcal{N}(v)} \exp\!\left(\mathrm{LeakyReLU}\!\left(\mathbf{a}^{\top}[\,W h_v \,\|\, W h_w\,]\right)\right)}
+```
 
 **Why I care:** a gate-level netlist, a placement, a routing congestion map and a dataflow graph are all graphs. Every EDA problem that currently costs hours of heuristic search is a graph learning problem that nobody has finished attacking.
 
 </details>
 
 <details>
-<summary><b>&nbsp;🤖 &nbsp;Agentic AI &mdash; planning with a budget</b></summary>
+<summary><b>&nbsp;🤖 &nbsp;Agentic AI — planning with a budget</b></summary>
 
 <br>
 
 An agent that can call tools is doing sequential decision-making where actions have *cost*, not just consequence. The honest objective includes the bill:
 
-$$a^{*} \;=\; \arg\max_{a \in \mathcal{A}} \; \mathbb{E}_{s' \sim T}\!\left[\, R(s, a, s') + \gamma V(s') \,\right] \;-\; \lambda\, c(a)$$
+```math
+a^{*} \;=\; \arg\max_{a \in \mathcal{A}} \; \mathbb{E}_{s' \sim T}\!\left[\, R(s, a, s') + \gamma V(s') \,\right] \;-\; \lambda\, c(a)
+```
 
-where $c(a)$ is latency, tokens, API spend, or blast radius. Drop that term and you get an agent that solves the task by brute-force calling everything it can reach.
+where $`c(a)`$ is latency, tokens, API spend, or blast radius. Drop that term and you get an agent that solves the task by brute-force calling everything it can reach.
 
-**Search over reasoning** &mdash; tree search with a learned value, borrowed wholesale from planning:
+**Search over reasoning** — tree search with a learned value, borrowed wholesale from planning:
 
-$$\mathrm{UCT}(s,a) \;=\; Q(s,a) \;+\; c\,\sqrt{\frac{\ln N(s)}{N(s,a)}}$$
+```math
+\mathrm{UCT}(s,a) \;=\; Q(s,a) \;+\; c\,\sqrt{\frac{\ln N(s)}{N(s,a)}}
+```
 
-**Where I've shipped this:** an agentic AI system for fintech, built at Mumbai Hacks 2024 &mdash; finished **runner-up**. Constrained action space, real cost model, hard correctness requirements. Financial agents are a good forcing function: they make you take $c(a)$ seriously.
+**Where I've shipped this:** an agentic AI system for fintech, built at Mumbai Hacks 2024 — finished **runner-up**. Constrained action space, real cost model, hard correctness requirements. Financial agents are a good forcing function: they make you take $`c(a)`$ seriously.
 
 </details>
 
 <details>
-<summary><b>&nbsp;⚡ &nbsp;Quantized &amp; Binary Networks &mdash; the math that makes edge inference possible</b></summary>
+<summary><b>&nbsp;⚡ &nbsp;Quantized &amp; Binary Networks — the math that makes edge inference possible</b></summary>
 
 <br>
 
-Uniform affine quantization &mdash; scale $s$, zero-point $z$, round-to-nearest:
+Uniform affine quantization — scale $`s`$, zero-point $`z`$, round-to-nearest:
 
-$$\hat{x} \;=\; s\left(\mathrm{clip}\!\left(\left\lfloor \frac{x}{s} \right\rceil + z,\; q_{\min},\; q_{\max}\right) - z\right)$$
+```math
+\hat{x} \;=\; s\left(\mathrm{clip}\!\left(\left\lfloor \frac{x}{s} \right\rceil + z,\; q_{\min},\; q_{\max}\right) - z\right)
+```
 
-Rounding has zero gradient almost everywhere, so training uses the straight-through estimator &mdash; pretend the quantizer is the identity inside the clipping range:
+Rounding has zero gradient almost everywhere, so training uses the straight-through estimator — pretend the quantizer is the identity inside the clipping range:
 
-$$\frac{\partial \hat{x}}{\partial x} \;\approx\; \mathbf{1}_{\left\{\, q_{\min} \,\le\, x/s + z \,\le\, q_{\max} \,\right\}}$$
+```math
+\frac{\partial \hat{x}}{\partial x} \;\approx\; \mathbf{1}_{\left\{\, q_{\min} \,\le\, x/s + z \,\le\, q_{\max} \,\right\}}
+```
 
 At the binary extreme, weights collapse to a sign and a single scale per filter:
 
-$$w_b = \mathrm{sign}(w), \qquad \alpha = \frac{\lVert W \rVert_1}{n}, \qquad W \approx \alpha\, w_b$$
+```math
+w_b = \mathrm{sign}(w), \qquad \alpha = \frac{\lVert W \rVert_1}{n}, \qquad W \approx \alpha\, w_b
+```
 
-which turns a multiply-accumulate into `XNOR` + `popcount` &mdash; and *that* is a sentence about hardware, not about machine learning.
+which turns a multiply-accumulate into `XNOR` + `popcount` — and *that* is a sentence about hardware, not about machine learning.
 
-**The constraint that decides everything** &mdash; arithmetic intensity against the roofline:
+**The constraint that decides everything** — arithmetic intensity against the roofline:
 
-$$P_{\text{attainable}} = \min\!\left(P_{\text{peak}},\; I \cdot B_{\text{mem}}\right), \qquad I = \frac{\text{FLOPs}}{\text{Bytes moved}}$$
+```math
+P_{\text{attainable}} = \min\!\left(P_{\text{peak}},\; I \cdot B_{\text{mem}}\right), \qquad I = \frac{\text{FLOPs}}{\text{Bytes moved}}
+```
 
 Most "slow" models are not compute-bound. They are memory-bound, and quantization is a bandwidth optimization that happens to look like a numerics one.
 
@@ -253,23 +283,29 @@ Most "slow" models are not compute-bound. They are memory-bound, and quantizatio
 </p>
 
 <details>
-<summary><b>&nbsp;⚛️ &nbsp;The quantum thread &mdash; what I'm actually studying</b></summary>
+<summary><b>&nbsp;⚛️ &nbsp;The quantum thread — what I'm actually studying</b></summary>
 
 <br>
 
-A state on $n$ qubits lives in $\mathbb{C}^{2^n}$, which is the entire promise and the entire problem. Variational algorithms hedge: put a shallow parameterised circuit on the quantum device, keep the optimiser classical.
+A state on $`n`$ qubits lives in $`\mathbb{C}^{2^n}`$, which is the entire promise and the entire problem. Variational algorithms hedge: put a shallow parameterised circuit on the quantum device, keep the optimiser classical.
 
-$$E_0 \;\le\; E(\boldsymbol{\theta}) \;=\; \langle \psi(\boldsymbol{\theta}) \vert \hat{H} \vert \psi(\boldsymbol{\theta}) \rangle, \qquad \vert \psi(\boldsymbol{\theta}) \rangle = U(\boldsymbol{\theta}) \vert 0 \rangle^{\otimes n}$$
+```math
+E_0 \;\le\; E(\boldsymbol{\theta}) \;=\; \langle \psi(\boldsymbol{\theta}) \vert \hat{H} \vert \psi(\boldsymbol{\theta}) \rangle, \qquad \vert \psi(\boldsymbol{\theta}) \rangle = U(\boldsymbol{\theta}) \vert 0 \rangle^{\otimes n}
+```
 
 The Hamiltonian decomposes into Pauli strings you can actually measure:
 
-$$\hat{H} \;=\; \sum_{\alpha} c_\alpha\, P_\alpha, \qquad P_\alpha \in \{ I, X, Y, Z \}^{\otimes n}$$
+```math
+\hat{H} \;=\; \sum_{\alpha} c_\alpha\, P_\alpha, \qquad P_\alpha \in \{ I, X, Y, Z \}^{\otimes n}
+```
 
-Gradients come from the **parameter-shift rule** &mdash; exact, not finite-difference, which is the detail that makes the whole thing trainable:
+Gradients come from the **parameter-shift rule** — exact, not finite-difference, which is the detail that makes the whole thing trainable:
 
-$$\frac{\partial E}{\partial \theta_i} \;=\; \frac{1}{2}\left[ E\!\left(\theta_i + \tfrac{\pi}{2}\right) - E\!\left(\theta_i - \tfrac{\pi}{2}\right) \right]$$
+```math
+\frac{\partial E}{\partial \theta_i} \;=\; \frac{1}{2}\left[ E\!\left(\theta_i + \tfrac{\pi}{2}\right) - E\!\left(\theta_i - \tfrac{\pi}{2}\right) \right]
+```
 
-**The honest caveat:** barren plateaus. For a random deep ansatz on $n$ qubits, gradient variance decays as $\mathcal{O}(2^{-n})$ &mdash; the landscape flattens exponentially and the optimiser has nothing to descend. Structured ansätze and local cost functions are the live area, and I'm reading rather than claiming here.
+**The honest caveat:** barren plateaus. For a random deep ansatz on $`n`$ qubits, gradient variance decays as $`\mathcal{O}(2^{-n})`$ — the landscape flattens exponentially and the optimiser has nothing to descend. Structured ansätze and local cost functions are the live area, and I'm reading rather than claiming here.
 
 **Why it sits next to the silicon work:** both are about extracting useful computation from a physical substrate that does not care about your abstractions. Coherence times and setup time are the same genre of constraint.
 
@@ -285,29 +321,37 @@ $$\frac{\partial E}{\partial \theta_i} \;=\; \frac{1}{2}\left[ E\!\left(\theta_i
 </p>
 
 <details open>
-<summary><b>&nbsp;⏱️ &nbsp;Timing, power, area &mdash; the three numbers you are always trading</b></summary>
+<summary><b>&nbsp;⏱️ &nbsp;Timing, power, area — the three numbers you are always trading</b></summary>
 
 <br>
 
-**Setup closure** &mdash; the clock period has to cover the whole combinational path:
+**Setup closure** — the clock period has to cover the whole combinational path:
 
-$$T_{\text{clk}} \;\ge\; t_{cq} \;+\; t_{\text{logic,max}} \;+\; t_{\text{setup}} \;-\; t_{\text{skew}} \;+\; t_{\text{jitter}}$$
+```math
+T_{\text{clk}} \;\ge\; t_{cq} \;+\; t_{\text{logic,max}} \;+\; t_{\text{setup}} \;-\; t_{\text{skew}} \;+\; t_{\text{jitter}}
+```
 
-**Hold closure** &mdash; the failure mode that survives simulation and kills silicon, because it is frequency-independent:
+**Hold closure** — the failure mode that survives simulation and kills silicon, because it is frequency-independent:
 
-$$t_{cq} \;+\; t_{\text{logic,min}} \;\ge\; t_{\text{hold}} \;+\; t_{\text{skew}}$$
+```math
+t_{cq} \;+\; t_{\text{logic,min}} \;\ge\; t_{\text{hold}} \;+\; t_{\text{skew}}
+```
 
 You cannot slow the clock to fix a hold violation. That asymmetry is why hold buffers exist and why CTS matters more than it looks.
 
 **Dynamic and static power:**
 
-$$P_{\text{total}} \;=\; \underbrace{\alpha\, C_L\, V_{DD}^{2}\, f}_{\text{switching}} \;+\; \underbrace{V_{DD}\, I_{\text{leak}}}_{\text{leakage}}$$
+```math
+P_{\text{total}} \;=\; \underbrace{\alpha\, C_L\, V_{DD}^{2}\, f}_{\text{switching}} \;+\; \underbrace{V_{DD}\, I_{\text{leak}}}_{\text{leakage}}
+```
 
-The quadratic on $V_{DD}$ is the single most exploitable fact in low-power design &mdash; and the reason DVFS beats almost any microarchitectural trick you can name.
+The quadratic on $`V_{DD}`$ is the single most exploitable fact in low-power design — and the reason DVFS beats almost any microarchitectural trick you can name.
 
-**Amdahl, for accelerator scoping** &mdash; the sentence that kills bad accelerator proposals early:
+**Amdahl, for accelerator scoping** — the sentence that kills bad accelerator proposals early:
 
-$$S = \frac{1}{(1 - p) + \dfrac{p}{s}}$$
+```math
+S = \frac{1}{(1 - p) + \dfrac{p}{s}}
+```
 
 If your kernel is 60% of runtime, an *infinitely* fast accelerator buys you 2.5×. Profile before you build.
 
@@ -328,7 +372,7 @@ If your kernel is 60% of runtime, an *infinitely* fast accelerator buys you 2.5�
 | **FPGA / HLS** | HLS datapath design and hardware-aware model restructuring | Vivado HLS, Versal ACAP |
 | **Signoff literacy** | reading STA reports, understanding DRC/LVS as a design constraint rather than someone else's problem | reports, and patience |
 
-**Concretely:** at ADRIN (ISRO) I designed a custom HLS-based datapath to deploy **MobileViTv2** &mdash; a vision transformer &mdash; on the **AMD Versal ACAP VCK-190**. Transformers on edge silicon are an exercise in memory hierarchy, not in FLOPs. The attention block is the bandwidth problem; everything else is arithmetic you can schedule.
+**Concretely:** at ADRIN (ISRO) I designed a custom HLS-based datapath to deploy **MobileViTv2** — a vision transformer — on the **AMD Versal ACAP VCK-190**. Transformers on edge silicon are an exercise in memory hierarchy, not in FLOPs. The attention block is the bandwidth problem; everything else is arithmetic you can schedule.
 
 </details>
 
@@ -342,28 +386,30 @@ If your kernel is 60% of runtime, an *infinitely* fast accelerator buys you 2.5�
 </p>
 
 <details>
-<summary><b>&nbsp;🔍 &nbsp;Why constrained-random needs so many runs &mdash; and when to stop</b></summary>
+<summary><b>&nbsp;🔍 &nbsp;Why constrained-random needs so many runs — and when to stop</b></summary>
 
 <br>
 
-Random stimulus hitting $n$ distinct coverage bins is the coupon-collector problem. The expected number of runs to hit all of them:
+Random stimulus hitting $`n`$ distinct coverage bins is the coupon-collector problem. The expected number of runs to hit all of them:
 
-$$\mathbb{E}[N] \;=\; n \sum_{k=1}^{n} \frac{1}{k} \;\approx\; n \ln n + \gamma n, \qquad \gamma \approx 0.5772$$
+```math
+\mathbb{E}[N] \;=\; n \sum_{k=1}^{n} \frac{1}{k} \;\approx\; n \ln n + \gamma n, \qquad \gamma \approx 0.5772
+```
 
-For $n = 1000$ bins that is roughly **7,500 runs** &mdash; and the tail is worse than the mean suggests. This is the quantitative argument for *directed* tests on the hard corners: you do not random-walk into a 1-in-$10^6$ state, you go there deliberately.
+For $`n = 1000`$ bins that is roughly **7,500 runs** — and the tail is worse than the mean suggests. This is the quantitative argument for *directed* tests on the hard corners: you do not random-walk into a 1-in-$`10^6`$ state, you go there deliberately.
 
-The complementary argument, for formal: model checking does not sample the state space, it quantifies over it. Where a property is small and the state space is bounded, a proof beats $7{,}500$ simulations and finishes sooner.
+The complementary argument, for formal: model checking does not sample the state space, it quantifies over it. Where a property is small and the state space is bounded, a proof beats $`7{,}500`$ simulations and finishes sooner.
 
 **My working rule:** lint and CDC first because they're free. cocotb for iteration speed while the design is still moving. UVM once the interfaces stabilise and you need real reuse. SVA everywhere, because an assertion that fires next to the bug is worth a hundred waveforms. Formal on the control logic where the state space is small enough to be exhausted.
 
 </details>
 
 <details>
-<summary><b>&nbsp;🐍 &nbsp;cocotb &mdash; and the open-source tooling around it</b></summary>
+<summary><b>&nbsp;🐍 &nbsp;cocotb — and the open-source tooling around it</b></summary>
 
 <br>
 
-Python testbenches are not a toy. They give you the whole scientific stack next to your DUT: numpy for reference models, pytest for structure, CI that actually runs on every push. The tradeoff is simulation speed at the boundary &mdash; which matters less than people assume for anything below full-chip.
+Python testbenches are not a toy. They give you the whole scientific stack next to your DUT: numpy for reference models, pytest for structure, CI that actually runs on every push. The tradeoff is simulation speed at the boundary — which matters less than people assume for anything below full-chip.
 
 I maintain **[`cocotb-v2-migration-helper`](https://github.com/HUNT-001/cocotb-v2-migration-helper)** for exactly this reason: the v1 → v2 API break is mechanical enough to automate and tedious enough that people put it off, and testbench debt compounds faster than design debt.
 
@@ -379,25 +425,29 @@ I maintain **[`cocotb-v2-migration-helper`](https://github.com/HUNT-001/cocotb-v
 </p>
 
 <details>
-<summary><b>&nbsp;🔬 &nbsp;Process physics &mdash; the constraints that reach all the way up to RTL</b></summary>
+<summary><b>&nbsp;🔬 &nbsp;Process physics — the constraints that reach all the way up to RTL</b></summary>
 
 <br>
 
 **Lithography sets the floor.** Rayleigh, for resolution and depth of focus:
 
-$$\mathrm{CD} = k_1 \frac{\lambda}{\mathrm{NA}}, \qquad \mathrm{DOF} = k_2 \frac{\lambda}{\mathrm{NA}^{2}}$$
+```math
+\mathrm{CD} = k_1 \frac{\lambda}{\mathrm{NA}}, \qquad \mathrm{DOF} = k_2 \frac{\lambda}{\mathrm{NA}^{2}}
+```
 
-EUV at $\lambda = 13.5\,\text{nm}$ with $\mathrm{NA} = 0.33$ gets you to roughly 13 nm half-pitch in a single exposure. Below that you either multi-pattern (LELE, SADP, SAQP &mdash; each adding cost, mask count and overlay error) or you move to High-NA at $0.55$ and accept a smaller field. Note the square in the DOF term: every gain in resolution costs you focus budget quadratically. There is no free tightening.
+EUV at $`\lambda = 13.5\,\text{nm}`$ with $`\mathrm{NA} = 0.33`$ gets you to roughly 13 nm half-pitch in a single exposure. Below that you either multi-pattern (LELE, SADP, SAQP — each adding cost, mask count and overlay error) or you move to High-NA at $`0.55`$ and accept a smaller field. Note the square in the DOF term: every gain in resolution costs you focus budget quadratically. There is no free tightening.
 
-**Yield decides whether any of it matters.** Murphy's model, for a die of area $A$ and defect density $D_0$:
+**Yield decides whether any of it matters.** Murphy's model, for a die of area $`A`$ and defect density $`D_0`$:
 
-$$Y = \left( \frac{1 - e^{-A D_0}}{A D_0} \right)^{2}$$
+```math
+Y = \left( \frac{1 - e^{-A D_0}}{A D_0} \right)^{2}
+```
 
 Yield falls off *superlinearly* with die area. That single fact is why chiplets exist, why big dies are disproportionately expensive, and why "just make the accelerator bigger" is an economic proposal before it is an architectural one.
 
 **Devices, as they've actually moved:** planar → FinFET → gate-all-around nanosheet, each transition driven by electrostatic control of a shrinking channel. Short-channel effects are what happens when the gate stops winning against the drain, and the whole device roadmap is a sequence of geometric answers to that one problem.
 
-**Why an RTL person should know this:** wire delay does not scale like gate delay. Beyond a certain node, interconnect dominates &mdash; which means floorplan is a microarchitectural decision, not a backend one, and locality in your dataflow is worth more than gate count.
+**Why an RTL person should know this:** wire delay does not scale like gate delay. Beyond a certain node, interconnect dominates — which means floorplan is a microarchitectural decision, not a backend one, and locality in your dataflow is worth more than gate count.
 
 </details>
 
@@ -420,7 +470,7 @@ Yield falls off *superlinearly* with die area. That single fact is why chiplets 
 |:--|:--|:--|
 | **Hardware-aware latent dynamics** | world-model latents shaped by a hardware cost term learn representations that are cheaper to *run*, not just cheaper to store | active |
 | **GNNs over netlists** | structural graph learning can replace heuristic passes in verification triage and design-space search | active |
-| **Cost-aware agentic planning** | making $c(a)$ a first-class term in the agent objective changes behaviour qualitatively, not just quantitatively | active, from Mumbai Hacks work |
+| **Cost-aware agentic planning** | making $`c(a)`$ a first-class term in the agent objective changes behaviour qualitatively, not just quantitatively | active, from Mumbai Hacks work |
 | **Binary/quantized accelerator co-design** | quantization schemes chosen *jointly* with the datapath beat schemes chosen for the model alone | active, tied to ADRIN work |
 | **Verification-informed architecture** | designs that are cheap to verify are a distinguishable class, and the property is predictable from the RTL | early |
 
@@ -430,7 +480,7 @@ Yield falls off *superlinearly* with die area. That single fact is why chiplets 
 <br>
 
 1. **Write the objective down in full.** If I can't put the loss on one line, I don't understand the problem yet.
-2. **Find the constraint that actually binds.** Usually memory bandwidth, sample complexity, or verification effort &mdash; rarely the thing the paper emphasises.
+2. **Find the constraint that actually binds.** Usually memory bandwidth, sample complexity, or verification effort — rarely the thing the paper emphasises.
 3. **Build the smallest thing that could fail.** A baseline that can be beaten, or a claim that can be falsified.
 4. **Measure against a roofline, not a vibe.** "Faster" is meaningless without knowing what the ceiling was.
 5. **Write down what didn't work.** The dead ends are the part that's actually mine.
@@ -448,13 +498,13 @@ Yield falls off *superlinearly* with die area. That single fact is why chiplets 
 
 | Competition | Result | Domain |
 |:--|:--|:--|
-| **Smart India Hackathon 2025** | 🏅 Grand Finale &mdash; national finalist | Govt. of India, national-scale problem statement |
+| **Smart India Hackathon 2025** | 🏅 Grand Finale — national finalist | Govt. of India, national-scale problem statement |
 | **Mumbai Hacks 2024** | 🥈 **Runner-Up** | Agentic AI for FinTech |
 | **Analog Design Quest** | 🏅 Finalist | Analog / mixed-signal circuit design |
 | **Mirabilis Design Hacks** | 🏅 Finalist | System-level modelling &amp; architecture |
 
 <p align="center">
-<i>Four national-level finals across three unrelated domains &mdash; agentic AI, analog design, and system architecture.<br>
+<i>Four national-level finals across three unrelated domains — agentic AI, analog design, and system architecture.<br>
 The through-line isn't the subject. It's being able to go from a cold problem statement to a defensible build in 36 hours.</i>
 </p>
 
@@ -537,7 +587,7 @@ Takeaway: >
 
 <p align="center">
 <i>Everything above this line is hand-authored SVG. No template, no generator, no screenshot.<br>
-The page is the portfolio piece &mdash; so here is the design system it runs on.</i>
+The page is the portfolio piece — so here is the design system it runs on.</i>
 </p>
 
 <details>
@@ -545,7 +595,7 @@ The page is the portfolio piece &mdash; so here is the design system it runs on.
 
 <br>
 
-**Colour tokens** &mdash; a single ramp from substrate to signal, with a violet axis reserved for anything quantum or probabilistic:
+**Colour tokens** — a single ramp from substrate to signal, with a violet axis reserved for anything quantum or probabilistic:
 
 | Token | Hex | Role |
 |:--|:--|:--|
@@ -560,13 +610,13 @@ The page is the portfolio piece &mdash; so here is the design system it runs on.
 | `quantum` | `#A78BFA` | probabilistic / quantum domain |
 | `quantum-alt` | `#C084FC` | quantum secondary |
 
-**Type scale** &mdash; three families, three jobs. Segoe UI for headings (authority), JetBrains Mono / Consolas for anything machine-adjacent (labels, code, annotation), and a math serif for equations. Section headers run at 30px / 700 / +10 letter-spacing; annotations at 9–11px mono with lowered opacity so they read as marginalia rather than content.
+**Type scale** — three families, three jobs. Segoe UI for headings (authority), JetBrains Mono / Consolas for anything machine-adjacent (labels, code, annotation), and a math serif for equations. Section headers run at 30px / 700 / +10 letter-spacing; annotations at 9–11px mono with lowered opacity so they read as marginalia rather than content.
 
-**Motion, deliberately restrained** &mdash; every animation is a 3–9 second loop with no easing spikes, so nothing competes for attention. Travelling pulses along circuit rails, a slow scan sweep across banners, coverage bars that fill once and freeze, a Bloch vector that precesses. Motion signals *aliveness*, not urgency.
+**Motion, deliberately restrained** — every animation is a 3–9 second loop with no easing spikes, so nothing competes for attention. Travelling pulses along circuit rails, a slow scan sweep across banners, coverage bars that fill once and freeze, a Bloch vector that precesses. Motion signals *aliveness*, not urgency.
 
-**Layout rules** &mdash; a fixed 1400px design width with 16–18px corner radii, consistent 60px side gutters, and a dot-grid at 10% opacity across every panel so the whole page reads as one continuous surface rather than a stack of unrelated images.
+**Layout rules** — a fixed 1400px design width with 16–18px corner radii, consistent 60px side gutters, and a dot-grid at 10% opacity across every panel so the whole page reads as one continuous surface rather than a stack of unrelated images.
 
-**Accessibility notes** &mdash; every graphic carries `alt` text; nothing critical is conveyed by colour alone; contrast ratios on body text clear 7:1 against the substrate; the page degrades to readable structured markdown if images fail to load.
+**Accessibility notes** — every graphic carries `alt` text; nothing critical is conveyed by colour alone; contrast ratios on body text clear 7:1 against the substrate; the page degrades to readable structured markdown if images fail to load.
 
 </details>
 
@@ -575,10 +625,10 @@ The page is the portfolio piece &mdash; so here is the design system it runs on.
 
 <br>
 
-- **Hand-authored SVG** for every banner, divider, diagram and equation plate &mdash; generated from parameterised Python so the geometry is computed, not eyeballed
+- **Hand-authored SVG** for every banner, divider, diagram and equation plate — generated from parameterised Python so the geometry is computed, not eyeballed
 - **Native LaTeX** for the mathematics, so equations are selectable, theme-adaptive text rather than images
 - **GitHub Actions** regenerate the 3D contribution graph and the contribution snake on a schedule
-- **Progressive disclosure** via `<details>` &mdash; the page skims in thirty seconds and reads for thirty minutes, depending on what you came for
+- **Progressive disclosure** via `<details>` — the page skims in thirty seconds and reads for thirty minutes, depending on what you came for
 
 </details>
 
@@ -648,9 +698,9 @@ The page is the portfolio piece &mdash; so here is the design system it runs on.
 
 | Credential | Issuer | Why it's here |
 |:--|:--|:--|
-| [Hardware Security](https://www.coursera.org/learn/hardware-security) | University of Maryland | trojans, side channels, and PUFs &mdash; the attacks that live *below* the software threat model |
+| [Hardware Security](https://www.coursera.org/learn/hardware-security) | University of Maryland | trojans, side channels, and PUFs — the attacks that live *below* the software threat model |
 | VLSI Design | L&T EduTech | industry-framed digital design flow, end to end |
-| [Algorithms Specialization](https://www.coursera.org/specializations/algorithms) | Stanford University | the four-course track &mdash; divide & conquer, graphs, greedy/DP, NP-completeness |
+| [Algorithms Specialization](https://www.coursera.org/specializations/algorithms) | Stanford University | the four-course track — divide & conquer, graphs, greedy/DP, NP-completeness |
 | [Agentic AI Foundations Associate](https://education.oracle.com/agentic-ai-foundations-associate/pexam_1Z0-1157-26) `1Z0-1157-26` | Oracle | agent reasoning patterns, tool orchestration, MCP |
 | [AI Agents Course](https://huggingface.co/learn/agents-course) | Hugging Face | building and evaluating agents against real benchmarks |
 | SQL AI Developer Associate `DP-800` | Microsoft | vector search, embeddings and RAG pushed down into the database engine |
@@ -658,7 +708,7 @@ The page is the portfolio piece &mdash; so here is the design system it runs on.
 | Google Data Analytics Professional | Google | the eight-course analytics track |
 
 <p align="center">
-<i>Hardware Security and the Algorithms specialization are the two that show up most in my actual work &mdash;<br>
+<i>Hardware Security and the Algorithms specialization are the two that show up most in my actual work —<br>
 one because attacks find the layer you forgot to model, the other because complexity analysis is<br>
 the only honest way to argue about a design before you've built it.</i>
 </p>
@@ -669,8 +719,8 @@ the only honest way to argue about a design before you've built it.</i>
 <img src="assets/banner-background.svg" alt="Background" width="100%" />
 
 <p align="center">
-  <b>BS in Data Science</b> &mdash; Indian Institute of Technology Madras<br>
-  <b>B.Tech in Electrical &amp; Electronics Engineering</b> &mdash; Amrita Vishwa Vidyapeetham
+  <b>BS in Data Science</b> — Indian Institute of Technology Madras<br>
+  <b>B.Tech in Electrical &amp; Electronics Engineering</b> — Amrita Vishwa Vidyapeetham
 </p>
 
 <p align="center">
