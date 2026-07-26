@@ -139,13 +139,7 @@ class Engineer:
 
 A world model compresses observations into a latent state whose *dynamics* are learnable. The recurrent state-space model splits that state in two: a deterministic path $`h_t`$ that carries memory, and a stochastic path $`z_t`$ that carries uncertainty.
 
-<<<<<<< HEAD
 $$h_t = f_\theta\!\left(h_{t-1},\, z_{t-1},\, a_{t-1}\right), \qquad z_t \sim q_\phi\!\left(z_t \mid h_t,\, o_t\right)$$
-=======
-$$
-h_t = f_\theta\!\left(h_{t-1},\, z_{t-1},\, a_{t-1}\right), \qquad z_t \sim q_\phi\!\left(z_t \mid h_t,\, o_t\right)
-$$
->>>>>>> 7366dcfafc688c86296226a8f1dd540734767a6b
 
 Training maximises the evidence lower bound — reconstruct the observation, predict the reward, and pay a KL price for every bit of surprise smuggled into the latent:
 
