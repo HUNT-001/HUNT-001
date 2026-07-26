@@ -1,179 +1,181 @@
-<svg width="1400" height="330" viewBox="0 0 1400 330" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1400" height="462" viewBox="0 0 1400 462" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="330" gradientUnits="userSpaceOnUse">
+    <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="462" gradientUnits="userSpaceOnUse">
       <stop offset="0%"   stop-color="#030811"/>
       <stop offset="50%"  stop-color="#071226"/>
       <stop offset="100%" stop-color="#0C1D3E"/>
     </linearGradient>
+    <radialGradient id="amb" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(700.0 188.0) scale(560 240)">
+      <stop offset="0%"   stop-color="#1D4ED8" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#1D4ED8" stop-opacity="0"/>
+    </radialGradient>
     <pattern id="dotGrid" x="0" y="0" width="36" height="36" patternUnits="userSpaceOnUse">
       <circle cx="18" cy="18" r="0.7" fill="#4A90D9" fill-opacity="0.10"/>
     </pattern>
     <filter id="textGlow" x="-30%" y="-100%" width="160%" height="300%">
-      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#38BDF8" flood-opacity="0.4"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#38BDF8" flood-opacity="0.42"/>
     </filter>
     <filter id="cornerGlow" x="-60%" y="-60%" width="280%" height="280%">
       <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#60A5FA" flood-opacity="0.5"/>
     </filter>
-    <clipPath id="clip"><rect width="1400" height="330" rx="16"/></clipPath>
+    <clipPath id="clip"><rect width="1400" height="462" rx="16"/></clipPath>
   </defs>
 
-  <rect width="1400" height="330" rx="16" fill="url(#bg)"/>
+  <rect width="1400" height="462" rx="16" fill="url(#bg)"/>
+  <rect width="1400" height="462" rx="16" fill="url(#amb)"/>
   <g clip-path="url(#clip)">
-    <rect width="1400" height="330" fill="url(#dotGrid)"/>
+    <rect width="1400" height="462" fill="url(#dotGrid)"/>
 
-    <text x="30" y="28" fill="#3B6EA8" font-size="10" font-family="Consolas, monospace" letter-spacing="2" opacity="0.6">// SIGNAL BROADCAST</text>
-    <line x1="0" y1="255" x2="1400" y2="255" stroke="#162F5C" stroke-width="1" opacity="0.5"/>
+    <text x="46" y="34" fill="#3B6EA8" font-size="10" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="2.6"
+          opacity="0.72">// SIGNAL BROADCAST</text>
+    <text x="1370" y="34" text-anchor="end" fill="#3B6EA8" font-size="10" font-family="Consolas, 'JetBrains Mono', monospace"
+          letter-spacing="2.6" opacity="0.6">8 DOMAINS &#183; ONE SUBSTRATE</text>
 
-    
-    <line x1="700" y1="140" x2="700.0" y2="45.0" stroke="#1E3F72" stroke-width="1" opacity="0.55"/>
-    <circle r="2.6" fill="#7DD3FC">
-      <animateMotion dur="3s" begin="0.0s" repeatCount="indefinite" path="M700,140 L700.0,45.0"/>
-      <animate attributeName="opacity" values="0;1;1;0" dur="3s" begin="0.0s" repeatCount="indefinite"/>
-    </circle>
-    <line x1="700" y1="140" x2="925.2" y2="92.5" stroke="#1E3F72" stroke-width="1" opacity="0.55"/>
-    <circle r="2.6" fill="#7DD3FC">
-      <animateMotion dur="3s" begin="0.5s" repeatCount="indefinite" path="M700,140 L925.2,92.5"/>
-      <animate attributeName="opacity" values="0;1;1;0" dur="3s" begin="0.5s" repeatCount="indefinite"/>
-    </circle>
-    <line x1="700" y1="140" x2="925.2" y2="187.5" stroke="#1E3F72" stroke-width="1" opacity="0.55"/>
-    <circle r="2.6" fill="#7DD3FC">
-      <animateMotion dur="3s" begin="1.0s" repeatCount="indefinite" path="M700,140 L925.2,187.5"/>
-      <animate attributeName="opacity" values="0;1;1;0" dur="3s" begin="1.0s" repeatCount="indefinite"/>
-    </circle>
-    <line x1="700" y1="140" x2="700.0" y2="235.0" stroke="#1E3F72" stroke-width="1" opacity="0.55"/>
-    <circle r="2.6" fill="#7DD3FC">
-      <animateMotion dur="3s" begin="1.5s" repeatCount="indefinite" path="M700,140 L700.0,235.0"/>
-      <animate attributeName="opacity" values="0;1;1;0" dur="3s" begin="1.5s" repeatCount="indefinite"/>
-    </circle>
-    <line x1="700" y1="140" x2="474.8" y2="187.5" stroke="#1E3F72" stroke-width="1" opacity="0.55"/>
-    <circle r="2.6" fill="#7DD3FC">
-      <animateMotion dur="3s" begin="2.0s" repeatCount="indefinite" path="M700,140 L474.8,187.5"/>
-      <animate attributeName="opacity" values="0;1;1;0" dur="3s" begin="2.0s" repeatCount="indefinite"/>
-    </circle>
-    <line x1="700" y1="140" x2="474.8" y2="92.5" stroke="#1E3F72" stroke-width="1" opacity="0.55"/>
-    <circle r="2.6" fill="#7DD3FC">
-      <animateMotion dur="3s" begin="2.5s" repeatCount="indefinite" path="M700,140 L474.8,92.5"/>
-      <animate attributeName="opacity" values="0;1;1;0" dur="3s" begin="2.5s" repeatCount="indefinite"/>
-    </circle>
+    <line x1="749.7" y1="193.6" x2="1116.2" y2="234.8" stroke="#1E3F72" stroke-width="1" opacity="0.6"/>
+    <circle r="2.6" fill="#7DD3FC"><animateMotion dur="3.2s" begin="0.00s" repeatCount="indefinite" path="M749.7,193.6 L1116.2,234.8"/><animate attributeName="opacity" values="0;1;1;0" dur="3.2s" begin="0.00s" repeatCount="indefinite"/></circle>
+    <line x1="749.7" y1="182.4" x2="1116.2" y2="141.2" stroke="#1E3F72" stroke-width="1" opacity="0.6"/>
+    <circle r="2.6" fill="#7DD3FC"><animateMotion dur="3.2s" begin="0.40s" repeatCount="indefinite" path="M749.7,182.4 L1116.2,141.2"/><animate attributeName="opacity" values="0;1;1;0" dur="3.2s" begin="0.40s" repeatCount="indefinite"/></circle>
+    <line x1="741.8" y1="160.6" x2="858.4" y2="84.1" stroke="#1E3F72" stroke-width="1" opacity="0.6"/>
+    <circle r="2.6" fill="#7DD3FC"><animateMotion dur="3.2s" begin="0.80s" repeatCount="indefinite" path="M741.8,160.6 L858.4,84.1"/><animate attributeName="opacity" values="0;1;1;0" dur="3.2s" begin="0.80s" repeatCount="indefinite"/></circle>
+    <line x1="658.2" y1="160.6" x2="541.6" y2="84.1" stroke="#1E3F72" stroke-width="1" opacity="0.6"/>
+    <circle r="2.6" fill="#7DD3FC"><animateMotion dur="3.2s" begin="1.20s" repeatCount="indefinite" path="M658.2,160.6 L541.6,84.1"/><animate attributeName="opacity" values="0;1;1;0" dur="3.2s" begin="1.20s" repeatCount="indefinite"/></circle>
+    <line x1="650.3" y1="182.4" x2="283.8" y2="141.2" stroke="#1E3F72" stroke-width="1" opacity="0.6"/>
+    <circle r="2.6" fill="#7DD3FC"><animateMotion dur="3.2s" begin="1.60s" repeatCount="indefinite" path="M650.3,182.4 L283.8,141.2"/><animate attributeName="opacity" values="0;1;1;0" dur="3.2s" begin="1.60s" repeatCount="indefinite"/></circle>
+    <line x1="650.3" y1="193.6" x2="283.8" y2="234.8" stroke="#1E3F72" stroke-width="1" opacity="0.6"/>
+    <circle r="2.6" fill="#7DD3FC"><animateMotion dur="3.2s" begin="2.00s" repeatCount="indefinite" path="M650.3,193.6 L283.8,234.8"/><animate attributeName="opacity" values="0;1;1;0" dur="3.2s" begin="2.00s" repeatCount="indefinite"/></circle>
+    <line x1="658.2" y1="215.4" x2="541.6" y2="291.9" stroke="#1E3F72" stroke-width="1" opacity="0.6"/>
+    <circle r="2.6" fill="#7DD3FC"><animateMotion dur="3.2s" begin="2.40s" repeatCount="indefinite" path="M658.2,215.4 L541.6,291.9"/><animate attributeName="opacity" values="0;1;1;0" dur="3.2s" begin="2.40s" repeatCount="indefinite"/></circle>
+    <line x1="741.8" y1="215.4" x2="858.4" y2="291.9" stroke="#1E3F72" stroke-width="1" opacity="0.6"/>
+    <circle r="2.6" fill="#7DD3FC"><animateMotion dur="3.2s" begin="2.80s" repeatCount="indefinite" path="M741.8,215.4 L858.4,291.9"/><animate attributeName="opacity" values="0;1;1;0" dur="3.2s" begin="2.80s" repeatCount="indefinite"/></circle>
     
     <g>
-      <circle cx="700.0" cy="45.0" r="32" fill="#060F22" fill-opacity="0.75" stroke="#1A3D7A" stroke-width="1"/>
-      <circle cx="700.0" cy="45.0" r="32" fill="none" stroke="#38BDF8" stroke-width="1" opacity="0.5">
-        <animate attributeName="r" values="32;37;32" dur="3.6s" begin="0.0s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.5;0.05;0.5" dur="3.6s" begin="0.0s" repeatCount="indefinite"/>
+      <circle cx="1149.0" cy="238.5" r="30" fill="#060F22" fill-opacity="0.9"
+              stroke="#A78BFA" stroke-width="1" stroke-opacity="0.55"/>
+      <circle cx="1149.0" cy="238.5" r="30" fill="none" stroke="#A78BFA" stroke-width="1" opacity="0.45">
+        <animate attributeName="r" values="30;36;30" dur="3.8s"
+                 begin="0.00s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.45;0.04;0.45" dur="3.8s"
+                 begin="0.00s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="700.0" cy="45.0" r="3.4" fill="#67E8F9"/>
-      <text x="700.0" y="97.0" text-anchor="middle" fill="#9DC4F5" font-size="12" font-family="Consolas, monospace" letter-spacing="0.3">Hardware / RTL</text>
-    </g>
-    <g>
-      <circle cx="925.2" cy="92.5" r="32" fill="#060F22" fill-opacity="0.75" stroke="#1A3D7A" stroke-width="1"/>
-      <circle cx="925.2" cy="92.5" r="32" fill="none" stroke="#38BDF8" stroke-width="1" opacity="0.5">
-        <animate attributeName="r" values="32;37;32" dur="3.6s" begin="0.35s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.5;0.05;0.5" dur="3.6s" begin="0.35s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="925.2" cy="92.5" r="3.4" fill="#67E8F9"/>
-      <text x="925.2" y="144.5" text-anchor="middle" fill="#9DC4F5" font-size="12" font-family="Consolas, monospace" letter-spacing="0.3">Verification</text>
-    </g>
-    <g>
-      <circle cx="925.2" cy="187.5" r="32" fill="#060F22" fill-opacity="0.75" stroke="#1A3D7A" stroke-width="1"/>
-      <circle cx="925.2" cy="187.5" r="32" fill="none" stroke="#38BDF8" stroke-width="1" opacity="0.5">
-        <animate attributeName="r" values="32;37;32" dur="3.6s" begin="0.7s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.5;0.05;0.5" dur="3.6s" begin="0.7s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="925.2" cy="187.5" r="3.4" fill="#67E8F9"/>
-      <text x="925.2" y="239.5" text-anchor="middle" fill="#9DC4F5" font-size="12" font-family="Consolas, monospace" letter-spacing="0.3">Reinforcement Learning</text>
-    </g>
-    <g>
-      <circle cx="700.0" cy="235.0" r="32" fill="#060F22" fill-opacity="0.75" stroke="#1A3D7A" stroke-width="1"/>
-      <circle cx="700.0" cy="235.0" r="32" fill="none" stroke="#38BDF8" stroke-width="1" opacity="0.5">
-        <animate attributeName="r" values="32;37;32" dur="3.6s" begin="1.0499999999999998s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.5;0.05;0.5" dur="3.6s" begin="1.0499999999999998s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="700.0" cy="235.0" r="3.4" fill="#67E8F9"/>
-      <text x="700.0" y="287.0" text-anchor="middle" fill="#9DC4F5" font-size="12" font-family="Consolas, monospace" letter-spacing="0.3">Multimodal Agentic AI</text>
-    </g>
-    <g>
-      <circle cx="474.8" cy="187.5" r="32" fill="#060F22" fill-opacity="0.75" stroke="#1A3D7A" stroke-width="1"/>
-      <circle cx="474.8" cy="187.5" r="32" fill="none" stroke="#38BDF8" stroke-width="1" opacity="0.5">
-        <animate attributeName="r" values="32;37;32" dur="3.6s" begin="1.4s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.5;0.05;0.5" dur="3.6s" begin="1.4s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="474.8" cy="187.5" r="3.4" fill="#67E8F9"/>
-      <text x="474.8" y="239.5" text-anchor="middle" fill="#9DC4F5" font-size="12" font-family="Consolas, monospace" letter-spacing="0.3">Embedded / Edge</text>
-    </g>
-    <g>
-      <circle cx="474.8" cy="92.5" r="32" fill="#060F22" fill-opacity="0.75" stroke="#1A3D7A" stroke-width="1"/>
-      <circle cx="474.8" cy="92.5" r="32" fill="none" stroke="#38BDF8" stroke-width="1" opacity="0.5">
-        <animate attributeName="r" values="32;37;32" dur="3.6s" begin="1.75s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.5;0.05;0.5" dur="3.6s" begin="1.75s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="474.8" cy="92.5" r="3.4" fill="#67E8F9"/>
-      <text x="474.8" y="144.5" text-anchor="middle" fill="#9DC4F5" font-size="12" font-family="Consolas, monospace" letter-spacing="0.3">Cloud / Tools</text>
+      <circle cx="1149.0" cy="238.5" r="3.4" fill="#A78BFA"/>
+      <rect x="1074.7" y="280.5" width="148.6" height="23" rx="7" fill="#050D1E" fill-opacity="0.94" stroke="#A78BFA" stroke-width="0.8" stroke-opacity="0.42"/><text x="1149.0" y="295.9" text-anchor="middle" fill="#DCEBFF" font-size="11.5" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="2">Model-Based RL</text>
     </g>
     
-    <circle cx="700" cy="140" r="60" fill="none" stroke="#1D4ED8" stroke-width="1" opacity="0.3">
-      <animate attributeName="r" values="60;90;60" dur="4.5s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.3;0;0.3" dur="4.5s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="700" cy="140" r="60" fill="none" stroke="#22D3EE" stroke-width="1" opacity="0.25">
-      <animate attributeName="r" values="60;90;60" dur="4.5s" begin="1.5s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.25;0;0.25" dur="4.5s" begin="1.5s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="700" cy="140" r="60" fill="none" stroke="#818CF8" stroke-width="1" opacity="0.2">
-      <animate attributeName="r" values="60;90;60" dur="4.5s" begin="3s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.2;0;0.2" dur="4.5s" begin="3s" repeatCount="indefinite"/>
-    </circle>
-
-    <circle cx="700" cy="140" r="46" fill="#060F22" fill-opacity="0.85" stroke="#3B82F6" stroke-width="1.4"/>
-    <circle cx="700" cy="140" r="38" fill="none" stroke="#0F2040" stroke-width="3"/>
-    <circle cx="700" cy="140" r="38" fill="none" stroke="#67E8F9" stroke-width="3"
-            stroke-dasharray="60 179" stroke-linecap="round" opacity="0.8">
-      <animateTransform attributeName="transform" type="rotate"
-        values="0 700 140;360 700 140" dur="6s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="700" cy="140" r="5" fill="#E0F2FE">
-      <animate attributeName="opacity" values="1;0.4;1" dur="1.8s" repeatCount="indefinite"/>
-    </circle>
-
+    <g>
+      <circle cx="1149.0" cy="137.5" r="30" fill="#060F22" fill-opacity="0.9"
+              stroke="#A78BFA" stroke-width="1" stroke-opacity="0.55"/>
+      <circle cx="1149.0" cy="137.5" r="30" fill="none" stroke="#A78BFA" stroke-width="1" opacity="0.45">
+        <animate attributeName="r" values="30;36;30" dur="3.8s"
+                 begin="0.42s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.45;0.04;0.45" dur="3.8s"
+                 begin="0.42s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1149.0" cy="137.5" r="3.4" fill="#A78BFA"/>
+      <rect x="1083.6" y="179.5" width="130.8" height="23" rx="7" fill="#050D1E" fill-opacity="0.94" stroke="#A78BFA" stroke-width="0.8" stroke-opacity="0.42"/><text x="1149.0" y="194.9" text-anchor="middle" fill="#DCEBFF" font-size="11.5" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="2">World Models</text>
+    </g>
     
-    <text x="700" y="298" text-anchor="middle" fill="#7DD3FC" font-size="19"
-          font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700"
-          letter-spacing="1.2" filter="url(#textGlow)" opacity="1">
-      Reinforcement Learning Engineer
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.000;0.015;0.185;0.200;1" dur="20s" repeatCount="indefinite"/>
-    </text>
-    <text x="700" y="298" text-anchor="middle" fill="#7DD3FC" font-size="19"
-          font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700"
-          letter-spacing="1.2" filter="url(#textGlow)" opacity="0">
-      Imparting Consciousness Into Machines
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.200;0.215;0.385;0.400;1" dur="20s" repeatCount="indefinite"/>
-    </text>
-    <text x="700" y="298" text-anchor="middle" fill="#7DD3FC" font-size="19"
-          font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700"
-          letter-spacing="1.2" filter="url(#textGlow)" opacity="0">
-      Taking AI To The Next Level
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.400;0.415;0.585;0.600;1" dur="20s" repeatCount="indefinite"/>
-    </text>
-    <text x="700" y="298" text-anchor="middle" fill="#7DD3FC" font-size="19"
-          font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700"
-          letter-spacing="1.2" filter="url(#textGlow)" opacity="0">
-      Exploring Unified World-Model Algorithms
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.600;0.615;0.785;0.800;1" dur="20s" repeatCount="indefinite"/>
-    </text>
-    <text x="700" y="298" text-anchor="middle" fill="#7DD3FC" font-size="19"
-          font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700"
-          letter-spacing="1.2" filter="url(#textGlow)" opacity="0">
-      Multimodal Agentic AI Architect
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.800;0.815;0.985;1.000;1" dur="20s" repeatCount="indefinite"/>
-    </text>
+    <g>
+      <circle cx="886.0" cy="66.0" r="30" fill="#060F22" fill-opacity="0.9"
+              stroke="#C084FC" stroke-width="1" stroke-opacity="0.55"/>
+      <circle cx="886.0" cy="66.0" r="30" fill="none" stroke="#C084FC" stroke-width="1" opacity="0.45">
+        <animate attributeName="r" values="30;36;30" dur="3.8s"
+                 begin="0.84s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.45;0.04;0.45" dur="3.8s"
+                 begin="0.84s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="886.0" cy="66.0" r="3.4" fill="#C084FC"/>
+      <rect x="829.5" y="108.0" width="113.0" height="23" rx="7" fill="#050D1E" fill-opacity="0.94" stroke="#C084FC" stroke-width="0.8" stroke-opacity="0.42"/><text x="886.0" y="123.4" text-anchor="middle" fill="#DCEBFF" font-size="11.5" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="2">Agentic AI</text>
+    </g>
+    
+    <g>
+      <circle cx="514.0" cy="66.0" r="30" fill="#060F22" fill-opacity="0.9"
+              stroke="#C084FC" stroke-width="1" stroke-opacity="0.55"/>
+      <circle cx="514.0" cy="66.0" r="30" fill="none" stroke="#C084FC" stroke-width="1" opacity="0.45">
+        <animate attributeName="r" values="30;36;30" dur="3.8s"
+                 begin="1.26s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.45;0.04;0.45" dur="3.8s"
+                 begin="1.26s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="514.0" cy="66.0" r="3.4" fill="#C084FC"/>
+      <rect x="426.4" y="108.0" width="175.3" height="23" rx="7" fill="#050D1E" fill-opacity="0.94" stroke="#C084FC" stroke-width="0.8" stroke-opacity="0.42"/><text x="514.0" y="123.4" text-anchor="middle" fill="#DCEBFF" font-size="11.5" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="2">Graph Neural Nets</text>
+    </g>
+    
+    <g>
+      <circle cx="251.0" cy="137.5" r="30" fill="#060F22" fill-opacity="0.9"
+              stroke="#C084FC" stroke-width="1" stroke-opacity="0.55"/>
+      <circle cx="251.0" cy="137.5" r="30" fill="none" stroke="#C084FC" stroke-width="1" opacity="0.45">
+        <animate attributeName="r" values="30;36;30" dur="3.8s"
+                 begin="1.68s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.45;0.04;0.45" dur="3.8s"
+                 begin="1.68s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="251.0" cy="137.5" r="3.4" fill="#C084FC"/>
+      <rect x="194.5" y="179.5" width="113.0" height="23" rx="7" fill="#050D1E" fill-opacity="0.94" stroke="#C084FC" stroke-width="0.8" stroke-opacity="0.42"/><text x="251.0" y="194.9" text-anchor="middle" fill="#DCEBFF" font-size="11.5" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="2">Quantum ML</text>
+    </g>
+    
+    <g>
+      <circle cx="251.0" cy="238.5" r="30" fill="#060F22" fill-opacity="0.9"
+              stroke="#38BDF8" stroke-width="1" stroke-opacity="0.55"/>
+      <circle cx="251.0" cy="238.5" r="30" fill="none" stroke="#38BDF8" stroke-width="1" opacity="0.45">
+        <animate attributeName="r" values="30;36;30" dur="3.8s"
+                 begin="2.10s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.45;0.04;0.45" dur="3.8s"
+                 begin="2.10s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="251.0" cy="238.5" r="3.4" fill="#38BDF8"/>
+      <rect x="163.3" y="280.5" width="175.3" height="23" rx="7" fill="#050D1E" fill-opacity="0.94" stroke="#38BDF8" stroke-width="0.8" stroke-opacity="0.42"/><text x="251.0" y="295.9" text-anchor="middle" fill="#DCEBFF" font-size="11.5" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="2">Quantized Edge ML</text>
+    </g>
+    
+    <g>
+      <circle cx="514.0" cy="310.0" r="30" fill="#060F22" fill-opacity="0.9"
+              stroke="#22D3EE" stroke-width="1" stroke-opacity="0.55"/>
+      <circle cx="514.0" cy="310.0" r="30" fill="none" stroke="#22D3EE" stroke-width="1" opacity="0.45">
+        <animate attributeName="r" values="30;36;30" dur="3.8s"
+                 begin="2.52s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.45;0.04;0.45" dur="3.8s"
+                 begin="2.52s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="514.0" cy="310.0" r="3.4" fill="#22D3EE"/>
+      <rect x="421.9" y="352.0" width="184.2" height="23" rx="7" fill="#050D1E" fill-opacity="0.94" stroke="#22D3EE" stroke-width="0.8" stroke-opacity="0.42"/><text x="514.0" y="367.4" text-anchor="middle" fill="#DCEBFF" font-size="11.5" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="2">RTL &amp; Architecture</text>
+    </g>
+    
+    <g>
+      <circle cx="886.0" cy="310.0" r="30" fill="#060F22" fill-opacity="0.9"
+              stroke="#22D3EE" stroke-width="1" stroke-opacity="0.55"/>
+      <circle cx="886.0" cy="310.0" r="30" fill="none" stroke="#22D3EE" stroke-width="1" opacity="0.45">
+        <animate attributeName="r" values="30;36;30" dur="3.8s"
+                 begin="2.94s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.45;0.04;0.45" dur="3.8s"
+                 begin="2.94s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="886.0" cy="310.0" r="3.4" fill="#22D3EE"/>
+      <rect x="789.4" y="352.0" width="193.1" height="23" rx="7" fill="#050D1E" fill-opacity="0.94" stroke="#22D3EE" stroke-width="0.8" stroke-opacity="0.42"/><text x="886.0" y="367.4" text-anchor="middle" fill="#DCEBFF" font-size="11.5" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="2">Formal Verification</text>
+    </g>
+    <circle cx="700.0" cy="188.0" r="54" fill="none" stroke="#1D4ED8" stroke-width="1" opacity="0.3"><animate attributeName="r" values="54;84;54" dur="4.5s" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.3;0;0.3" dur="4.5s" begin="0s" repeatCount="indefinite"/></circle>
+    <circle cx="700.0" cy="188.0" r="54" fill="none" stroke="#22D3EE" stroke-width="1" opacity="0.24"><animate attributeName="r" values="54;84;54" dur="4.5s" begin="1.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.24;0;0.24" dur="4.5s" begin="1.5s" repeatCount="indefinite"/></circle>
+    <circle cx="700.0" cy="188.0" r="54" fill="none" stroke="#818CF8" stroke-width="1" opacity="0.2"><animate attributeName="r" values="54;84;54" dur="4.5s" begin="3.0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.2;0;0.2" dur="4.5s" begin="3.0s" repeatCount="indefinite"/></circle>
+    <circle cx="700.0" cy="188.0" r="46" fill="#060F22" fill-opacity="0.92" stroke="#3B82F6" stroke-width="1.4"/>
+    <circle cx="700.0" cy="188.0" r="38" fill="none" stroke="#0F2040" stroke-width="3"/>
+    <circle cx="700.0" cy="188.0" r="38" fill="none" stroke="#67E8F9" stroke-width="3" stroke-dasharray="60 179" stroke-linecap="round" opacity="0.85"><animateTransform attributeName="transform" type="rotate" values="0 700.0 188.0;360 700.0 188.0" dur="6s" repeatCount="indefinite"/></circle>
+    <circle cx="700.0" cy="188.0" r="38" fill="none" stroke="#A78BFA" stroke-width="2" stroke-dasharray="24 215" stroke-linecap="round" opacity="0.7"><animateTransform attributeName="transform" type="rotate" values="360 700.0 188.0;0 700.0 188.0" dur="9s" repeatCount="indefinite"/></circle>
+    <circle cx="700.0" cy="188.0" r="5" fill="#E0F2FE"><animate attributeName="opacity" values="1;0.4;1" dur="1.8s" repeatCount="indefinite"/></circle>
+    <line x1="0" y1="398" x2="1400" y2="398" stroke="#162F5C" stroke-width="1" opacity="0.55"/>
+    <text x="700.0" y="426" text-anchor="middle" fill="#8ED8FB" font-size="19" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" letter-spacing="1.2" filter="url(#textGlow)" opacity="1">Building where algorithms meet atoms<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.0000;0.0120;0.1880;0.2000;1" dur="22.0s" repeatCount="indefinite"/></text>
+    <text x="700.0" y="426" text-anchor="middle" fill="#8ED8FB" font-size="19" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" letter-spacing="1.2" filter="url(#textGlow)" opacity="0">World models, and the silicon to run them<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2000;0.2120;0.3880;0.4000;1" dur="22.0s" repeatCount="indefinite"/></text>
+    <text x="700.0" y="426" text-anchor="middle" fill="#8ED8FB" font-size="19" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" letter-spacing="1.2" filter="url(#textGlow)" opacity="0">Model-based RL · Agentic systems · GNNs<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.4000;0.4120;0.5880;0.6000;1" dur="22.0s" repeatCount="indefinite"/></text>
+    <text x="700.0" y="426" text-anchor="middle" fill="#8ED8FB" font-size="19" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" letter-spacing="1.2" filter="url(#textGlow)" opacity="0">RTL, verification, and AI accelerators<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6000;0.6120;0.7880;0.8000;1" dur="22.0s" repeatCount="indefinite"/></text>
+    <text x="700.0" y="426" text-anchor="middle" fill="#8ED8FB" font-size="19" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" letter-spacing="1.2" filter="url(#textGlow)" opacity="0">Research-driven, deployment-obsessed<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.8000;0.8120;0.9880;1.0000;1" dur="22.0s" repeatCount="indefinite"/></text>
 
     <g filter="url(#cornerGlow)" opacity="0.8">
       <path d="M22 22 L22 42 M22 22 L42 22" stroke="#38BDF8" stroke-width="1.6" stroke-linecap="round"/>
     </g>
     <g filter="url(#cornerGlow)" opacity="0.8">
-      <path d="M1378 308 L1378 288 M1378 308 L1358 308" stroke="#22D3EE" stroke-width="1.6" stroke-linecap="round"/>
+      <path d="M1378 440 L1378 420 M1378 440 L1358 440"
+            stroke="#22D3EE" stroke-width="1.6" stroke-linecap="round"/>
     </g>
 
-    <rect x="1" y="1" width="1398" height="328" rx="15.5" fill="none" stroke="#162F5C" stroke-width="1" opacity="0.6"/>
+    <rect x="1" y="1" width="1398" height="460" rx="15.5" fill="none" stroke="#162F5C"
+          stroke-width="1" opacity="0.6"/>
   </g>
 </svg>

@@ -98,7 +98,11 @@ function paint(md, source) {
     }
   }
 
+  // display: $$...$$  (single-line or spanning lines)
+  md = md.replace(/\\$\\$([\\s\\S]+?)\\$\\$/g, function (_, s) { return stash(tex(s.trim(), true)); });
+  // legacy display fence, in case any survive
   md = md.replace(/```math\\n([\\s\\S]*?)\\n```/g, function (_, s) { return stash(tex(s, true)); });
+  // inline: $`...`$
   md = md.replace(/\\$`([^`]+)`\\$/g, function (_, s) { return stash(tex(s, false)); });
 
   var html = marked.parse(md, { gfm: true, breaks: false });

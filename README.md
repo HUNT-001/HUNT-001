@@ -139,21 +139,15 @@ class Engineer:
 
 A world model compresses observations into a latent state whose *dynamics* are learnable. The recurrent state-space model splits that state in two: a deterministic path $`h_t`$ that carries memory, and a stochastic path $`z_t`$ that carries uncertainty.
 
-```math
-h_t = f_\theta\!\left(h_{t-1},\, z_{t-1},\, a_{t-1}\right), \qquad z_t \sim q_\phi\!\left(z_t \mid h_t,\, o_t\right)
-```
+$$h_t = f_\theta\!\left(h_{t-1},\, z_{t-1},\, a_{t-1}\right), \qquad z_t \sim q_\phi\!\left(z_t \mid h_t,\, o_t\right)$$
 
 Training maximises the evidence lower bound — reconstruct the observation, predict the reward, and pay a KL price for every bit of surprise smuggled into the latent:
 
-```math
-\mathcal{L}(\theta,\phi) \;=\; \mathbb{E}_{q_\phi}\!\left[\sum_{t=1}^{T} \underbrace{\ln p_\theta(o_t \mid h_t, z_t)}_{\text{reconstruction}} \;+\; \underbrace{\ln p_\theta(r_t \mid h_t, z_t)}_{\text{reward}} \;-\; \beta \underbrace{\mathrm{KL}\!\left[\, q_\phi(z_t \mid h_t, o_t) \,\|\, p_\theta(z_t \mid h_t) \,\right]}_{\text{complexity}}\right]
-```
+$$\mathcal{L}(\theta,\phi) \;=\; \mathbb{E}_{q_\phi}\!\left[\sum_{t=1}^{T} \underbrace{\ln p_\theta(o_t \mid h_t, z_t)}_{\text{reconstruction}} \;+\; \underbrace{\ln p_\theta(r_t \mid h_t, z_t)}_{\text{reward}} \;-\; \beta \underbrace{\mathrm{KL}\!\left[\, q_\phi(z_t \mid h_t, o_t) \,\|\, p_\theta(z_t \mid h_t) \,\right]}_{\text{complexity}}\right]$$
 
 Once the dynamics are learned, you never have to touch the environment again to improve the policy. You roll out *inside the model* and train on imagined trajectories, bootstrapped with a $`\lambda`$-return:
 
-```math
-V^{\lambda}_t \;=\; r_t \;+\; \gamma\Big[(1-\lambda)\, v_\psi(s_{t+1}) \;+\; \lambda\, V^{\lambda}_{t+1}\Big]
-```
+$$V^{\lambda}_t \;=\; r_t \;+\; \gamma\Big[(1-\lambda)\, v_\psi(s_{t+1}) \;+\; \lambda\, V^{\lambda}_{t+1}\Big]$$
 
 **The part that's genuinely hard:** $`\beta`$ is the whole argument. Too low and the model memorises pixels instead of learning consequence. Too high and the posterior collapses onto the prior — the model stops dreaming, and every rollout returns the same beige future.
 
@@ -168,21 +162,15 @@ An MDP is the tuple $`\langle \mathcal{S}, \mathcal{A}, P, R, \gamma \rangle`$, 
 
 **Bellman optimality** — the fixed point every value-based method is chasing:
 
-```math
-Q^{*}(s,a) \;=\; \mathbb{E}_{s' \sim P}\!\left[\, r + \gamma \max_{a'} Q^{*}(s', a') \;\middle|\; s, a \,\right]
-```
+$$Q^{*}(s,a) \;=\; \mathbb{E}_{s' \sim P}\!\left[\, r + \gamma \max_{a'} Q^{*}(s', a') \;\middle|\; s, a \,\right]$$
 
 **Policy gradient** — when the action space stops being something you can argmax over:
 
-```math
-\nabla_\theta J(\theta) \;=\; \mathbb{E}_{\pi_\theta}\!\left[\, \nabla_\theta \ln \pi_\theta(a_t \mid s_t)\, A^{\pi}(s_t, a_t) \,\right]
-```
+$$\nabla_\theta J(\theta) \;=\; \mathbb{E}_{\pi_\theta}\!\left[\, \nabla_\theta \ln \pi_\theta(a_t \mid s_t)\, A^{\pi}(s_t, a_t) \,\right]$$
 
 **GAE** — the bias/variance dial on the advantage estimate:
 
-```math
-\hat{A}^{\mathrm{GAE}(\gamma,\lambda)}_t \;=\; \sum_{l=0}^{\infty} (\gamma\lambda)^{l}\, \delta_{t+l}, \qquad \delta_t = r_t + \gamma V(s_{t+1}) - V(s_t)
-```
+$$\hat{A}^{\mathrm{GAE}(\gamma,\lambda)}_t \;=\; \sum_{l=0}^{\infty} (\gamma\lambda)^{l}\, \delta_{t+l}, \qquad \delta_t = r_t + \gamma V(s_{t+1}) - V(s_t)$$
 
 **Why model-based:** model-free RL pays for every gradient step in real environment interactions. A world model converts sample complexity into compute complexity — and compute is the thing I know how to make cheaper in hardware.
 
@@ -195,21 +183,15 @@ Q^{*}(s,a) \;=\; \mathbb{E}_{s' \sim P}\!\left[\, r + \gamma \max_{a'} Q^{*}(s',
 
 Message passing in its general form — aggregate from the neighbourhood, update, repeat:
 
-```math
-h_v^{(k+1)} \;=\; \sigma\!\left( W^{(k)} h_v^{(k)} \;+\; \bigoplus_{u \in \mathcal{N}(v)} \frac{1}{c_{vu}}\, M^{(k)}\!\left(h_u^{(k)},\, e_{uv}\right) \right)
-```
+$$h_v^{(k+1)} \;=\; \sigma\!\left( W^{(k)} h_v^{(k)} \;+\; \bigoplus_{u \in \mathcal{N}(v)} \frac{1}{c_{vu}}\, M^{(k)}\!\left(h_u^{(k)},\, e_{uv}\right) \right)$$
 
 where $`\bigoplus`$ is any permutation-invariant aggregator. The spectral view, symmetrically normalised:
 
-```math
-H^{(k+1)} \;=\; \sigma\!\left( \tilde{D}^{-1/2} \tilde{A}\, \tilde{D}^{-1/2} H^{(k)} W^{(k)} \right), \qquad \tilde{A} = A + I
-```
+$$H^{(k+1)} \;=\; \sigma\!\left( \tilde{D}^{-1/2} \tilde{A}\, \tilde{D}^{-1/2} H^{(k)} W^{(k)} \right), \qquad \tilde{A} = A + I$$
 
 Attention as a learned aggregator, which is where GNNs and transformers turn out to be the same idea wearing different clothes:
 
-```math
-\alpha_{vu} = \frac{\exp\!\left(\mathrm{LeakyReLU}\!\left(\mathbf{a}^{\top}[\,W h_v \,\|\, W h_u\,]\right)\right)}{\sum_{w \in \mathcal{N}(v)} \exp\!\left(\mathrm{LeakyReLU}\!\left(\mathbf{a}^{\top}[\,W h_v \,\|\, W h_w\,]\right)\right)}
-```
+$$\alpha_{vu} = \frac{\exp\!\left(\mathrm{LeakyReLU}\!\left(\mathbf{a}^{\top}[\,W h_v \,\|\, W h_u\,]\right)\right)}{\sum_{w \in \mathcal{N}(v)} \exp\!\left(\mathrm{LeakyReLU}\!\left(\mathbf{a}^{\top}[\,W h_v \,\|\, W h_w\,]\right)\right)}$$
 
 **Why I care:** a gate-level netlist, a placement, a routing congestion map and a dataflow graph are all graphs. Every EDA problem that currently costs hours of heuristic search is a graph learning problem that nobody has finished attacking.
 
@@ -222,17 +204,13 @@ Attention as a learned aggregator, which is where GNNs and transformers turn out
 
 An agent that can call tools is doing sequential decision-making where actions have *cost*, not just consequence. The honest objective includes the bill:
 
-```math
-a^{*} \;=\; \arg\max_{a \in \mathcal{A}} \; \mathbb{E}_{s' \sim T}\!\left[\, R(s, a, s') + \gamma V(s') \,\right] \;-\; \lambda\, c(a)
-```
+$$a^{*} \;=\; \arg\max_{a \in \mathcal{A}} \; \mathbb{E}_{s' \sim T}\!\left[\, R(s, a, s') + \gamma V(s') \,\right] \;-\; \lambda\, c(a)$$
 
 where $`c(a)`$ is latency, tokens, API spend, or blast radius. Drop that term and you get an agent that solves the task by brute-force calling everything it can reach.
 
 **Search over reasoning** — tree search with a learned value, borrowed wholesale from planning:
 
-```math
-\mathrm{UCT}(s,a) \;=\; Q(s,a) \;+\; c\,\sqrt{\frac{\ln N(s)}{N(s,a)}}
-```
+$$\mathrm{UCT}(s,a) \;=\; Q(s,a) \;+\; c\,\sqrt{\frac{\ln N(s)}{N(s,a)}}$$
 
 **Where I've shipped this:** an agentic AI system for fintech, built at Mumbai Hacks 2024 — finished **runner-up**. Constrained action space, real cost model, hard correctness requirements. Financial agents are a good forcing function: they make you take $`c(a)`$ seriously.
 
@@ -245,29 +223,21 @@ where $`c(a)`$ is latency, tokens, API spend, or blast radius. Drop that term an
 
 Uniform affine quantization — scale $`s`$, zero-point $`z`$, round-to-nearest:
 
-```math
-\hat{x} \;=\; s\left(\mathrm{clip}\!\left(\left\lfloor \frac{x}{s} \right\rceil + z,\; q_{\min},\; q_{\max}\right) - z\right)
-```
+$$\hat{x} \;=\; s\left(\mathrm{clip}\!\left(\left\lfloor \frac{x}{s} \right\rceil + z,\; q_{\min},\; q_{\max}\right) - z\right)$$
 
 Rounding has zero gradient almost everywhere, so training uses the straight-through estimator — pretend the quantizer is the identity inside the clipping range:
 
-```math
-\frac{\partial \hat{x}}{\partial x} \;\approx\; \mathbf{1}_{\left\{\, q_{\min} \,\le\, x/s + z \,\le\, q_{\max} \,\right\}}
-```
+$$\frac{\partial \hat{x}}{\partial x} \;\approx\; \mathbf{1}_{\left\{\, q_{\min} \,\le\, x/s + z \,\le\, q_{\max} \,\right\}}$$
 
 At the binary extreme, weights collapse to a sign and a single scale per filter:
 
-```math
-w_b = \mathrm{sign}(w), \qquad \alpha = \frac{\lVert W \rVert_1}{n}, \qquad W \approx \alpha\, w_b
-```
+$$w_b = \mathrm{sign}(w), \qquad \alpha = \frac{\lVert W \rVert_1}{n}, \qquad W \approx \alpha\, w_b$$
 
 which turns a multiply-accumulate into `XNOR` + `popcount` — and *that* is a sentence about hardware, not about machine learning.
 
 **The constraint that decides everything** — arithmetic intensity against the roofline:
 
-```math
-P_{\text{attainable}} = \min\!\left(P_{\text{peak}},\; I \cdot B_{\text{mem}}\right), \qquad I = \frac{\text{FLOPs}}{\text{Bytes moved}}
-```
+$$P_{\text{attainable}} = \min\!\left(P_{\text{peak}},\; I \cdot B_{\text{mem}}\right), \qquad I = \frac{\text{FLOPs}}{\text{Bytes moved}}$$
 
 Most "slow" models are not compute-bound. They are memory-bound, and quantization is a bandwidth optimization that happens to look like a numerics one.
 
@@ -289,21 +259,15 @@ Most "slow" models are not compute-bound. They are memory-bound, and quantizatio
 
 A state on $`n`$ qubits lives in $`\mathbb{C}^{2^n}`$, which is the entire promise and the entire problem. Variational algorithms hedge: put a shallow parameterised circuit on the quantum device, keep the optimiser classical.
 
-```math
-E_0 \;\le\; E(\boldsymbol{\theta}) \;=\; \langle \psi(\boldsymbol{\theta}) \vert \hat{H} \vert \psi(\boldsymbol{\theta}) \rangle, \qquad \vert \psi(\boldsymbol{\theta}) \rangle = U(\boldsymbol{\theta}) \vert 0 \rangle^{\otimes n}
-```
+$$E_0 \;\le\; E(\boldsymbol{\theta}) \;=\; \langle \psi(\boldsymbol{\theta}) \vert \hat{H} \vert \psi(\boldsymbol{\theta}) \rangle, \qquad \vert \psi(\boldsymbol{\theta}) \rangle = U(\boldsymbol{\theta}) \vert 0 \rangle^{\otimes n}$$
 
 The Hamiltonian decomposes into Pauli strings you can actually measure:
 
-```math
-\hat{H} \;=\; \sum_{\alpha} c_\alpha\, P_\alpha, \qquad P_\alpha \in \{ I, X, Y, Z \}^{\otimes n}
-```
+$$\hat{H} \;=\; \sum_{\alpha} c_\alpha\, P_\alpha, \qquad P_\alpha \in \{ I, X, Y, Z \}^{\otimes n}$$
 
 Gradients come from the **parameter-shift rule** — exact, not finite-difference, which is the detail that makes the whole thing trainable:
 
-```math
-\frac{\partial E}{\partial \theta_i} \;=\; \frac{1}{2}\left[ E\!\left(\theta_i + \tfrac{\pi}{2}\right) - E\!\left(\theta_i - \tfrac{\pi}{2}\right) \right]
-```
+$$\frac{\partial E}{\partial \theta_i} \;=\; \frac{1}{2}\left[ E\!\left(\theta_i + \tfrac{\pi}{2}\right) - E\!\left(\theta_i - \tfrac{\pi}{2}\right) \right]$$
 
 **The honest caveat:** barren plateaus. For a random deep ansatz on $`n`$ qubits, gradient variance decays as $`\mathcal{O}(2^{-n})`$ — the landscape flattens exponentially and the optimiser has nothing to descend. Structured ansätze and local cost functions are the live area, and I'm reading rather than claiming here.
 
@@ -327,31 +291,23 @@ Gradients come from the **parameter-shift rule** — exact, not finite-differenc
 
 **Setup closure** — the clock period has to cover the whole combinational path:
 
-```math
-T_{\text{clk}} \;\ge\; t_{cq} \;+\; t_{\text{logic,max}} \;+\; t_{\text{setup}} \;-\; t_{\text{skew}} \;+\; t_{\text{jitter}}
-```
+$$T_{\text{clk}} \;\ge\; t_{cq} \;+\; t_{\text{logic,max}} \;+\; t_{\text{setup}} \;-\; t_{\text{skew}} \;+\; t_{\text{jitter}}$$
 
 **Hold closure** — the failure mode that survives simulation and kills silicon, because it is frequency-independent:
 
-```math
-t_{cq} \;+\; t_{\text{logic,min}} \;\ge\; t_{\text{hold}} \;+\; t_{\text{skew}}
-```
+$$t_{cq} \;+\; t_{\text{logic,min}} \;\ge\; t_{\text{hold}} \;+\; t_{\text{skew}}$$
 
 You cannot slow the clock to fix a hold violation. That asymmetry is why hold buffers exist and why CTS matters more than it looks.
 
 **Dynamic and static power:**
 
-```math
-P_{\text{total}} \;=\; \underbrace{\alpha\, C_L\, V_{DD}^{2}\, f}_{\text{switching}} \;+\; \underbrace{V_{DD}\, I_{\text{leak}}}_{\text{leakage}}
-```
+$$P_{\text{total}} \;=\; \underbrace{\alpha\, C_L\, V_{DD}^{2}\, f}_{\text{switching}} \;+\; \underbrace{V_{DD}\, I_{\text{leak}}}_{\text{leakage}}$$
 
 The quadratic on $`V_{DD}`$ is the single most exploitable fact in low-power design — and the reason DVFS beats almost any microarchitectural trick you can name.
 
 **Amdahl, for accelerator scoping** — the sentence that kills bad accelerator proposals early:
 
-```math
-S = \frac{1}{(1 - p) + \dfrac{p}{s}}
-```
+$$S = \frac{1}{(1 - p) + \dfrac{p}{s}}$$
 
 If your kernel is 60% of runtime, an *infinitely* fast accelerator buys you 2.5×. Profile before you build.
 
@@ -392,9 +348,7 @@ If your kernel is 60% of runtime, an *infinitely* fast accelerator buys you 2.5�
 
 Random stimulus hitting $`n`$ distinct coverage bins is the coupon-collector problem. The expected number of runs to hit all of them:
 
-```math
-\mathbb{E}[N] \;=\; n \sum_{k=1}^{n} \frac{1}{k} \;\approx\; n \ln n + \gamma n, \qquad \gamma \approx 0.5772
-```
+$$\mathbb{E}[N] \;=\; n \sum_{k=1}^{n} \frac{1}{k} \;\approx\; n \ln n + \gamma n, \qquad \gamma \approx 0.5772$$
 
 For $`n = 1000`$ bins that is roughly **7,500 runs** — and the tail is worse than the mean suggests. This is the quantitative argument for *directed* tests on the hard corners: you do not random-walk into a 1-in-$`10^6`$ state, you go there deliberately.
 
@@ -431,17 +385,13 @@ I maintain **[`cocotb-v2-migration-helper`](https://github.com/HUNT-001/cocotb-v
 
 **Lithography sets the floor.** Rayleigh, for resolution and depth of focus:
 
-```math
-\mathrm{CD} = k_1 \frac{\lambda}{\mathrm{NA}}, \qquad \mathrm{DOF} = k_2 \frac{\lambda}{\mathrm{NA}^{2}}
-```
+$$\mathrm{CD} = k_1 \frac{\lambda}{\mathrm{NA}}, \qquad \mathrm{DOF} = k_2 \frac{\lambda}{\mathrm{NA}^{2}}$$
 
 EUV at $`\lambda = 13.5\,\text{nm}`$ with $`\mathrm{NA} = 0.33`$ gets you to roughly 13 nm half-pitch in a single exposure. Below that you either multi-pattern (LELE, SADP, SAQP — each adding cost, mask count and overlay error) or you move to High-NA at $`0.55`$ and accept a smaller field. Note the square in the DOF term: every gain in resolution costs you focus budget quadratically. There is no free tightening.
 
 **Yield decides whether any of it matters.** Murphy's model, for a die of area $`A`$ and defect density $`D_0`$:
 
-```math
-Y = \left( \frac{1 - e^{-A D_0}}{A D_0} \right)^{2}
-```
+$$Y = \left( \frac{1 - e^{-A D_0}}{A D_0} \right)^{2}$$
 
 Yield falls off *superlinearly* with die area. That single fact is why chiplets exist, why big dies are disproportionately expensive, and why "just make the accelerator bigger" is an economic proposal before it is an architectural one.
 
