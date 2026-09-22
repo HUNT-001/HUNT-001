@@ -577,6 +577,7 @@ Yield falls off *superlinearly* with die area. That single fact is why chiplets 
 | **Mumbai Hacks 2024** | 🥈 **Runner-Up** | Agentic AI for FinTech |
 | **Analog Design Quest** | 🏅 Finalist | Analog / mixed-signal circuit design |
 | **Mirabilis Design Hacks** | 🏅 Finalist | System-level modelling &amp; architecture |
+| **SAADRI - SPARK 3.0 ** | 🥇 **Winner** | Data modelling , GIS , Geospatial Data , Sentinel 1 |
 
 <p align="center">
 <i>Four national-level finals across three unrelated domains — agentic AI, analog design, and system architecture.<br>
