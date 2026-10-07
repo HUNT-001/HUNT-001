@@ -147,6 +147,7 @@ def banner(title, pal, sub=None, motif="brackets"):
 
 BANNERS = [
     ("banner-projects.svg",       "PROJECTS",      SILICON, "SELECTED  ENGINEERING  WORK",        "grid"),
+    ("banner-dream.svg",          "DREAM LOG",     QUANTUM, "NIGHTLY  LATENT  ROLLOUT",          "orbital"),
     ("banner-research.svg",       "RESEARCH",      FUSION,  "WORLD  MODELS  /  RL  /  GNN  /  AGENTIC",  "orbital"),
     ("banner-mathematics.svg",    "MATHEMATICS",   FUSION,  "THE  FORMALISM  UNDERNEATH",        "orbital"),
     ("banner-silicon.svg",        "SILICON",       SILICON, "RTL  →  SYNTHESIS  →  GDSII  →  TAPEOUT", "wafer"),
