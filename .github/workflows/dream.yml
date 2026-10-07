@@ -1,0 +1,67 @@
+#  THE DREAM LOG
+#
+#  Once a night this wakes tools/dream.py. The script reads recent public
+#  GitHub activity, compresses it into a state vector, and performs one
+#  imagination rollout from that latent — then commits the rendered panel.
+#
+#  Setup is optional:
+#    · With a repository secret named ANTHROPIC_API_KEY, the rollout is written
+#      by a model. Add it under Settings → Secrets and variables → Actions.
+#    · Without one, the script composes the rollout deterministically from the
+#      state vector. The panel always renders; only the prose degrades.
+#
+#  Run it by hand any time from the Actions tab (workflow_dispatch).
+
+name: dream
+
+on:
+  schedule:
+    # 21:00 UTC = 02:30 IST, i.e. the small hours, which is thematically correct
+    - cron: "0 21 * * *"
+  workflow_dispatch:
+    inputs:
+      offline:
+        description: "Force the deterministic path (skip the API)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dream
+  cancel-in-progress: false
+
+jobs:
+  dream:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0          # dream.py reads recent commit subjects
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Perform the rollout
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GITHUB_TOKEN: ${{ github.token }}
+          DREAM_GH_USER: ${{ github.repository_owner }}
+        run: |
+          python tools/dream.py ${{ inputs.offline && '--offline' || '' }}
+
+      - name: Commit the dream
+        run: |
+          git config user.name  "dream[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/dream-latest.svg dreams/log.json
+          if git diff --cached --quiet; then
+            echo "nothing changed; the model had no new thoughts"
+            exit 0
+          fi
+          # Keep the subject readable in the history — the log is the artefact.
+          N=$(python -c "import json;print(json.load(open('dreams/log.json'))[-1]['n'])")
+          git commit -m "dream $(printf '%04d' "$N")"
+          git push
