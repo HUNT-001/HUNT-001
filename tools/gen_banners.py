@@ -156,6 +156,9 @@ BANNERS = [
     ("banner-achievements.svg",   "ACHIEVEMENTS",  FUSION,  "NATIONAL  FINALS  &amp;  PODIUMS",  "grid"),
     ("banner-quantum.svg",        "QUANTUM",       QUANTUM, "HILBERT  SPACE  /  VQE  /  QML",    "orbital"),
     ("banner-algorithms.svg",     "ALGORITHMS",    FUSION,  "ORIGINAL  RESEARCH  &amp;  DERIVATIONS", "grid"),
+    ("banner-writing.svg",        "WRITING",       FUSION,  "CASE STUDIES  /  WRITE-UPS  /  DATA STORIES", "grid"),
+    ("banner-depth.svg",          "TECHNICAL DEPTH", FUSION, "THE DEEP END  ·  EXPAND WHAT INTERESTS YOU", "orbital"),
+    ("banner-qna.svg",            "ASK ME ANYTHING", SILICON, "LIVE  Q&amp;A  ·  GITHUB  DISCUSSIONS", "waveform"),
     ("banner-uiux.svg",           "INTERFACE",     FUSION,  "UI  /  UX  /  DESIGN  SYSTEMS",     "grid"),
 ]
 
