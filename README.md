@@ -11,7 +11,7 @@
     <img src="assets/linkedin-button.svg" alt="LinkedIn" height="46" />
   </a>
   &nbsp;
-  <a href="https://vtanushpavan.vercel.app/">
+  <a href="https://tanushpavan.vercel.app/">
     <img src="assets/portfolio-button.svg" alt="Portfolio" height="46" />
   </a>
   &nbsp;
@@ -38,20 +38,15 @@
 <!-- ═══════════════════════════════ ABOUT ═══════════════════════════════ -->
 <img src="assets/banner-about.svg" alt="About Me" width="100%" />
 
+<p align="center"><img src="assets/hero-bridge.svg" alt="The model, the machine, and the seam between them" width="100%" /></p>
+
 <p align="center">
-I'm a dual-degree student working on <b>efficient intelligent systems</b> — the kind that have to survive<br>
-both a loss curve and a timing report.
+Dual-degree student building <b>efficient intelligent systems</b> — the kind that have to survive both a loss curve and a timing report.<br>
+Most people pick a side: the model or the machine. The interesting problems live in the seam.
 </p>
 
 <p align="center">
-Most people pick a side: the model or the machine. I find the interesting problems live in the seam between them.<br>
-A world model is only useful if something can run it. A datapath is only worth building if something worth running exists.
-</p>
-
-<p align="center">
-🧠 <b>Above the line</b> — world models, model-based RL, graph neural networks, agentic systems, quantum-inspired ML<br>
-⚙️ <b>Below the line</b> — RTL design, functional verification, AI accelerators, quantized inference, edge deployment<br>
-🔬 <b>Across it</b> — hardware-aware ML, HW/SW co-design, and my own algorithmic research
+🧠 <b>The model</b> — world models · model-based RL · GNNs · agentic systems · quantum ML &nbsp;&nbsp;|&nbsp;&nbsp; ⚙️ <b>The machine</b> — RTL · verification · AI accelerators · quantized & edge inference
 </p>
 
 <details>
@@ -90,7 +85,6 @@ class Engineer:
 
 <p align="center"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&pause=2400&color=7DD3FC&center=true&vCenter=true&width=1200&separator=;&lines=Every+circuit+carries+a+question.+Every+model%2C+an+answer+waiting+to+evolve.;I+don%27t+just+train+models+-+I+architect+the+substrate+they+think+on.;A+world+model+is+a+compression+of+consequence.;The+next+intelligence+won%27t+live+in+the+cloud.+It%27ll+be+etched+into+silicon.;Somewhere+between+hardware+and+cognition+-+that%27s+where+I+build." alt="Signal Log" /></p>
 
-
 <!-- ═══════════════════════════════ DREAM LOG ═══════════════════════════════ -->
 <a id="dream-log"></a>
 <img src="assets/banner-dream.svg" alt="Dream Log" width="100%" />
@@ -118,6 +112,157 @@ then commits the result. A world model that dreams about the person building it.
 
 </details>
 
+<!-- ═══════════════════════════════ EXPERIENCE ═══════════════════════════════ -->
+<img src="assets/banner-experience.svg" alt="Experience" width="100%" />
+
+<table align="center">
+<tr>
+<td width="50%" valign="top">
+
+### WIPRO
+**`AI Engineer Intern · 2 months`**
+
+```yaml
+Role: Applied AI / ML engineering
+Work:
+  - Built and evaluated ML models for real
+    deployment scenarios, not notebooks
+  - Explored RL approaches for sequential
+    decision-making problems
+  - Assessed robustness and production
+    readiness across experiments
+Takeaway: >
+  The gap between a model that scores well
+  and a model you can deploy is mostly
+  everything that isn't the model.
+```
+
+</td>
+<td width="50%" valign="top">
+
+### ADRIN — NRSC, ISRO
+**`Edge AI Intern · 45 days`**
+
+```yaml
+Role: Edge AI / HW-SW co-design
+Work:
+  - Custom HLS datapath to deploy MobileViTv2
+    on AMD Versal ACAP (VCK-190)
+  - Hardware-aware optimisation of a vision
+    transformer for edge inference
+  - Applied ML for remote sensing pipelines
+Takeaway: >
+  A transformer on edge silicon is a memory
+  hierarchy problem wearing an attention mask.
+```
+
+</td>
+</tr>
+</table>
+
+<!-- ═══════════════════════════════ PROJECTS ═══════════════════════════════ -->
+<img src="assets/banner-projects.svg" alt="Projects" width="100%" />
+
+<p align="center">
+  <a href="https://github.com/HUNT-001/cocotb-v2-migration-helper">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=HUNT-001&repo=cocotb-v2-migration-helper&bg_color=0C1D3E&title_color=7DD3FC&text_color=9DC4F5&icon_color=38BDF8&border_color=1A3D7A&border_radius=16" width="48%" />
+  </a>
+  <a href="https://github.com/HUNT-001/ai-chip-design-platform">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=HUNT-001&repo=ai-chip-design-platform&bg_color=0C1D3E&title_color=7DD3FC&text_color=9DC4F5&icon_color=38BDF8&border_color=1A3D7A&border_radius=16" width="48%" />
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/HUNT-001/solar-digital-twin">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=HUNT-001&repo=solar-digital-twin&bg_color=0C1D3E&title_color=7DD3FC&text_color=9DC4F5&icon_color=38BDF8&border_color=1A3D7A&border_radius=16" width="48%" />
+  </a>
+  <a href="https://github.com/HUNT-001/Electro-thermal-modelling">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=HUNT-001&repo=Electro-thermal-modelling&bg_color=0C1D3E&title_color=7DD3FC&text_color=9DC4F5&icon_color=38BDF8&border_color=1A3D7A&border_radius=16" width="48%" />
+  </a>
+</p>
+
+<!-- ═══════════════════════════════ ACHIEVEMENTS ═══════════════════════════════ -->
+<img src="assets/banner-achievements.svg" alt="Achievements" width="100%" />
+
+<p align="center"><img src="assets/achievements-wall.svg" alt="Competition record" width="100%" /></p>
+
+| Competition | Result | Domain |
+|:--|:--|:--|
+| **Smart India Hackathon 2025** | 🏅 Grand Finale — national finalist | Govt. of India, national-scale problem statement |
+| **Mumbai Hacks 2024** | 🥈 **Runner-Up** | Agentic AI for FinTech |
+| **Analog Design Quest** | 🏅 Finalist | Analog / mixed-signal circuit design |
+| **Mirabilis Design Hacks** | 🏅 Finalist | System-level modelling &amp; architecture |
+| **SAADRI - SPARK 3.0** | 🥇 **Winner** | Data modelling , GIS , Geospatial Data , Sentinel 1 |
+
+<p align="center">
+<i>Four national-level finals across three unrelated domains — agentic AI, analog design, and system architecture.<br>
+The through-line isn't the subject. It's being able to go from a cold problem statement to a defensible build in 36 hours.</i>
+</p>
+
+<img src="assets/divider-waveform.svg" alt="" width="100%" />
+
+<img src="assets/divider-waveform.svg" alt="" width="100%" />
+
+<!-- ═══════════════════════════════ WRITING ═══════════════════════════════ -->
+<img src="assets/banner-writing.svg" alt="Writing" width="100%" />
+
+<p align="center">
+<b>Developer-to-developer write-ups</b> &mdash; case studies, project teardowns, technical deep-dives and data stories.<br>
+The reasoning behind the work, not just the result.
+</p>
+
+<table align="center">
+<tr>
+<td width="25%" align="center" valign="top">
+
+**🔬 Case Studies**
+
+Real problems, the approach, and the number that mattered
+
+</td>
+<td width="25%" align="center" valign="top">
+
+**🧩 Project Write-Ups**
+
+How a repo was built and what I'd change
+
+</td>
+<td width="25%" align="center" valign="top">
+
+**⚙️ Technical Blogs**
+
+Focused deep-dives on one idea
+
+</td>
+<td width="25%" align="center" valign="top">
+
+**📊 Data Stories**
+
+A dataset, a question, the answer
+
+</td>
+</tr>
+</table>
+
+<p align="center">
+  <a href="blogs/"><img src="https://img.shields.io/badge/READ_THE_WRITE--UPS-38BDF8?style=for-the-badge&labelColor=000000&logo=readme&logoColor=white" alt="Write-ups" /></a>
+  &nbsp;
+  <a href="https://tanushpavan.vercel.app/"><img src="https://img.shields.io/badge/FULL_BLOG_ON_PORTFOLIO-A78BFA?style=for-the-badge&labelColor=000000&logo=vercel&logoColor=white" alt="Portfolio blog" /></a>
+</p>
+
+<p align="center">
+<i>Latest &mdash; <a href="blogs/case-studies/mobilevit-on-versal.md">MobileViTv2 on the Versal VCK-190</a> &nbsp;&middot;&nbsp; <a href="blogs/technical-blogs/hold-violations.md">Why hold violations survive simulation</a></i>
+</p>
+
+<img src="assets/divider-quantum.svg" alt="" width="100%" />
+
+<!-- ═══════════════════════════════ TECHNICAL DEPTH ═══════════════════════════════ -->
+<img src="assets/banner-depth.svg" alt="Technical Depth" width="100%" />
+
+<p align="center">
+<i>Everything above is the <b>what</b>. Below is the <b>how</b> &mdash; the research, the maths, and the silicon,<br>
+each folded into a collapsible. Open what interests you; skip what doesn't.</i>
+</p>
+
 <!-- ═══════════════════════════════ RESEARCH ═══════════════════════════════ -->
 <img src="assets/banner-research.svg" alt="Research" width="100%" />
 
@@ -126,7 +271,6 @@ then commits the result. A world model that dreams about the person building it.
 <p align="center">
 <i>Six threads, one question: how do you build something that models its world well enough to act in it — cheaply enough to matter?</i>
 </p>
-
 
 <!-- ═══════════════════════════════ MATHEMATICS ═══════════════════════════════ -->
 <img src="assets/banner-mathematics.svg" alt="Mathematics" width="100%" />
@@ -233,7 +377,6 @@ Gradients come from the **parameter-shift rule** — exact, not finite-differenc
 
 </details>
 
-
 <!-- ═══════════════════════════════ SILICON ═══════════════════════════════ -->
 <img src="assets/banner-silicon.svg" alt="Silicon" width="100%" />
 
@@ -282,7 +425,6 @@ If your kernel is 60% of runtime, an *infinitely* fast accelerator buys you 2.5�
 **Concretely:** at ADRIN (ISRO) I designed a custom HLS-based datapath to deploy **MobileViTv2** — a vision transformer — on the **AMD Versal ACAP VCK-190**. Transformers on edge silicon are an exercise in memory hierarchy, not in FLOPs. The attention block is the bandwidth problem; everything else is arithmetic you can schedule.
 
 </details>
-
 
 <!-- ═══════════════════════════════ VERIFICATION ═══════════════════════════════ -->
 <img src="assets/banner-verification.svg" alt="Verification" width="100%" />
@@ -343,7 +485,6 @@ Yield falls off *superlinearly* with die area. That one fact is why chiplets exi
 
 </details>
 
-
 <!-- ═══════════════════════════════ ALGORITHMS ═══════════════════════════════ -->
 <img src="assets/banner-algorithms.svg" alt="Algorithms" width="100%" />
 
@@ -365,96 +506,74 @@ Yield falls off *superlinearly* with die area. That one fact is why chiplets exi
 | **Binary/quantized accelerator co-design** | quantization schemes chosen *jointly* with the datapath beat schemes chosen for the model alone | active, tied to ADRIN work |
 | **Verification-informed architecture** | designs that are cheap to verify are a distinguishable class, and the property is predictable from the RTL | early |
 
+<!-- ═══════════════════════════════ TECH STACK ═══════════════════════════════ -->
+<img src="assets/banner-tech-stack.svg" alt="Tech Stack" width="100%" />
 
-<!-- ═══════════════════════════════ ACHIEVEMENTS ═══════════════════════════════ -->
-<img src="assets/banner-achievements.svg" alt="Achievements" width="100%" />
-
-<p align="center"><img src="assets/achievements-wall.svg" alt="Competition record" width="100%" /></p>
-
-| Competition | Result | Domain |
-|:--|:--|:--|
-| **Smart India Hackathon 2025** | 🏅 Grand Finale — national finalist | Govt. of India, national-scale problem statement |
-| **Mumbai Hacks 2024** | 🥈 **Runner-Up** | Agentic AI for FinTech |
-| **Analog Design Quest** | 🏅 Finalist | Analog / mixed-signal circuit design |
-| **Mirabilis Design Hacks** | 🏅 Finalist | System-level modelling &amp; architecture |
-| **SAADRI - SPARK 3.0** | 🥇 **Winner** | Data modelling , GIS , Geospatial Data , Sentinel 1 |
+<h3 align="center">Silicon &amp; Verification</h3>
 
 <p align="center">
-<i>Four national-level finals across three unrelated domains — agentic AI, analog design, and system architecture.<br>
-The through-line isn't the subject. It's being able to go from a cold problem statement to a defensible build in 36 hours.</i>
+  <img src="assets/tile-systemverilog.svg" height="50" /> <img src="assets/tile-rtl.svg" height="50" /> <img src="assets/tile-soc.svg" height="50" /> <img src="assets/tile-digital-ic.svg" height="50" /> <img src="assets/tile-uvm.svg" height="50" /> <img src="assets/tile-cocotb.svg" height="50" /> <img src="assets/tile-vivado.svg" height="50" /> <img src="assets/tile-ltspice.svg" height="50" />
+</p>
+
+<h3 align="center">Machine Learning &amp; AI</h3>
+
+<p align="center">
+  <img src="assets/tile-agentic-ai.svg" height="50" /> <img src="assets/tile-deep-learning.svg" height="50" /> <img src="assets/tile-machine-learning.svg" height="50" /> <img src="assets/tile-embedded-c.svg" height="50" /> <img src="assets/tile-tableau.svg" height="50" /> <img src="assets/tile-git.svg" height="50" />
+</p>
+
+<h3 align="center">Languages, Frameworks &amp; Cloud</h3>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,c,java,r,pytorch,tensorflow,matlab,aws,github" height="62" />
+</p>
+
+<!-- ═══════════════════════════════ CERTIFICATIONS ═══════════════════════════════ -->
+<!-- panel is generated — edit CERTS in tools/gen_certifications.py and re-run to update -->
+<img src="assets/banner-certifications.svg" alt="Certifications" width="100%" />
+
+<p align="center"><img src="assets/certifications-panel.svg" alt="Certifications and coursework" width="100%" /></p>
+
+| Credential | Issuer | Why it's here |
+|:--|:--|:--|
+| [Hardware Security](https://www.coursera.org/learn/hardware-security) | University of Maryland | trojans, side channels, and PUFs — the attacks that live *below* the software threat model |
+| VLSI Design | L&T EduTech | industry-framed digital design flow, end to end |
+| [Algorithms Specialization](https://www.coursera.org/specializations/algorithms) | Stanford University | the four-course track — divide & conquer, graphs, greedy/DP, NP-completeness |
+| [Agentic AI Foundations Associate](https://education.oracle.com/agentic-ai-foundations-associate/pexam_1Z0-1157-26) `1Z0-1157-26` | Oracle | agent reasoning patterns, tool orchestration, MCP |
+| [AI Agents Course](https://huggingface.co/learn/agents-course) | Hugging Face | building and evaluating agents against real benchmarks |
+| SQL AI Developer Associate `DP-800` | Microsoft | vector search, embeddings and RAG pushed down into the database engine |
+| Certified Cloud Practitioner `CLF-C02` | Amazon Web Services | the infrastructure vocabulary everything else is billed in |
+| Google Data Analytics Professional | Google | the eight-course analytics track |
+
+<p align="center">
+<i>Hardware Security and the Algorithms specialization are the two that show up most in my actual work —<br>
+one because attacks find the layer you forgot to model, the other because complexity analysis is<br>
+the only honest way to argue about a design before you've built it.</i>
+</p>
+
+<!-- ═══════════════════════════════ BACKGROUND ═══════════════════════════════ -->
+<img src="assets/banner-background.svg" alt="Background" width="100%" />
+
+<p align="center">
+  <b>BS in Data Science</b> — Indian Institute of Technology Madras<br>
+  <b>B.Tech in Electrical &amp; Electronics Engineering</b> — Amrita Vishwa Vidyapeetham
+</p>
+
+<p align="center">
+<i>Two degrees, deliberately. One taught me to reason about data and uncertainty;<br>
+the other taught me what actually happens when electrons have to carry the answer.</i>
 </p>
 
 <img src="assets/divider-waveform.svg" alt="" width="100%" />
 
-<!-- ═══════════════════════════════ EXPERIENCE ═══════════════════════════════ -->
-<img src="assets/banner-experience.svg" alt="Experience" width="100%" />
-
-<table align="center">
-<tr>
-<td width="50%" valign="top">
-
-### WIPRO
-**`AI Engineer Intern · 2 months`**
-
-```yaml
-Role: Applied AI / ML engineering
-Work:
-  - Built and evaluated ML models for real
-    deployment scenarios, not notebooks
-  - Explored RL approaches for sequential
-    decision-making problems
-  - Assessed robustness and production
-    readiness across experiments
-Takeaway: >
-  The gap between a model that scores well
-  and a model you can deploy is mostly
-  everything that isn't the model.
-```
-
-</td>
-<td width="50%" valign="top">
-
-### ADRIN — NRSC, ISRO
-**`Edge AI Intern · 45 days`**
-
-```yaml
-Role: Edge AI / HW-SW co-design
-Work:
-  - Custom HLS datapath to deploy MobileViTv2
-    on AMD Versal ACAP (VCK-190)
-  - Hardware-aware optimisation of a vision
-    transformer for edge inference
-  - Applied ML for remote sensing pipelines
-Takeaway: >
-  A transformer on edge silicon is a memory
-  hierarchy problem wearing an attention mask.
-```
-
-</td>
-</tr>
-</table>
-
-
-<!-- ═══════════════════════════════ PROJECTS ═══════════════════════════════ -->
-<img src="assets/banner-projects.svg" alt="Projects" width="100%" />
+<!-- ═══════════════════════════════ GITHUB STATS ═══════════════════════════════ -->
+<img src="assets/banner-github-stats.svg" alt="GitHub Stats" width="100%" />
 
 <p align="center">
-  <a href="https://github.com/HUNT-001/cocotb-v2-migration-helper">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=HUNT-001&repo=cocotb-v2-migration-helper&bg_color=0C1D3E&title_color=7DD3FC&text_color=9DC4F5&icon_color=38BDF8&border_color=1A3D7A&border_radius=16" width="48%" />
-  </a>
-  <a href="https://github.com/HUNT-001/ai-chip-design-platform">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=HUNT-001&repo=ai-chip-design-platform&bg_color=0C1D3E&title_color=7DD3FC&text_color=9DC4F5&icon_color=38BDF8&border_color=1A3D7A&border_radius=16" width="48%" />
-  </a>
-</p>
-<p align="center">
-  <a href="https://github.com/HUNT-001/solar-digital-twin">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=HUNT-001&repo=solar-digital-twin&bg_color=0C1D3E&title_color=7DD3FC&text_color=9DC4F5&icon_color=38BDF8&border_color=1A3D7A&border_radius=16" width="48%" />
-  </a>
-  <a href="https://github.com/HUNT-001/Electro-thermal-modelling">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=HUNT-001&repo=Electro-thermal-modelling&bg_color=0C1D3E&title_color=7DD3FC&text_color=9DC4F5&icon_color=38BDF8&border_color=1A3D7A&border_radius=16" width="48%" />
-  </a>
+  <img src="https://github-readme-stats.vercel.app/api?username=HUNT-001&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HUNT-001&layout=compact&theme=tokyonight&hide_border=true" height="165" />
 </p>
 
+<p align="center"><img src="./profile-3d-contrib/profile-night-view.svg" alt="3D contribution graph" width="100%" /></p>
 
 <!-- ═══════════════════════════════ INTERFACE / DESIGN ═══════════════════════════════ -->
 <img src="assets/banner-uiux.svg" alt="Interface" width="100%" />
@@ -485,77 +604,25 @@ The page is the portfolio piece — so here is the design system it runs on.</i>
 
 <img src="assets/divider-quantum.svg" alt="" width="100%" />
 
-<!-- ═══════════════════════════════ TECH STACK ═══════════════════════════════ -->
-<img src="assets/banner-tech-stack.svg" alt="Tech Stack" width="100%" />
-
-<h3 align="center">Silicon &amp; Verification</h3>
-
-<p align="center">
-  <img src="assets/tile-systemverilog.svg" height="50" /> <img src="assets/tile-rtl.svg" height="50" /> <img src="assets/tile-soc.svg" height="50" /> <img src="assets/tile-digital-ic.svg" height="50" /> <img src="assets/tile-uvm.svg" height="50" /> <img src="assets/tile-cocotb.svg" height="50" /> <img src="assets/tile-vivado.svg" height="50" /> <img src="assets/tile-ltspice.svg" height="50" />
-</p>
-
-<h3 align="center">Machine Learning &amp; AI</h3>
-
-<p align="center">
-  <img src="assets/tile-agentic-ai.svg" height="50" /> <img src="assets/tile-deep-learning.svg" height="50" /> <img src="assets/tile-machine-learning.svg" height="50" /> <img src="assets/tile-embedded-c.svg" height="50" /> <img src="assets/tile-tableau.svg" height="50" /> <img src="assets/tile-git.svg" height="50" />
-</p>
-
-<h3 align="center">Languages, Frameworks &amp; Cloud</h3>
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,c,java,r,pytorch,tensorflow,matlab,aws,github" height="62" />
-</p>
-
-
-<!-- ═══════════════════════════════ CERTIFICATIONS ═══════════════════════════════ -->
-<!-- panel is generated — edit CERTS in tools/gen_certifications.py and re-run to update -->
-<img src="assets/banner-certifications.svg" alt="Certifications" width="100%" />
-
-<p align="center"><img src="assets/certifications-panel.svg" alt="Certifications and coursework" width="100%" /></p>
-
-| Credential | Issuer | Why it's here |
-|:--|:--|:--|
-| [Hardware Security](https://www.coursera.org/learn/hardware-security) | University of Maryland | trojans, side channels, and PUFs — the attacks that live *below* the software threat model |
-| VLSI Design | L&T EduTech | industry-framed digital design flow, end to end |
-| [Algorithms Specialization](https://www.coursera.org/specializations/algorithms) | Stanford University | the four-course track — divide & conquer, graphs, greedy/DP, NP-completeness |
-| [Agentic AI Foundations Associate](https://education.oracle.com/agentic-ai-foundations-associate/pexam_1Z0-1157-26) `1Z0-1157-26` | Oracle | agent reasoning patterns, tool orchestration, MCP |
-| [AI Agents Course](https://huggingface.co/learn/agents-course) | Hugging Face | building and evaluating agents against real benchmarks |
-| SQL AI Developer Associate `DP-800` | Microsoft | vector search, embeddings and RAG pushed down into the database engine |
-| Certified Cloud Practitioner `CLF-C02` | Amazon Web Services | the infrastructure vocabulary everything else is billed in |
-| Google Data Analytics Professional | Google | the eight-course analytics track |
-
-<p align="center">
-<i>Hardware Security and the Algorithms specialization are the two that show up most in my actual work —<br>
-one because attacks find the layer you forgot to model, the other because complexity analysis is<br>
-the only honest way to argue about a design before you've built it.</i>
-</p>
-
-
-<!-- ═══════════════════════════════ BACKGROUND ═══════════════════════════════ -->
-<img src="assets/banner-background.svg" alt="Background" width="100%" />
-
-<p align="center">
-  <b>BS in Data Science</b> — Indian Institute of Technology Madras<br>
-  <b>B.Tech in Electrical &amp; Electronics Engineering</b> — Amrita Vishwa Vidyapeetham
-</p>
-
-<p align="center">
-<i>Two degrees, deliberately. One taught me to reason about data and uncertainty;<br>
-the other taught me what actually happens when electrons have to carry the answer.</i>
-</p>
-
 <img src="assets/divider-waveform.svg" alt="" width="100%" />
 
-<!-- ═══════════════════════════════ GITHUB STATS ═══════════════════════════════ -->
-<img src="assets/banner-github-stats.svg" alt="GitHub Stats" width="100%" />
+<!-- ═══════════════════════════════ ASK ME ANYTHING ═══════════════════════════════ -->
+<img src="assets/banner-qna.svg" alt="Ask Me Anything" width="100%" />
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=HUNT-001&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HUNT-001&layout=compact&theme=tokyonight&hide_border=true" height="165" />
+<b>Got a question about any of this?</b> World models, RTL, verification, the edge-AI work, or how this page is built &mdash; ask in the open.
 </p>
 
-<p align="center"><img src="./profile-3d-contrib/profile-night-view.svg" alt="3D contribution graph" width="100%" /></p>
+<p align="center">
+  <a href="https://github.com/HUNT-001/HUNT-001/discussions/new?category=q-a"><img src="https://img.shields.io/badge/ASK_A_QUESTION-GitHub_Discussions-238636?style=for-the-badge&labelColor=000000&logo=github&logoColor=white" alt="Ask a question" /></a>
+  &nbsp;
+  <a href="https://github.com/HUNT-001/HUNT-001/discussions/categories/q-a"><img src="https://img.shields.io/github/discussions/HUNT-001/HUNT-001?style=for-the-badge&labelColor=000000&color=38BDF8&logo=github&logoColor=white&label=OPEN+THREADS" alt="Open threads" /></a>
+</p>
 
+<p align="center">
+<i>Answered in the open, so the next person with the same question can read it too.<br>
+A live, interactive Q&amp;A widget is coming to the <a href="https://tanushpavan.vercel.app/">portfolio site</a>.</i>
+</p>
 
 <!-- ═══════════════════════════════ CONNECT ═══════════════════════════════ -->
 <img src="assets/banner-connect.svg" alt="Connect" width="100%" />
@@ -573,7 +640,7 @@ graph learning for EDA &nbsp;·&nbsp; quantized and binary inference &nbsp;·&nb
   <a href="https://www.linkedin.com/in/vakkalagadda-tanush-pavan-a37a20308/">
     <img src="https://img.shields.io/badge/LINKEDIN-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=000000" alt="LinkedIn"/>
   </a>
-  <a href="https://vtanushpavan.vercel.app/">
+  <a href="https://tanushpavan.vercel.app/">
     <img src="https://img.shields.io/badge/PORTFOLIO-93C5FD?style=for-the-badge&logo=vercel&logoColor=000000&labelColor=000000" alt="Portfolio"/>
   </a>
   <a href="mailto:tanushpavanv@gmail.com">
@@ -586,3 +653,4 @@ graph learning for EDA &nbsp;·&nbsp; quantized and binary inference &nbsp;·&nb
 </p>
 
 <img src="assets/circuit-pulse-divider.svg" alt="" width="100%" />
+
