@@ -29,81 +29,100 @@
 <text x="700.0" y="70" text-anchor="middle" fill="#7FA6D4" font-size="11.5" font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="3" opacity="0.75">shipped under a clock, judged by people who build for a living</text>
 
     <g>
-      <rect x="48.0" y="102" width="308.0" height="164" rx="13" fill="#08152B" fill-opacity="0.9"
-            stroke="#38BDF8" stroke-width="1.1" stroke-opacity="0.5"/>
-      <rect x="48.0" y="102" width="308.0" height="3.4" rx="1.7" fill="#38BDF8" opacity="0.9"/>
-      <circle cx="202.0" cy="146" r="24" fill="none" stroke="#38BDF8" stroke-width="1.2" opacity="0.55"/>
-      <circle cx="202.0" cy="146" r="18" fill="#38BDF8" fill-opacity="0.13"/>
-      <text x="202.0" y="151" text-anchor="middle" fill="#38BDF8" font-size="13"
-            font-family="Consolas, 'JetBrains Mono', monospace" font-weight="700" letter-spacing="1.4">SIH</text>
-      <text x="202.0" y="196" text-anchor="middle" fill="#EAF4FF" font-size="12.6"
-            font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" letter-spacing="1.1">SMART INDIA HACKATHON</text>
-      <text x="202.0" y="218" text-anchor="middle" fill="#38BDF8" font-size="12"
-            font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="3">GRAND FINALE</text>
-      <text x="202.0" y="240" text-anchor="middle" fill="#7FA6D4" font-size="9.4"
-            font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.85">National-level finals &#8212; Govt. of India</text>
-      <text x="342.0" y="258" text-anchor="end" fill="#7FA6D4" font-size="9"
-            font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.55">2025</text>
+      <rect x="40.0" y="102" width="251.2" height="164" rx="13" fill="#08152B" fill-opacity="0.9"
+            stroke="#BC7B3A" stroke-width="1.1" stroke-opacity="0.5"/>
+      <rect x="40.0" y="102" width="251.2" height="3.4" rx="1.7" fill="#BC7B3A" opacity="0.9"/>
+      <circle cx="165.6" cy="146" r="24" fill="none" stroke="#BC7B3A" stroke-width="1.2" opacity="0.55"/>
+      <circle cx="165.6" cy="146" r="18" fill="#BC7B3A" fill-opacity="0.13"/>
+      <text x="165.6" y="151" text-anchor="middle" fill="#BC7B3A" font-size="13"
+            font-family="Consolas, 'JetBrains Mono', monospace" font-weight="700" letter-spacing="1.4">WIN</text>
+      <text x="165.6" y="196" text-anchor="middle" fill="#EAF4FF" font-size="11"
+            font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" letter-spacing="0.4">IEEE GRSS · SAADRI</text>
+      <text x="165.6" y="218" text-anchor="middle" fill="#BC7B3A" font-size="12"
+            font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="3">WINNER</text>
+      <text x="165.6" y="240" text-anchor="middle" fill="#7FA6D4" font-size="9.4"
+            font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.85">GeoReach &#8212; SAR + OSM flood mapping</text>
+      <text x="277.2" y="258" text-anchor="end" fill="#7FA6D4" font-size="9"
+            font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.55">2026</text>
       <animate attributeName="opacity" values="0.7;1;0.7" dur="5.5s" begin="0.0s" repeatCount="indefinite"/>
     </g>
 
     <g>
-      <rect x="380.0" y="102" width="308.0" height="164" rx="13" fill="#08152B" fill-opacity="0.9"
-            stroke="#A78BFA" stroke-width="1.1" stroke-opacity="0.5"/>
-      <rect x="380.0" y="102" width="308.0" height="3.4" rx="1.7" fill="#A78BFA" opacity="0.9"/>
-      <circle cx="534.0" cy="146" r="24" fill="none" stroke="#A78BFA" stroke-width="1.2" opacity="0.55"/>
-      <circle cx="534.0" cy="146" r="18" fill="#A78BFA" fill-opacity="0.13"/>
-      <text x="534.0" y="151" text-anchor="middle" fill="#A78BFA" font-size="13"
-            font-family="Consolas, 'JetBrains Mono', monospace" font-weight="700" letter-spacing="1.4">2ND</text>
-      <text x="534.0" y="196" text-anchor="middle" fill="#EAF4FF" font-size="12.6"
-            font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" letter-spacing="1.1">MUMBAI HACKS</text>
-      <text x="534.0" y="218" text-anchor="middle" fill="#A78BFA" font-size="12"
-            font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="3">RUNNER-UP</text>
-      <text x="534.0" y="240" text-anchor="middle" fill="#7FA6D4" font-size="9.4"
-            font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.85">Agentic AI for FinTech &#8212; podium finish</text>
-      <text x="674.0" y="258" text-anchor="end" fill="#7FA6D4" font-size="9"
-            font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.55">2024</text>
+      <rect x="307.2" y="102" width="251.2" height="164" rx="13" fill="#08152B" fill-opacity="0.9"
+            stroke="#BC7B3A" stroke-width="1.1" stroke-opacity="0.5"/>
+      <rect x="307.2" y="102" width="251.2" height="3.4" rx="1.7" fill="#BC7B3A" opacity="0.9"/>
+      <circle cx="432.8" cy="146" r="24" fill="none" stroke="#BC7B3A" stroke-width="1.2" opacity="0.55"/>
+      <circle cx="432.8" cy="146" r="18" fill="#BC7B3A" fill-opacity="0.13"/>
+      <text x="432.8" y="151" text-anchor="middle" fill="#BC7B3A" font-size="13"
+            font-family="Consolas, 'JetBrains Mono', monospace" font-weight="700" letter-spacing="1.4">WIN</text>
+      <text x="432.8" y="196" text-anchor="middle" fill="#EAF4FF" font-size="11"
+            font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" letter-spacing="0.4">MUNICHTECH EXPO</text>
+      <text x="432.8" y="218" text-anchor="middle" fill="#BC7B3A" font-size="12"
+            font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="3">WINNER</text>
+      <text x="432.8" y="240" text-anchor="middle" fill="#7FA6D4" font-size="9.4"
+            font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.85">DriftSense &#8212; SEM image localization</text>
+      <text x="544.4" y="258" text-anchor="end" fill="#7FA6D4" font-size="9"
+            font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.55">2026</text>
       <animate attributeName="opacity" values="0.7;1;0.7" dur="5.5s" begin="0.6s" repeatCount="indefinite"/>
     </g>
 
     <g>
-      <rect x="712.0" y="102" width="308.0" height="164" rx="13" fill="#08152B" fill-opacity="0.9"
-            stroke="#22D3EE" stroke-width="1.1" stroke-opacity="0.5"/>
-      <rect x="712.0" y="102" width="308.0" height="3.4" rx="1.7" fill="#22D3EE" opacity="0.9"/>
-      <circle cx="866.0" cy="146" r="24" fill="none" stroke="#22D3EE" stroke-width="1.2" opacity="0.55"/>
-      <circle cx="866.0" cy="146" r="18" fill="#22D3EE" fill-opacity="0.13"/>
-      <text x="866.0" y="151" text-anchor="middle" fill="#22D3EE" font-size="13"
-            font-family="Consolas, 'JetBrains Mono', monospace" font-weight="700" letter-spacing="1.4">ADQ</text>
-      <text x="866.0" y="196" text-anchor="middle" fill="#EAF4FF" font-size="12.6"
-            font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" letter-spacing="1.1">ANALOG DESIGN QUEST</text>
-      <text x="866.0" y="218" text-anchor="middle" fill="#22D3EE" font-size="12"
+      <rect x="574.4" y="102" width="251.2" height="164" rx="13" fill="#08152B" fill-opacity="0.9"
+            stroke="#38BDF8" stroke-width="1.1" stroke-opacity="0.5"/>
+      <rect x="574.4" y="102" width="251.2" height="3.4" rx="1.7" fill="#38BDF8" opacity="0.9"/>
+      <circle cx="700.0" cy="146" r="24" fill="none" stroke="#38BDF8" stroke-width="1.2" opacity="0.55"/>
+      <circle cx="700.0" cy="146" r="18" fill="#38BDF8" fill-opacity="0.13"/>
+      <text x="700.0" y="151" text-anchor="middle" fill="#38BDF8" font-size="13"
+            font-family="Consolas, 'JetBrains Mono', monospace" font-weight="700" letter-spacing="1.4">SIH</text>
+      <text x="700.0" y="196" text-anchor="middle" fill="#EAF4FF" font-size="11"
+            font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" letter-spacing="0.4">SMART INDIA HACKATHON</text>
+      <text x="700.0" y="218" text-anchor="middle" fill="#38BDF8" font-size="12"
             font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="3">FINALIST</text>
-      <text x="866.0" y="240" text-anchor="middle" fill="#7FA6D4" font-size="9.4"
-            font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.85">Analog / mixed-signal design challenge</text>
-      <text x="1006.0" y="258" text-anchor="end" fill="#7FA6D4" font-size="9"
-            font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.55">&#8212;</text>
+      <text x="700.0" y="240" text-anchor="middle" fill="#7FA6D4" font-size="9.4"
+            font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.85">Grand Finale &#8212; national</text>
+      <text x="811.6" y="258" text-anchor="end" fill="#7FA6D4" font-size="9"
+            font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.55">2025</text>
       <animate attributeName="opacity" values="0.7;1;0.7" dur="5.5s" begin="1.2s" repeatCount="indefinite"/>
     </g>
 
     <g>
-      <rect x="1044.0" y="102" width="308.0" height="164" rx="13" fill="#08152B" fill-opacity="0.9"
-            stroke="#C084FC" stroke-width="1.1" stroke-opacity="0.5"/>
-      <rect x="1044.0" y="102" width="308.0" height="3.4" rx="1.7" fill="#C084FC" opacity="0.9"/>
-      <circle cx="1198.0" cy="146" r="24" fill="none" stroke="#C084FC" stroke-width="1.2" opacity="0.55"/>
-      <circle cx="1198.0" cy="146" r="18" fill="#C084FC" fill-opacity="0.13"/>
-      <text x="1198.0" y="151" text-anchor="middle" fill="#C084FC" font-size="13"
-            font-family="Consolas, 'JetBrains Mono', monospace" font-weight="700" letter-spacing="1.4">MDX</text>
-      <text x="1198.0" y="196" text-anchor="middle" fill="#EAF4FF" font-size="12.6"
-            font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" letter-spacing="1.1">MIRABILIS DESIGN HACKS</text>
-      <text x="1198.0" y="218" text-anchor="middle" fill="#C084FC" font-size="12"
+      <rect x="841.6" y="102" width="251.2" height="164" rx="13" fill="#08152B" fill-opacity="0.9"
+            stroke="#22D3EE" stroke-width="1.1" stroke-opacity="0.5"/>
+      <rect x="841.6" y="102" width="251.2" height="3.4" rx="1.7" fill="#22D3EE" opacity="0.9"/>
+      <circle cx="967.2" cy="146" r="24" fill="none" stroke="#22D3EE" stroke-width="1.2" opacity="0.55"/>
+      <circle cx="967.2" cy="146" r="18" fill="#22D3EE" fill-opacity="0.13"/>
+      <text x="967.2" y="151" text-anchor="middle" fill="#22D3EE" font-size="13"
+            font-family="Consolas, 'JetBrains Mono', monospace" font-weight="700" letter-spacing="1.4">ADC</text>
+      <text x="967.2" y="196" text-anchor="middle" fill="#EAF4FF" font-size="11"
+            font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" letter-spacing="0.4">ANALOG CIRCUIT DESIGN</text>
+      <text x="967.2" y="218" text-anchor="middle" fill="#22D3EE" font-size="12"
             font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="3">FINALIST</text>
-      <text x="1198.0" y="240" text-anchor="middle" fill="#7FA6D4" font-size="9.4"
-            font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.85">System-level modelling &amp; architecture</text>
-      <text x="1338.0" y="258" text-anchor="end" fill="#7FA6D4" font-size="9"
-            font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.55">&#8212;</text>
+      <text x="967.2" y="240" text-anchor="middle" fill="#7FA6D4" font-size="9.4"
+            font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.85">IIT Madras &#8212; mixed-signal</text>
+      <text x="1078.8" y="258" text-anchor="end" fill="#7FA6D4" font-size="9"
+            font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.55">2026</text>
       <animate attributeName="opacity" values="0.7;1;0.7" dur="5.5s" begin="1.8s" repeatCount="indefinite"/>
     </g>
-<text x="700.0" y="300" text-anchor="middle" fill="#7FA6D4" font-size="10.6" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.6" letter-spacing="2">4 national-level finals &#183; 1 podium &#183; domains spanning fintech agents, analog design and system modelling</text>
+
+    <g>
+      <rect x="1108.8" y="102" width="251.2" height="164" rx="13" fill="#08152B" fill-opacity="0.9"
+            stroke="#C084FC" stroke-width="1.1" stroke-opacity="0.5"/>
+      <rect x="1108.8" y="102" width="251.2" height="3.4" rx="1.7" fill="#C084FC" opacity="0.9"/>
+      <circle cx="1234.4" cy="146" r="24" fill="none" stroke="#C084FC" stroke-width="1.2" opacity="0.55"/>
+      <circle cx="1234.4" cy="146" r="18" fill="#C084FC" fill-opacity="0.13"/>
+      <text x="1234.4" y="151" text-anchor="middle" fill="#C084FC" font-size="13"
+            font-family="Consolas, 'JetBrains Mono', monospace" font-weight="700" letter-spacing="1.4">MDX</text>
+      <text x="1234.4" y="196" text-anchor="middle" fill="#EAF4FF" font-size="11"
+            font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" letter-spacing="0.4">MIRABILIS DESIGN HACKS</text>
+      <text x="1234.4" y="218" text-anchor="middle" fill="#C084FC" font-size="12"
+            font-family="Consolas, 'JetBrains Mono', monospace" letter-spacing="3">FINALIST</text>
+      <text x="1234.4" y="240" text-anchor="middle" fill="#7FA6D4" font-size="9.4"
+            font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.85">System-level modelling</text>
+      <text x="1346.0" y="258" text-anchor="end" fill="#7FA6D4" font-size="9"
+            font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.55">&#8212;</text>
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="5.5s" begin="2.4s" repeatCount="indefinite"/>
+    </g>
+<text x="700.0" y="300" text-anchor="middle" fill="#7FA6D4" font-size="10.6" font-family="Consolas, 'JetBrains Mono', monospace" opacity="0.6" letter-spacing="2">2 wins &#183; 3 national finals &#183; geospatial AI, semiconductor CV, analog design and system modelling</text>
     <rect x="1" y="1" width="1398" height="328" rx="17.5" fill="none" stroke="#1B3566" stroke-width="1" opacity="0.7"/>
   </g>
 </svg>
