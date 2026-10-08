@@ -27,7 +27,8 @@ CERTS = [
     ("AI Agents Course",                     "Hugging Face",                      "",              "ml"),
     ("SQL AI Developer Associate",           "Microsoft",                         "DP-800",        "cl"),
 
-    ("Certified Cloud Practitioner",         "Amazon Web Services",               "CLF-C02",       "cl"),
+    ("Certified Data Engineer – Associate",  "Amazon Web Services",               "DEA-C01",       "cl"),
+    ("GitHub Foundations",                   "GitHub",                            "GH-900",        "cs"),
     ("Data Analytics Professional",          "Google · Coursera",                 "8-course track","cl"),
 ]
 # ─────────────────────────────────────────────────────────────────────────────
