@@ -392,19 +392,22 @@ def eq_quantum():
 # ─────────────────────────── 5. Achievements ───────────────────────────
 def achievements():
     h = 330
+    CM = "#BC7B3A"  # caramel — reserved for wins
     cards = [
-        ("SMART INDIA HACKATHON", "2025", "GRAND FINALE", "National-level finals &#8212; Govt. of India", CY_A, "SIH"),
-        ("MUMBAI HACKS", "2024", "RUNNER-UP", "Agentic AI for FinTech &#8212; podium finish", VI_A, "2ND"),
-        ("ANALOG DESIGN QUEST", "&#8212;", "FINALIST", "Analog / mixed-signal design challenge", CY_B, "ADQ"),
-        ("MIRABILIS DESIGN HACKS", "&#8212;", "FINALIST", "System-level modelling &amp; architecture", VI_B, "MDX"),
+        ("IEEE GRSS · SAADRI", "2026", "WINNER", "GeoReach &#8212; SAR + OSM flood mapping", CM, "WIN"),
+        ("MUNICHTECH EXPO", "2026", "WINNER", "DriftSense &#8212; SEM image localization", CM, "WIN"),
+        ("SMART INDIA HACKATHON", "2025", "FINALIST", "Grand Finale &#8212; national", CY_A, "SIH"),
+        ("ANALOG CIRCUIT DESIGN", "2026", "FINALIST", "IIT Madras &#8212; mixed-signal", CY_B, "ADC"),
+        ("MIRABILIS DESIGN HACKS", "&#8212;", "FINALIST", "System-level modelling", VI_B, "MDX"),
     ]
     p = []
     p.append(f'<text x="{W/2}" y="46" text-anchor="middle" fill="{INK}" font-size="21" font-family="{SANS}" '
              f'font-weight="700" letter-spacing="7" filter="url(#soft)">COMPETITION RECORD</text>')
     p.append(f'<text x="{W/2}" y="70" text-anchor="middle" fill="{DIM}" font-size="11.5" font-family="{MONO}" '
              f'letter-spacing="3" opacity="0.75">shipped under a clock, judged by people who build for a living</text>')
-    m, gap = 48, 24
-    cw = (W - 2*m - 3*gap) / 4
+    n = len(cards)
+    m, gap = 40, 16
+    cw = (W - 2*m - (n-1)*gap) / n
     for i, (name, yr, rank, desc, col, tag) in enumerate(cards):
         x = m + i * (cw + gap)
         p.append(f'''
@@ -416,8 +419,8 @@ def achievements():
       <circle cx="{x+cw/2:.1f}" cy="146" r="18" fill="{col}" fill-opacity="0.13"/>
       <text x="{x+cw/2:.1f}" y="151" text-anchor="middle" fill="{col}" font-size="13"
             font-family="{MONO}" font-weight="700" letter-spacing="1.4">{tag}</text>
-      <text x="{x+cw/2:.1f}" y="196" text-anchor="middle" fill="#EAF4FF" font-size="12.6"
-            font-family="{SANS}" font-weight="700" letter-spacing="1.1">{name}</text>
+      <text x="{x+cw/2:.1f}" y="196" text-anchor="middle" fill="#EAF4FF" font-size="11"
+            font-family="{SANS}" font-weight="700" letter-spacing="0.4">{name}</text>
       <text x="{x+cw/2:.1f}" y="218" text-anchor="middle" fill="{col}" font-size="12"
             font-family="{MONO}" letter-spacing="3">{rank}</text>
       <text x="{x+cw/2:.1f}" y="240" text-anchor="middle" fill="{DIM}" font-size="9.4"
@@ -427,7 +430,7 @@ def achievements():
       <animate attributeName="opacity" values="0.7;1;0.7" dur="5.5s" begin="{i*0.6:.1f}s" repeatCount="indefinite"/>
     </g>''')
     p.append(f'<text x="{W/2}" y="300" text-anchor="middle" fill="{DIM}" font-size="10.6" font-family="{MONO}" '
-             f'opacity="0.6" letter-spacing="2">4 national-level finals &#183; 1 podium &#183; domains spanning fintech agents, analog design and system modelling</text>')
+             f'opacity="0.6" letter-spacing="2">2 wins &#183; 3 national finals &#183; geospatial AI, semiconductor CV, analog design and system modelling</text>')
     return shell(h, "\n".join(p))
 
 
