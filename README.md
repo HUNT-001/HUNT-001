@@ -27,8 +27,9 @@
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=HUNT-001&style=for-the-badge&color=93C5FD&label=PROFILE+VIEWS" alt="Profile Views" />
   <img src="https://img.shields.io/github/followers/HUNT-001?style=for-the-badge&color=1E293B&labelColor=000000&logo=github&logoColor=white&label=FOLLOWERS" alt="Followers" />
+  <img src="https://img.shields.io/badge/BNN_ACCELERATOR-374.5_GOP%2Fs-22D3EE?style=for-the-badge&labelColor=000000" alt="BNN accelerator" />
+  <img src="https://img.shields.io/badge/IEEE_GRSS_%2B_MUNICHTECH-WINNER-BC7B3A?style=for-the-badge&labelColor=000000" alt="Hackathon wins" />
   <img src="https://img.shields.io/badge/SIH_2025-GRAND_FINALIST-38BDF8?style=for-the-badge&labelColor=000000" alt="SIH 2025" />
-  <img src="https://img.shields.io/badge/MUMBAI_HACKS_2024-RUNNER_UP-A78BFA?style=for-the-badge&labelColor=000000" alt="Mumbai Hacks 2024" />
 </p>
 
 <p align="center"><img src="assets/terminal-boot.svg" alt="Boot Sequence" width="100%" /></p>
@@ -119,46 +120,64 @@ then commits the result. A world model that dreams about the person building it.
 <tr>
 <td width="50%" valign="top">
 
-### WIPRO
-**`AI Engineer Intern · 2 months`**
-
-```yaml
-Role: Applied AI / ML engineering
-Work:
-  - Built and evaluated ML models for real
-    deployment scenarios, not notebooks
-  - Explored RL approaches for sequential
-    decision-making problems
-  - Assessed robustness and production
-    readiness across experiments
-Takeaway: >
-  The gap between a model that scores well
-  and a model you can deploy is mostly
-  everything that isn't the model.
-```
-
-</td>
-<td width="50%" valign="top">
-
 ### ADRIN — NRSC, ISRO
-**`Edge AI Intern · 45 days`**
+**`Edge AI Research Intern · 2026`**
 
 ```yaml
 Role: Edge AI / HW-SW co-design
 Work:
-  - Custom HLS datapath to deploy MobileViTv2
-    on AMD Versal ACAP (VCK-190)
-  - Hardware-aware optimisation of a vision
-    transformer for edge inference
-  - Applied ML for remote sensing pipelines
+  - Deployed an INT8 MobileViTv2-XS vision
+    transformer on AMD Versal VCK190
+    (Vitis AI / HLS / Vivado)
+  - Sub-100 ms onboard Earth-observation
+    inference for satellite systems
+  - Latency / throughput / utilization
+    trade-offs across Versal and Zynq
 Takeaway: >
   A transformer on edge silicon is a memory
   hierarchy problem wearing an attention mask.
 ```
 
 </td>
+<td width="50%" valign="top">
+
+### WIPRO
+**`AI-ML Engineering Intern · 2025`**
+
+```yaml
+Role: Applied AI / ML engineering
+Work:
+  - Built a production spam/ham classifier
+    (TF-IDF → Random Forest + LR meta-model)
+    for high-volume enterprise streams
+  - Re-architected the real-time inference
+    pipeline — batching + vectorized preproc
+Takeaway: >
+  Cut processing latency 13.4% at scale —
+  the model was never the slow part.
+```
+
+</td>
 </tr>
 </table>
+
+<br>
+
+<table align="center"><tr><td valign="top">
+
+### 🔬 Research · BNN Systolic Accelerator
+**`Hardware Research Engineer · 2025 – 2026 · Coimbatore`**
+
+Designed and verified a **patent-pending 64×64 systolic-array binary neural network accelerator** in SystemVerilog for energy-efficient edge inference, with full RTL verification and performance analysis.
+
+<p>
+  <img src="https://img.shields.io/badge/throughput-374.5_GOP%2Fs-38BDF8?style=flat-square&labelColor=0C1D3E" />
+  <img src="https://img.shields.io/badge/efficiency-92.8_GOP%2Fs%2FW-22D3EE?style=flat-square&labelColor=0C1D3E" />
+  <img src="https://img.shields.io/badge/speedup-10.67%C3%97-A78BFA?style=flat-square&labelColor=0C1D3E" />
+  <img src="https://img.shields.io/badge/status-patent--pending-BC7B3A?style=flat-square&labelColor=0C1D3E" />
+</p>
+
+</td></tr></table>
 
 <!-- ═══════════════════════════════ PROJECTS ═══════════════════════════════ -->
 <img src="assets/banner-projects.svg" alt="Projects" width="100%" />
@@ -180,6 +199,16 @@ Takeaway: >
   </a>
 </p>
 
+<p align="center"><b>More recent builds</b></p>
+
+| Build | What it is | Result |
+|:--|:--|:--|
+| **Agentic RISC-V Verification** (AVA · VOE) | 12-agent pipeline: RTL → testbench → golden-ISS diff → coverage → new tests, with a frozen kernel where a claim needs a re-checkable witness | the green result that means nothing, caught |
+| **Anvil** | Hardware-aware LLM quantization agent (Arm AI Challenge) — surrogate-guided search over 2.7×10⁸ per-layer configs | greedy's 60-eval result in ~9 · **1.8× faster TTFT** |
+| **GridSetu** | City-grid simulator (day-ahead market, AC power flow) turning a community battery into a forecast-backed reliability reserve | **−80%** evening unserved energy in simulation |
+| **DriftSense** | SEM-image patch localization via FFT + line-edge-roughness fingerprinting (no neural nets) | **3.3×** better than classical NCC · MunichTech winner |
+| **GeoReach** | Sentinel-1 SAR + OpenStreetMap flood-accessibility mapping for Assam | IEEE GRSS hackathon winner |
+
 <!-- ═══════════════════════════════ ACHIEVEMENTS ═══════════════════════════════ -->
 <img src="assets/banner-achievements.svg" alt="Achievements" width="100%" />
 
@@ -187,16 +216,15 @@ Takeaway: >
 
 | Competition | Result | Domain |
 |:--|:--|:--|
-| **SAADRI - SPARK 3.0** | 🥇 **Winner** | Data modelling , GIS , Geospatial Data , Sentinel 1 |
-|**Munich Tech EXPO 2026**|🥇 **Winner** | OpenCV , Physics based localization , Semiconductor manufacturing|
-| **Mumbai Hacks 2024** | 🥈 **Runner-Up** | Agentic AI for FinTech , Token Optimization , RAG |
+| **IEEE GRSS · SAADRI** | 🥇 **Winner** | GeoReach — Sentinel-1 SAR · OpenStreetMap · flood mapping |
+| **MunichTech EXPO 2026** | 🥇 **Winner** | DriftSense — OpenCV · SEM imaging · physics-based localization |
 | **Smart India Hackathon 2025** | 🏅 **Grand Finale — national finalist** | Govt. of India, national-scale problem statement |
-| **Analog Design Quest** | 🏅 Finalist | Analog / mixed-signal circuit design |
+| **Analog Circuit Design Challenge** | 🏅 Finalist | IIT Madras — analog / mixed-signal design |
 | **Mirabilis Design Hacks** | 🏅 Finalist | System-level modelling &amp; architecture |
 
 <p align="center">
-<i>Four national-level finals across three unrelated domains — agentic AI, analog design, and system architecture.<br>
-The through-line isn't the subject. It's being able to go from a cold problem statement to a defensible build in 36 hours.</i>
+<i>Two wins and three national finals across geospatial AI, semiconductor CV, analog design and system architecture.<br>
+The through-line isn't the subject. It's going from a cold problem statement to a defensible build in 36 hours.</i>
 </p>
 
 <img src="assets/divider-waveform.svg" alt="" width="100%" />
@@ -327,7 +355,7 @@ An agent that calls tools is doing sequential decision-making where actions have
 
 where $`c(a)`$ is latency, tokens, API spend, or blast radius. Drop that term and you get an agent that solves the task by brute-force calling everything it can reach. Add tree search with a learned value on top and you are doing planning, not prompting.
 
-**Where I've shipped this:** an agentic AI system for fintech at Mumbai Hacks 2024 — finished **runner-up**. Constrained action space, real cost model, hard correctness requirements. Financial agents are a good forcing function: they make you take $`c(a)`$ seriously.
+**Where I've shipped this:** the **agentic RISC-V verification platform** — twelve agents, most running with no EDA toolchain, where every tool call has a real cost. And **Anvil**, a quantization agent whose surrogate-guided planner matched a 60-evaluation greedy search in ~9 on-device evals. Both make you take $`c(a)`$ seriously.
 
 </details>
 
@@ -503,7 +531,7 @@ Yield falls off *superlinearly* with die area. That one fact is why chiplets exi
 |:--|:--|:--|
 | **Hardware-aware latent dynamics** | world-model latents shaped by a hardware cost term learn representations that are cheaper to *run*, not just cheaper to store | active |
 | **GNNs over netlists** | structural graph learning can replace heuristic passes in verification triage and design-space search | active |
-| **Cost-aware agentic planning** | making $`c(a)`$ a first-class term in the agent objective changes behaviour qualitatively, not just quantitatively | active, from Mumbai Hacks work |
+| **Cost-aware agentic planning** | making $`c(a)`$ a first-class term in the agent objective changes behaviour qualitatively, not just quantitatively | active, from the verification-agent work |
 | **Binary/quantized accelerator co-design** | quantization schemes chosen *jointly* with the datapath beat schemes chosen for the model alone | active, tied to ADRIN work |
 | **Verification-informed architecture** | designs that are cheap to verify are a distinguishable class, and the property is predictable from the RTL | early |
 
@@ -542,7 +570,8 @@ Yield falls off *superlinearly* with die area. That one fact is why chiplets exi
 | [Agentic AI Foundations Associate](https://education.oracle.com/agentic-ai-foundations-associate/pexam_1Z0-1157-26) `1Z0-1157-26` | Oracle | agent reasoning patterns, tool orchestration, MCP |
 | [AI Agents Course](https://huggingface.co/learn/agents-course) | Hugging Face | building and evaluating agents against real benchmarks |
 | SQL AI Developer Associate `DP-800` | Microsoft | vector search, embeddings and RAG pushed down into the database engine |
-| Certified Cloud Practitioner `CLF-C02` | Amazon Web Services | the infrastructure vocabulary everything else is billed in |
+| Certified Data Engineer – Associate `DEA-C01` | Amazon Web Services | pipelines, storage and orchestration — the layer the models actually run on |
+| GitHub Foundations `GH-900` | GitHub | the collaboration plumbing this whole profile is built on |
 | Google Data Analytics Professional | Google | the eight-course analytics track |
 
 <p align="center">
