@@ -231,6 +231,43 @@ a { color: inherit; text-decoration: none; }
 .post-body pre code { background: none; border: 0; padding: 0; color: #cfe0f7; }
 .post-body blockquote { border-left: 3px solid #2d5a86; margin: 18px 0; padding: 2px 0 2px 18px; color: #9fb6d6; }
 
+/* ---------- lab ---------- */
+.lab-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 40px; }
+@media (max-width: 860px) { .lab-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .lab-grid { grid-template-columns: 1fr; } }
+.labcard { position: relative; border: 1px solid #182542; border-radius: 16px; padding: 24px; background: linear-gradient(180deg, #0a1322, #070d18); transition: transform .25s, border-color .25s; display: block; overflow: hidden; }
+.labcard:hover { transform: translateY(-4px); border-color: #2d5a86; }
+.labcard.live { border-color: #3a2a63; }
+.labcard .badge { font-family: var(--font-mono); font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; padding: 3px 9px; border-radius: 20px; }
+.labcard .badge.on { color: #c084fc; border: 1px solid #3a2a63; }
+.labcard .badge.off { color: #5f779c; border: 1px solid #243458; }
+.labcard h3 { font-size: 18px; font-weight: 700; margin: 14px 0 6px; letter-spacing: -.2px; }
+.labcard p { font-size: 13px; color: #92a8c9; line-height: 1.55; }
+
+/* dream log demo */
+.dream { border: 1px solid #1b3566; border-radius: 18px; background: linear-gradient(180deg, #071226, #0c1d3e); overflow: hidden; margin-top: 36px; }
+.dream-top { display: flex; align-items: center; gap: 12px; padding: 14px 20px; border-bottom: 1px solid #16203a; font-family: var(--font-mono); font-size: 11px; letter-spacing: 2px; color: #7fa6d4; }
+.dream-top .src { margin-left: auto; }
+.dream-body { padding: 28px 26px; min-height: 180px; }
+.dream-line { font-family: var(--font-mono); margin: 0 0 14px; line-height: 1.5; }
+.dream-line.l0, .dream-line.l1 { font-size: clamp(14px, 2vw, 17px); color: #eaf2ff; }
+.dream-line.l2 { font-size: 14px; color: #8da2c0; }
+.caret { display: inline-block; width: 8px; margin-left: 2px; background: currentColor; animation: blink 1s steps(2) infinite; }
+@keyframes blink { 0%, 50% { opacity: 1; } 51%, 100% { opacity: 0; } }
+.dream-chips { display: flex; flex-wrap: wrap; gap: 8px; padding: 0 26px 22px; }
+.dream-chips .cap { width: 100%; font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 2.4px; color: #51607d; margin-bottom: 2px; }
+.dream-chips .chip { font-family: var(--font-mono); font-size: 11px; padding: 5px 11px; border-radius: 20px; border: 1px solid; }
+.dream-ctrl { display: flex; align-items: center; gap: 16px; padding: 16px 26px; border-top: 1px solid #16203a; flex-wrap: wrap; }
+.dream-ctrl button { background: #0b1322; border: 1px solid #243458; color: #cfe0f7; border-radius: 8px; padding: 7px 14px; font-size: 13px; cursor: pointer; transition: border-color .2s, color .2s; }
+.dream-ctrl button:hover { border-color: #2d5a86; }
+.dream-ctrl button.play { background: var(--caramel); color: #140a02; border-color: var(--caramel); font-weight: 700; }
+.dream-scrub { flex: 1; min-width: 180px; display: flex; gap: 4px; align-items: center; }
+.dream-scrub .node { flex: 1; height: 26px; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+.dream-scrub .node i { width: 8px; height: 8px; border-radius: 50%; background: #243458; transition: all .2s; }
+.dream-scrub .node.active i { width: 12px; height: 12px; box-shadow: 0 0 10px currentColor; }
+.dream-scrub .node.win i { background: #38bdf8; } .dream-scrub .node.q i { background: #a78bfa; }
+.dream-note { font-family: var(--font-mono); font-size: 11px; color: #51607d; margin-top: 14px; }
+
 /* ---------- generic page shell (stub pages) ---------- */
 .page { min-height: 70vh; padding-top: 150px; }
 .page .lead { font-size: clamp(16px, 2.2vw, 19px); color: #aabbd8; max-width: 640px; line-height: 1.6; margin-top: 18px; }
