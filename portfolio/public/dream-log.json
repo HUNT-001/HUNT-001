@@ -1,0 +1,301 @@
+[
+  {
+    "n": 1,
+    "date": "2026-09-30",
+    "source": "deterministic",
+    "lines": [
+      "14 pushes observed across 3 repositories; dominant thread: silicon.",
+      "Rolling forward: the datapath closes timing in simulation; the margin is thinner than reported.",
+      "Most observations arrived after midnight. The model notes this without comment."
+    ],
+    "state": {
+      "date": "2026-09-30",
+      "pushes": 14,
+      "repos": [
+        "ai-chip-design-platform",
+        "cocotb-v2-helper",
+        "world-models"
+      ],
+      "threads": [
+        "silicon",
+        "verification",
+        "world-model"
+      ],
+      "commits": [],
+      "nocturnal": 5,
+      "median_hour": 1.5,
+      "quiet": false
+    }
+  },
+  {
+    "n": 2,
+    "date": "2026-10-01",
+    "source": "inference",
+    "lines": [
+      "Six pushes, all inside the quantum branch; the ansatz depth doubled since Tuesday.",
+      "Rolling forward: the optimiser descends two orders of magnitude, then the landscape goes flat.",
+      "Barren plateaus are not a bug in the model. They are the territory."
+    ],
+    "state": {
+      "date": "2026-10-01",
+      "pushes": 6,
+      "repos": [
+        "world-models"
+      ],
+      "threads": [
+        "quantum",
+        "world-model"
+      ],
+      "commits": [],
+      "nocturnal": 0,
+      "median_hour": 15.0,
+      "quiet": false
+    }
+  },
+  {
+    "n": 3,
+    "date": "2026-10-02",
+    "source": "deterministic",
+    "lines": [
+      "Quiet. Prediction error undefined when nothing is observed.",
+      "Rolling forward: the dynamics hold for about three steps, then imagination outruns evidence.",
+      "Reconstruction error remains the only honest signal."
+    ],
+    "state": {
+      "date": "2026-10-02",
+      "pushes": 0,
+      "repos": [],
+      "threads": [],
+      "commits": [],
+      "nocturnal": 0,
+      "median_hour": null,
+      "quiet": true
+    }
+  },
+  {
+    "n": 4,
+    "date": "2026-10-03",
+    "source": "deterministic",
+    "lines": [
+      "9 pushes observed across 1 repositories; dominant thread: verification.",
+      "Rolling forward: coverage climbs, then flattens on the corner nobody wrote a test for.",
+      "Most observations arrived after midnight. The model notes this without comment."
+    ],
+    "state": {
+      "date": "2026-10-03",
+      "pushes": 9,
+      "repos": [
+        "ai-chip-design-platform"
+      ],
+      "threads": [
+        "verification",
+        "agentic"
+      ],
+      "commits": [],
+      "nocturnal": 3,
+      "median_hour": 2.0,
+      "quiet": false
+    }
+  },
+  {
+    "n": 5,
+    "date": "2026-10-04",
+    "source": "inference",
+    "lines": [
+      "Twenty-two pushes across three unrelated repos; attention is spread thin tonight.",
+      "Rolling forward: breadth buys options and costs depth \u2014 the model predicts a refactor by Thursday.",
+      "Context-switching has a latency the commit log never records."
+    ],
+    "state": {
+      "date": "2026-10-04",
+      "pushes": 22,
+      "repos": [
+        "gridsetu",
+        "anvil",
+        "georeach"
+      ],
+      "threads": [
+        "edge",
+        "rl",
+        "agentic"
+      ],
+      "commits": [],
+      "nocturnal": 1,
+      "median_hour": 14.0,
+      "quiet": false
+    }
+  },
+  {
+    "n": 6,
+    "date": "2026-10-05",
+    "source": "deterministic",
+    "lines": [
+      "4 pushes observed across 1 repositories; dominant thread: edge.",
+      "Rolling forward: the model fits in memory; the bandwidth is what it actually costs.",
+      "Every latent is a compression of consequence."
+    ],
+    "state": {
+      "date": "2026-10-05",
+      "pushes": 4,
+      "repos": [
+        "anvil"
+      ],
+      "threads": [
+        "edge",
+        "rl"
+      ],
+      "commits": [],
+      "nocturnal": 0,
+      "median_hour": 11.0,
+      "quiet": false
+    }
+  },
+  {
+    "n": 7,
+    "date": "2026-10-06",
+    "source": "deterministic",
+    "lines": [
+      "11 pushes observed across 2 repositories; dominant thread: verification.",
+      "Rolling forward: coverage climbs, then flattens on the corner nobody wrote a test for.",
+      "Most observations arrived after midnight. The model notes this without comment."
+    ],
+    "state": {
+      "date": "2026-10-06",
+      "pushes": 11,
+      "repos": [
+        "ai-chip-design-platform",
+        "cocotb-v2-helper"
+      ],
+      "threads": [
+        "verification",
+        "silicon"
+      ],
+      "commits": [],
+      "nocturnal": 4,
+      "median_hour": 0.5,
+      "quiet": false
+    }
+  },
+  {
+    "n": 8,
+    "date": "2026-10-07",
+    "source": "deterministic",
+    "lines": [
+      "2 pushes observed across 1 repositories; dominant thread: world-model.",
+      "Rolling forward: the dynamics hold for about three steps, then imagination outruns evidence.",
+      "The bug is already written; it has not been observed yet."
+    ],
+    "state": {
+      "date": "2026-10-07",
+      "pushes": 2,
+      "repos": [
+        "world-models"
+      ],
+      "threads": [
+        "world-model"
+      ],
+      "commits": [],
+      "nocturnal": 0,
+      "median_hour": 16.0,
+      "quiet": false
+    }
+  },
+  {
+    "n": 9,
+    "date": "2026-10-08",
+    "source": "deterministic",
+    "lines": [
+      "Quiet. Prediction error undefined when nothing is observed.",
+      "Rolling forward: the dynamics hold for about three steps, then imagination outruns evidence.",
+      "Reconstruction error remains the only honest signal."
+    ],
+    "state": {
+      "date": "2026-10-08",
+      "pushes": 0,
+      "repos": [],
+      "threads": [],
+      "commits": [],
+      "nocturnal": 0,
+      "median_hour": null,
+      "quiet": true
+    }
+  },
+  {
+    "n": 10,
+    "date": "2026-10-09",
+    "source": "inference",
+    "lines": [
+      "Seventeen pushes, most after midnight; the silicon and systems threads are converging.",
+      "Rolling forward: the datapath closes timing in simulation; the margin is thinner than reported.",
+      "The model has learned that 'done' is a checkpoint, not a state."
+    ],
+    "state": {
+      "date": "2026-10-09",
+      "pushes": 17,
+      "repos": [
+        "gridsetu",
+        "ai-chip-design-platform"
+      ],
+      "threads": [
+        "silicon",
+        "edge",
+        "agentic"
+      ],
+      "commits": [],
+      "nocturnal": 6,
+      "median_hour": 2.5,
+      "quiet": false
+    }
+  },
+  {
+    "n": 11,
+    "date": "2026-10-10",
+    "source": "deterministic",
+    "lines": [
+      "7 pushes observed across 1 repositories; dominant thread: verification.",
+      "Rolling forward: coverage climbs, then flattens on the corner nobody wrote a test for.",
+      "Sleep is a scheduled checkpoint, nothing more."
+    ],
+    "state": {
+      "date": "2026-10-10",
+      "pushes": 7,
+      "repos": [
+        "cocotb-v2-helper"
+      ],
+      "threads": [
+        "verification"
+      ],
+      "commits": [],
+      "nocturnal": 2,
+      "median_hour": 22.5,
+      "quiet": false
+    }
+  },
+  {
+    "n": 12,
+    "date": "2026-10-11",
+    "source": "deterministic",
+    "lines": [
+      "5 pushes observed across 2 repositories; dominant thread: world-model.",
+      "Rolling forward: the dynamics hold for about three steps, then imagination outruns evidence.",
+      "Confidence is cheap. Calibration is not."
+    ],
+    "state": {
+      "date": "2026-10-11",
+      "pushes": 5,
+      "repos": [
+        "world-models",
+        "anvil"
+      ],
+      "threads": [
+        "world-model",
+        "rl",
+        "quantum"
+      ],
+      "commits": [],
+      "nocturnal": 1,
+      "median_hour": 13.0,
+      "quiet": false
+    }
+  }
+]
