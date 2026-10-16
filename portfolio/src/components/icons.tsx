@@ -49,3 +49,13 @@ export function Trophy() {
     </svg>
   );
 }
+
+export function Medal() {
+  return (
+    <svg className="tphy" viewBox="0 0 24 24">
+      <path d="M8 3l3 6M16 3l-3 6" />
+      <circle cx="12" cy="15" r="6" />
+      <path d="M12 12l.9 1.9 2 .2-1.5 1.4.4 2L12 16.4 10.2 17.5l.4-2-1.5-1.4 2-.2z" />
+    </svg>
+  );
+}
