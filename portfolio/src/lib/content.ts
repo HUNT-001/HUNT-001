@@ -69,7 +69,7 @@ export const EXPERIENCE: Experience[] = [
     metric: "−13.4% processing latency at scale" },
 ];
 
-export interface Win { kind: "win" | "fin" | "fv"; year: string; result: string; title: string; org: string; tech: string; desc?: string; href?: string; }
+export interface Win { kind: "win" | "run" | "fin" | "fv"; year: string; result: string; title: string; org: string; tech: string; desc?: string; href?: string; }
 export const WINS: Win[] = [
   { kind: "win", year: "2026", result: "Winner", title: "GeoReach", org: "IEEE Hackathon — SAADRI · IEEE · GRSS",
     tech: "Sentinel-1 SAR · OpenStreetMap · Flood mapping", href: "/work/georeach",
@@ -77,6 +77,9 @@ export const WINS: Win[] = [
   { kind: "win", year: "2026", result: "Winner · Industry & Enterprise", title: "DriftSense", org: "MunichTech EXPO 2026",
     tech: "Computer Vision · SEM imaging · FFT + LER fingerprinting", href: "/work/driftsense",
     desc: "Localized a reference patch in 1000×1000 SEM images where classical matching fails — 3.3× better than NCC on the hard tier. Selected for exhibition." },
+  { kind: "run", year: "2026", result: "Runner-up · 2nd", title: "AI Infra Summit Hackathon", org: "lablab.ai · NativelyAI",
+    tech: "OpenVINO · Intel Physical AI Studio · NVIDIA",
+    desc: "Delivered the second-best solution of the AI Infra Summit Hackathon." },
 ];
 export const FINALS: Win[] = [
   { kind: "fin", year: "2025", result: "◆ National Finalist", title: "Smart India Hackathon", org: "MoE · AICTE · MIC · Team Paradoxx6", tech: "Grand Finale · National" },
@@ -173,3 +176,38 @@ export const PROJECTS: Project[] = [
 ];
 
 export const FEATURED = PROJECTS.filter((p) => p.featured);
+
+export const PROFILE =
+  "Dual-degree student (B.Tech EEE, Amrita; B.S. Data Science, IIT Madras) focused on hardware-aware edge AI and RTL design/verification. Deployed INT8 vision transformers on AMD Versal (sub-100 ms) at ADRIN / ISRO and designed a 64×64 systolic-array BNN accelerator (374.5 GOP/s, 92.8 GOP/s/W). National finalist, SIH 2025; winner at IEEE GRSS and MunichTech EXPO 2026 hackathons.";
+
+export interface Edu { degree: string; field: string; school: string; dates: string; }
+export const EDUCATION: Edu[] = [
+  { degree: "B.Tech, Electrical & Electronics Engineering", field: "EEE", school: "Amrita Vishwa Vidyapeetham", dates: "2024 – 2028" },
+  { degree: "B.S., Data Science & Applications", field: "Data Science", school: "IIT Madras (distance)", dates: "2024 – 2028" },
+];
+
+export interface SkillGroup { label: string; items: string[]; }
+export const SKILLS: SkillGroup[] = [
+  { label: "FPGA & EDA", items: ["Vivado", "Vitis AI", "Vitis HLS", "AMD Versal VCK190", "Kria SOM", "Zynq UltraScale+", "MATLAB HDL Coder", "LTSpice"] },
+  { label: "Hardware Design & Verification", items: ["SystemVerilog", "RTL design", "UVM", "cocotb", "Verilator", "coverage-driven verification", "HLS"] },
+  { label: "AI & ML", items: ["Deep learning", "Computer vision", "Vision transformers", "INT8 / GGUF quantization", "llama.cpp", "KleidiAI", "Agentic & multi-agent systems", "RAG", "Time-series forecasting"] },
+  { label: "LLM Tooling", items: ["LangChain", "LangGraph", "CrewAI", "MCP", "A2A"] },
+  { label: "Data & Visualization", items: ["Pandas", "NumPy", "Scikit-Learn", "Tableau", "Matplotlib", "R"] },
+  { label: "Languages & Cloud", items: ["Python", "C", "C++", "SQL", "FastAPI", "REST", "AWS", "Docker", "Linux", "Git"] },
+];
+
+export interface Cert { name: string; issuer: string; code?: string; }
+export const CERTS: Cert[] = [
+  { name: "SQL AI Developer Associate", issuer: "Microsoft", code: "DP-800" },
+  { name: "Agentic AI Foundations Associate", issuer: "Oracle", code: "1Z0-1157-26" },
+  { name: "Certified Data Engineer – Associate", issuer: "Amazon Web Services", code: "DEA-C01" },
+  { name: "GitHub Foundations", issuer: "GitHub", code: "GH-900" },
+  { name: "Data Analytics Professional", issuer: "Google" },
+  { name: "AI Agents Course", issuer: "Hugging Face" },
+  { name: "Hardware Security", issuer: "University of Maryland" },
+  { name: "Algorithms Specialization", issuer: "Stanford University" },
+  { name: "VLSI Design", issuer: "L&T EduTech" },
+];
+
+// Google Drive direct-download form of SITE.resume
+export const RESUME_PDF = "https://drive.google.com/uc?export=download&id=1ZHIIiWZsbryzjKmy67pWGzHVqAEmm1Qt";
