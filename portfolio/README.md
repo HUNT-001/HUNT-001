@@ -21,7 +21,18 @@ npm start
 ## Deploy (Vercel)
 
 Point Vercel at this repo with **Root Directory = `portfolio`**. Framework preset: Next.js.
-No env vars needed yet. It'll serve at your domain (e.g. tanushpavan.vercel.app).
+It serves with no env vars at your domain (e.g. tanushpavan.vercel.app).
+
+**Optional — live AI in the Q&A widget.** The `/contact` widget answers instantly from a curated
+knowledge base (`src/lib/qa.ts`). To upgrade it to live, AI-generated answers grounded on the same
+facts, add a Vercel env var:
+
+```
+ANTHROPIC_API_KEY = sk-ant-...        # required to enable AI mode
+ANTHROPIC_MODEL   = claude-sonnet-4-5 # optional override
+```
+
+Without the key, the widget quietly stays in "instant" (knowledge-base) mode — nothing breaks.
 
 ## What's built
 
