@@ -2,17 +2,41 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import SmoothScroll from "@/components/SmoothScroll";
+import ScrollProgress from "@/components/ScrollProgress";
+
+const DESC =
+  "Dual-degree engineer building at the seam of model and machine — world models, RL, agentic AI, RTL, verification, edge AI and the silicon that runs them.";
 
 export const metadata: Metadata = {
-  title: "Tanush Pavan V — Intelligent systems, end to end",
-  description:
-    "Dual-degree engineer building at the seam of model and machine — world models, RL, agentic AI, RTL, verification, edge AI and the silicon that runs them.",
+  title: {
+    default: "Tanush Pavan V — Intelligent systems, end to end",
+    template: "%s",
+  },
+  description: DESC,
   metadataBase: new URL("https://tanushpavan.vercel.app"),
+  applicationName: "Tanush Pavan V",
+  authors: [{ name: "Tanush Pavan V", url: "https://github.com/HUNT-001" }],
+  keywords: [
+    "Tanush Pavan", "RTL verification", "agentic AI", "edge AI", "RISC-V",
+    "SystemVerilog", "BNN accelerator", "world models", "EDA", "FPGA", "Versal",
+  ],
   openGraph: {
     title: "Tanush Pavan V — Intelligent systems, end to end",
     description: "World models to the silicon that runs them.",
+    url: "https://tanushpavan.vercel.app",
+    siteName: "Tanush Pavan V",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Tanush Pavan V — Intelligent systems, end to end",
+    description: "World models to the silicon that runs them.",
+  },
+  robots: { index: true, follow: true },
+};
+
+export const viewport = {
+  themeColor: "#05070d",
 };
 
 // Fonts are loaded via <link> (not next/font) so the build never depends on a
@@ -30,6 +54,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <SmoothScroll />
+        <ScrollProgress />
         <Nav />
         {children}
       </body>
