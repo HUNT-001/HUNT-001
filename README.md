@@ -218,12 +218,13 @@ Designed and verified a **patent-pending 64×64 systolic-array binary neural net
 |:--|:--|:--|
 | **IEEE GRSS · SAADRI** | 🥇 **Winner** | GeoReach — Sentinel-1 SAR · OpenStreetMap · flood mapping |
 | **MunichTech EXPO 2026** | 🥇 **Winner** | DriftSense — OpenCV · SEM imaging · physics-based localization |
+| **AI Infra Summit Hackathon** | 🥈 **Runner-up (2nd)** | OpenVINO · Intel Physical AI Studio · NVIDIA · lablab.ai |
 | **Smart India Hackathon 2025** | 🏅 **Grand Finale — national finalist** | Govt. of India, national-scale problem statement |
 | **Analog Circuit Design Challenge** | 🏅 Finalist | IIT Madras — analog / mixed-signal design |
 | **Mirabilis Design Hacks** | 🏅 Finalist | System-level modelling &amp; architecture |
 
 <p align="center">
-<i>Two wins and three national finals across geospatial AI, semiconductor CV, analog design and system architecture.<br>
+<i>Two wins, a runner-up and three national finals across geospatial AI, semiconductor CV, AI infrastructure, analog design and system architecture.<br>
 The through-line isn't the subject. It's going from a cold problem statement to a defensible build in 36 hours.</i>
 </p>
 
