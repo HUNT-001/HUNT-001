@@ -392,10 +392,12 @@ def eq_quantum():
 # ─────────────────────────── 5. Achievements ───────────────────────────
 def achievements():
     h = 330
-    CM = "#BC7B3A"  # caramel — reserved for wins
+    CM = "#BC7B3A"  # caramel — wins
+    SI = "#C3CAD6"  # silver — runner-up
     cards = [
         ("IEEE GRSS · SAADRI", "2026", "WINNER", "GeoReach &#8212; SAR + OSM flood mapping", CM, "WIN"),
         ("MUNICHTECH EXPO", "2026", "WINNER", "DriftSense &#8212; SEM image localization", CM, "WIN"),
+        ("AI INFRA SUMMIT", "2026", "RUNNER-UP", "lablab.ai &#8212; 2nd best solution", SI, "2ND"),
         ("SMART INDIA HACKATHON", "2025", "FINALIST", "Grand Finale &#8212; national", CY_A, "SIH"),
         ("ANALOG CIRCUIT DESIGN", "2026", "FINALIST", "IIT Madras &#8212; mixed-signal", CY_B, "ADC"),
         ("MIRABILIS DESIGN HACKS", "&#8212;", "FINALIST", "System-level modelling", VI_B, "MDX"),
@@ -430,7 +432,7 @@ def achievements():
       <animate attributeName="opacity" values="0.7;1;0.7" dur="5.5s" begin="{i*0.6:.1f}s" repeatCount="indefinite"/>
     </g>''')
     p.append(f'<text x="{W/2}" y="300" text-anchor="middle" fill="{DIM}" font-size="10.6" font-family="{MONO}" '
-             f'opacity="0.6" letter-spacing="2">2 wins &#183; 3 national finals &#183; geospatial AI, semiconductor CV, analog design and system modelling</text>')
+             f'opacity="0.6" letter-spacing="2">2 wins &#183; 1 runner-up &#183; 3 national finals &#183; geospatial AI, semiconductor CV, AI infra, analog design, system modelling</text>')
     return shell(h, "\n".join(p))
 
 
