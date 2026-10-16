@@ -1,0 +1,15 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="#0b1222"/>
+  <rect x="1" y="1" width="62" height="62" rx="14" fill="none" stroke="#1b3566" stroke-width="1.5"/>
+  <!-- T monogram -->
+  <rect x="16" y="17" width="32" height="7" rx="2" fill="url(#g)"/>
+  <rect x="28.5" y="17" width="7" height="27" rx="2" fill="url(#g)"/>
+  <!-- seam accent -->
+  <circle cx="44" cy="44" r="4" fill="#bc7b3a"/>
+</svg>
