@@ -50,11 +50,6 @@ export default function Page() {
           </div>
         </Reveal>
 
-        <Reveal>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img className="about-candid" src="/photo-candid.jpg" alt="Tanush Pavan" />
-        </Reveal>
-
         <section style={{ marginTop: 44 }}>
           <Reveal>
             <div className="kick" style={{ marginBottom: 16 }}>Education</div>
