@@ -36,7 +36,7 @@ export function getAllPosts(): Post[] {
   if (!fs.existsSync(DIR)) return [];
   return fs
     .readdirSync(DIR)
-    .filter((f) => f.endsWith(".md"))
+    .filter((f) => f.endsWith(".md") && !f.startsWith("_") && !f.startsWith("."))
     .map((f) => read(f.replace(/\.md$/, "")))
     .sort((a, b) => (a.date < b.date ? 1 : -1));
 }
