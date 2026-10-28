@@ -853,5 +853,43 @@
       "median_hour": 9.5,
       "quiet": false
     }
+  },
+  {
+    "n": 22,
+    "date": "2026-10-28",
+    "source": "deterministic",
+    "lines": [
+      "23 pushes observed across 2 repositories; dominant thread: world-model.",
+      "Rolling forward: the dynamics hold for about three steps, then imagination outruns evidence.",
+      "Most observations arrived after midnight. The model notes this without comment."
+    ],
+    "state": {
+      "date": "2026-10-28",
+      "pushes": 23,
+      "repos": [
+        "DriftSense",
+        "culture-engine"
+      ],
+      "threads": [
+        "world-model"
+      ],
+      "commits": [
+        "generated",
+        "chore: update snake animation",
+        "dream 0021",
+        "generated",
+        "chore: update snake animation",
+        "dream 0020",
+        "generated",
+        "chore: update snake animation",
+        "dream 0019",
+        "generated",
+        "chore: update snake animation",
+        "dream 0018"
+      ],
+      "nocturnal": 9,
+      "median_hour": 11.5,
+      "quiet": false
+    }
   }
 ]
