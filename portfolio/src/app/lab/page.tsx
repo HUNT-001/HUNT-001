@@ -6,9 +6,9 @@ export const metadata = { title: "Lab — Tanush Pavan V" };
 const DEMOS = [
   { href: "/lab/dream-log", live: true, title: "The Dream Log", tag: "live",
     desc: "A world model that dreams. Scrub through nightly latent rollouts composed from real repo activity." },
-  { href: "/lab", live: false, title: "Quantization Explorer", tag: "soon",
+  { href: "/lab/quantization", live: true, title: "Quantization Explorer", tag: "live",
     desc: "Slide bit-width, model size and bandwidth and watch arithmetic intensity hit the roofline. Feel why models are memory-bound, not compute-bound." },
-  { href: "/lab", live: false, title: "RL Rollout Visualiser", tag: "soon",
+  { href: "/lab/rl-rollout", live: true, title: "RL Rollout Visualiser", tag: "live",
     desc: "Plan inside a learned latent — watch imagined trajectories diverge from reality step by step." },
 ];
 
