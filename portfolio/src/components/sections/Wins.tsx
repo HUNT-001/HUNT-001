@@ -21,7 +21,7 @@ function Card({ w }: { w: Win }) {
 
 export default function Wins() {
   return (
-    <section className="section featured" style={{ background: "rgba(6,10,20,.5)" }}>
+    <section className="section featured" style={{ background: "var(--band)" }}>
       <div className="dotgrid" />
       <div className="container">
         <Reveal>
@@ -34,7 +34,7 @@ export default function Wins() {
           <div className="bigstat">
             <div><div className="n am">3</div><div className="l">podium finishes</div></div>
             <div><div className="n cy">3</div><div className="l">national finals</div></div>
-            <div><div className="n" style={{ color: "#eaf2ff" }}>6+</div><div className="l">domains across teams</div></div>
+            <div><div className="n" style={{ color: "var(--ink)" }}>6+</div><div className="l">domains across teams</div></div>
           </div>
           <div className="axisbar">
             <span className="y">2025</span>

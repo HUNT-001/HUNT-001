@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { NAV, SITE } from "@/lib/content";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -26,7 +27,6 @@ export default function Nav() {
             <small>Silicon · AI · the seam</small>
           </span>
         </Link>
-        <button className="nav-toggle" aria-label="Menu" onClick={() => setOpen((v) => !v)}>≡</button>
         <div className={`nav-links${open ? " open" : ""}`}>
           {NAV.map((n) => {
             const active = pathname === n.href || (n.href !== "/" && pathname.startsWith(n.href));
@@ -39,6 +39,10 @@ export default function Nav() {
             );
           })}
           <Link href="/resume" className="resume" onClick={() => setOpen(false)}>Résumé</Link>
+        </div>
+        <div className="nav-tools">
+          <ThemeToggle />
+          <button className="nav-toggle" aria-label="Menu" onClick={() => setOpen((v) => !v)}>≡</button>
         </div>
       </div>
     </nav>

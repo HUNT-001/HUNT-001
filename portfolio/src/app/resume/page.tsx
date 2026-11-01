@@ -84,7 +84,7 @@ export default function Page() {
           <div className="cv-two">
             {[...WINS, ...FINALS].map((w) => (
               <div className="cv-cert" key={w.title}>
-                <strong style={{ color: w.kind === "win" ? "#bc7b3a" : w.kind === "run" ? "#c3cad6" : "#cfe0f7" }}>{w.result.replace("◆ ", "")}</strong>
+                <strong style={{ color: w.kind === "win" ? "var(--caramel)" : w.kind === "run" ? "var(--silver)" : "var(--ink)" }}>{w.result.replace("◆ ", "")}</strong>
                 {" — "}{w.title} <span className="code">{w.org}</span>
               </div>
             ))}

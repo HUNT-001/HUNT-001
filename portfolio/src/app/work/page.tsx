@@ -24,7 +24,7 @@ export default function Page() {
                 <div className="ty">{p.domain} · {p.year}</div>
                 <h3>{p.title}</h3>
                 <p>{p.desc.length > 130 ? p.desc.slice(0, 130) + "…" : p.desc}</p>
-                {p.metric && <div className="dt" style={{ color: p.metric.color === "am" ? "#bc7b3a" : "#38bdf8" }}>{p.metric.big} · {p.metric.lbl}</div>}
+                {p.metric && <div className="dt" style={{ color: p.metric.color === "am" ? "var(--caramel)" : "var(--cy)" }}>{p.metric.big} · {p.metric.lbl}</div>}
               </Link>
             </Reveal>
           ))}

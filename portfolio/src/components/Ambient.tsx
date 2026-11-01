@@ -91,7 +91,10 @@ export default function Ambient() {
       // ease node colour toward the route's palette
       const c = colorRef.current, tg = targetRef.current;
       for (let i = 0; i < 3; i++) c[i] += (tg[i] - c[i]) * 0.04;
-      const R = Math.round(c[0]), G = Math.round(c[1]), B = Math.round(c[2]);
+      // light theme: deepen the mesh so it reads on paper instead of glowing on ink
+      const light = document.documentElement.dataset.theme === "light";
+      const k = light ? 0.42 : 1, boost = light ? 1.5 : 1;
+      const R = Math.round(c[0] * k), G = Math.round(c[1] * k), B = Math.round(c[2] * k);
 
       ctx.clearRect(0, 0, w, h);
 
@@ -117,7 +120,7 @@ export default function Ambient() {
           const b = nodes[j];
           const dx = a.x - b.x, dy = a.y - b.y, d = Math.hypot(dx, dy);
           if (d > LINK) continue;
-          let alpha = (1 - d / LINK) * 0.16;
+          let alpha = (1 - d / LINK) * 0.16 * boost;
           if (mouse.active) {
             const mx = (a.x + b.x) / 2 - mouse.x, my = (a.y + b.y) / 2 - mouse.y;
             const md = Math.hypot(mx, my);
@@ -144,7 +147,7 @@ export default function Ambient() {
 
       // nodes
       for (const n of nodes) {
-        let a = 0.45;
+        let a = 0.45 * (light ? 1.3 : 1);
         if (mouse.active) { const md = Math.hypot(n.x - mouse.x, n.y - mouse.y); if (md < 180) a += (1 - md / 180) * 0.5; }
         ctx.fillStyle = `rgba(${R},${G},${B},${a.toFixed(3)})`;
         ctx.beginPath(); ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2); ctx.fill();

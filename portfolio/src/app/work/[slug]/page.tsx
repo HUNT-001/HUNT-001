@@ -28,7 +28,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 
         {p.metric && (
           <div style={{ marginTop: 22 }}>
-            <span className="metric" style={{ color: p.metric.color === "am" ? "#bc7b3a" : "#38bdf8", fontSize: 32 }}>{p.metric.big}</span>
+            <span className="metric" style={{ color: p.metric.color === "am" ? "var(--caramel)" : "var(--cy)", fontSize: 32 }}>{p.metric.big}</span>
             <div className="metriclbl">{p.metric.lbl}</div>
           </div>
         )}
@@ -39,7 +39,7 @@ export default function Page({ params }: { params: { slug: string } }) {
           {(p.study ?? [{ h: "Overview", p: p.desc }]).map((s) => (
             <Reveal key={s.h}>
               <div>
-                <h2 style={{ fontSize: 15, fontFamily: "var(--font-mono)", letterSpacing: ".06em", textTransform: "uppercase", color: "#7f98bd", margin: "0 0 8px" }}>{s.h}</h2>
+                <h2 style={{ fontSize: 15, fontFamily: "var(--font-mono)", letterSpacing: ".06em", textTransform: "uppercase", color: "var(--dim)", margin: "0 0 8px" }}>{s.h}</h2>
                 <p className="tp" style={{ fontSize: 16, maxWidth: "none", marginTop: 0 }}>{s.p}</p>
               </div>
             </Reveal>

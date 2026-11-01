@@ -24,7 +24,7 @@ export default function Featured() {
   const lead = FEATURED.find((p) => p.lead)!;
   const rest = FEATURED.filter((p) => !p.lead);
   return (
-    <section className="section featured" style={{ background: "rgba(6,10,20,.5)" }}>
+    <section className="section featured" style={{ background: "var(--band)" }}>
       <div className="dotgrid" />
       <div className="container">
         <Reveal>
