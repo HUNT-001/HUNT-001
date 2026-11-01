@@ -21,7 +21,7 @@ function Card({ w }: { w: Win }) {
 
 export default function Wins() {
   return (
-    <section className="section featured" style={{ background: "#060a14" }}>
+    <section className="section featured" style={{ background: "rgba(6,10,20,.5)" }}>
       <div className="dotgrid" />
       <div className="container">
         <Reveal>
