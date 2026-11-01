@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import { NAV, SITE } from "@/lib/content";
 
 export default function Nav() {
@@ -31,8 +32,9 @@ export default function Nav() {
             const active = pathname === n.href || (n.href !== "/" && pathname.startsWith(n.href));
             return (
               <Link key={n.href} href={n.href} onClick={() => setOpen(false)}
-                style={active ? { color: "#fff" } : undefined} aria-current={active ? "page" : undefined}>
-                {n.label}
+                className={`nl${active ? " on" : ""}`} aria-current={active ? "page" : undefined}>
+                {active && <motion.span layoutId="navpill" className="pill" transition={{ type: "spring", stiffness: 380, damping: 32 }} />}
+                <span className="t">{n.label}</span>
               </Link>
             );
           })}

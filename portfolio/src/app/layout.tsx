@@ -3,6 +3,8 @@ import "./globals.css";
 import Nav from "@/components/Nav";
 import SmoothScroll from "@/components/SmoothScroll";
 import ScrollProgress from "@/components/ScrollProgress";
+import Ambient from "@/components/Ambient";
+import Interactions from "@/components/Interactions";
 
 const DESC =
   "Dual-degree engineer building at the seam of model and machine — world models, RL, agentic AI, RTL, verification, edge AI and the silicon that runs them.";
@@ -53,6 +55,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
+        <Ambient />
+        <Interactions />
         <SmoothScroll />
         <ScrollProgress />
         <Nav />
