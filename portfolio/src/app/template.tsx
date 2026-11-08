@@ -1,14 +1,14 @@
 "use client";
 import { motion } from "framer-motion";
 
-// Every route change: content rises out of a soft blur. `filter`/`transform` are cleared
-// at the end so they never create a containing block for fixed-position children.
+// Route change: content rises and fades in. Only opacity + transform (GPU-composited);
+// the transform is cleared at the end so fixed-position children are never affected.
 export default function Template({ children }: { children: React.ReactNode }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 14, filter: "blur(6px)" }}
-      animate={{ opacity: 1, y: 0, filter: "blur(0px)", transitionEnd: { filter: "none", transform: "none" } }}
-      transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
+      initial={{ opacity: 0, y: 16 }}
+      animate={{ opacity: 1, y: 0, transitionEnd: { transform: "none" } }}
+      transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
     >
       {children}
     </motion.div>

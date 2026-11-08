@@ -63,10 +63,20 @@ export default function Ambient() {
     const mouse = { x: -9999, y: -9999, active: false };
     let raf = 0, running = true, last = performance.now();
 
-    const LINK = 150;
+    const LINK = 150, LINK2 = LINK * LINK, BUCKETS = 10;
+    const buckets: number[][] = Array.from({ length: BUCKETS }, () => []);
+    const sprite = document.createElement("canvas"); sprite.width = sprite.height = 40;
+    let spriteKey = "";
+    const paintSprite = (r: number, g: number, b: number) => {
+      const sc = sprite.getContext("2d"); if (!sc) return;
+      sc.clearRect(0, 0, 40, 40);
+      const gr = sc.createRadialGradient(20, 20, 0, 20, 20, 20);
+      gr.addColorStop(0, `rgba(${r},${g},${b},.95)`); gr.addColorStop(.35, `rgba(${r},${g},${b},.35)`); gr.addColorStop(1, `rgba(${r},${g},${b},0)`);
+      sc.fillStyle = gr; sc.fillRect(0, 0, 40, 40);
+    };
 
     const resize = () => {
-      dpr = Math.min(window.devicePixelRatio || 1, 1.75);
+      dpr = Math.min(window.devicePixelRatio || 1, 1.5);
       w = window.innerWidth; h = window.innerHeight;
       canvas.width = Math.floor(w * dpr); canvas.height = Math.floor(h * dpr);
       canvas.style.width = `${w}px`; canvas.style.height = `${h}px`;
@@ -112,45 +122,61 @@ export default function Ambient() {
         if (n.y < -20) n.y = h + 20; else if (n.y > h + 20) n.y = -20;
       }
 
-      // edges
+      // edges — bucketed by alpha so the whole mesh is ~10 stroke calls instead of hundreds
       ctx.lineWidth = 1;
+      for (let q = 0; q < BUCKETS; q++) buckets[q].length = 0;
+      const amax = 0.48 * boost;
       for (let i = 0; i < nodes.length; i++) {
         const a = nodes[i];
         for (let j = i + 1; j < nodes.length; j++) {
           const b = nodes[j];
-          const dx = a.x - b.x, dy = a.y - b.y, d = Math.hypot(dx, dy);
-          if (d > LINK) continue;
+          const dx = a.x - b.x, dy = a.y - b.y, d2 = dx * dx + dy * dy;
+          if (d2 > LINK2) continue;
+          const d = Math.sqrt(d2);
           let alpha = (1 - d / LINK) * 0.16 * boost;
           if (mouse.active) {
             const mx = (a.x + b.x) / 2 - mouse.x, my = (a.y + b.y) / 2 - mouse.y;
-            const md = Math.hypot(mx, my);
-            if (md < 200) alpha += (1 - md / 200) * 0.32;
+            const md2 = mx * mx + my * my;
+            if (md2 < 40000) alpha += (1 - Math.sqrt(md2) / 200) * 0.32;
           }
-          ctx.strokeStyle = `rgba(${R},${G},${B},${alpha.toFixed(3)})`;
-          ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
-          // occasionally fire a signal along this edge
+          const q = Math.min(BUCKETS - 1, Math.floor((alpha / amax) * BUCKETS));
+          buckets[q].push(a.x, a.y, b.x, b.y);
           if (!reduced && pulses.length < 7 && Math.random() < 0.00018 * dt) pulses.push({ a: i, b: j, t: 0, speed: 0.012 + Math.random() * 0.012 });
         }
       }
-
-      // pulses
-      for (let k = pulses.length - 1; k >= 0; k--) {
-        const p = pulses[k];
-        p.t += p.speed * dt;
-        const a = nodes[p.a], b = nodes[p.b];
-        if (!a || !b || p.t >= 1 || Math.hypot(a.x - b.x, a.y - b.y) > LINK * 1.05) { pulses.splice(k, 1); continue; }
-        const x = a.x + (b.x - a.x) * p.t, y = a.y + (b.y - a.y) * p.t;
-        const g = ctx.createRadialGradient(x, y, 0, x, y, 9);
-        g.addColorStop(0, `rgba(${R},${G},${B},.9)`); g.addColorStop(1, `rgba(${R},${G},${B},0)`);
-        ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x, y, 9, 0, Math.PI * 2); ctx.fill();
+      for (let q = 0; q < BUCKETS; q++) {
+        const L = buckets[q]; if (!L.length) continue;
+        ctx.strokeStyle = `rgba(${R},${G},${B},${(((q + 0.5) / BUCKETS) * amax).toFixed(3)})`;
+        ctx.beginPath();
+        for (let k = 0; k < L.length; k += 4) { ctx.moveTo(L[k], L[k + 1]); ctx.lineTo(L[k + 2], L[k + 3]); }
+        ctx.stroke();
       }
 
-      // nodes
-      for (const n of nodes) {
-        let a = 0.45 * (light ? 1.3 : 1);
-        if (mouse.active) { const md = Math.hypot(n.x - mouse.x, n.y - mouse.y); if (md < 180) a += (1 - md / 180) * 0.5; }
-        ctx.fillStyle = `rgba(${R},${G},${B},${a.toFixed(3)})`;
-        ctx.beginPath(); ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2); ctx.fill();
+      // pulses — one pre-rendered glow sprite, tinted once per colour change
+      if (pulses.length) {
+        if (spriteKey !== `${R},${G},${B}`) { spriteKey = `${R},${G},${B}`; paintSprite(R, G, B); }
+        for (let k = pulses.length - 1; k >= 0; k--) {
+          const p = pulses[k];
+          p.t += p.speed * dt;
+          const a = nodes[p.a], b = nodes[p.b];
+          if (!a || !b || p.t >= 1 || Math.hypot(a.x - b.x, a.y - b.y) > LINK * 1.05) { pulses.splice(k, 1); continue; }
+          ctx.drawImage(sprite, a.x + (b.x - a.x) * p.t - 10, a.y + (b.y - a.y) * p.t - 10, 20, 20);
+        }
+      }
+
+      // nodes — two passes: resting nodes in one path, cursor-lit nodes individually
+      const base = 0.45 * (light ? 1.3 : 1);
+      ctx.fillStyle = `rgba(${R},${G},${B},${base.toFixed(3)})`;
+      ctx.beginPath();
+      for (const n of nodes) { ctx.moveTo(n.x + n.r, n.y); ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2); }
+      ctx.fill();
+      if (mouse.active) {
+        for (const n of nodes) {
+          const md = Math.hypot(n.x - mouse.x, n.y - mouse.y);
+          if (md >= 180) continue;
+          ctx.fillStyle = `rgba(${R},${G},${B},${((1 - md / 180) * 0.5).toFixed(3)})`;
+          ctx.beginPath(); ctx.arc(n.x, n.y, n.r + 0.6, 0, Math.PI * 2); ctx.fill();
+        }
       }
 
       if (running && !reduced) raf = requestAnimationFrame(frame);

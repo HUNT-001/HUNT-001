@@ -19,7 +19,7 @@ ROOT = pathlib.Path(__file__).resolve().parents[1] / "portfolio" / "src" / "app"
 SRC, OUT = ROOT / "globals.css", ROOT / "theme-light.css"
 T = 'html[data-theme="light"]'
 
-KEEP_DARK = re.compile(r"\.(demo|dream|qa|rl-|seg)\b|\.post-body pre|\.caret")
+KEEP_DARK = re.compile(r"\.(demo|dream|qa|rl-|seg|fit|ghostbtn)\b|\.cur-|\.post-body pre|\.caret")
 KEEP_COLOR = {"#140a02", "#120a02"}  # dark text on caramel buttons
 COLOR_PROPS = re.compile(r"^(--|color$|background|border|box-shadow|fill|stroke|outline|text-shadow|scrollbar-color|accent-color)")
 HEX = re.compile(r"#([0-9a-fA-F]{6}|[0-9a-fA-F]{3})\b")
@@ -111,8 +111,8 @@ LIGHT_EXTRA = r'''
 html[data-theme="light"] { color-scheme: light; --caramel: #a9672b; --silver: #5d6779; }
 html[data-theme="light"] .vignette { background: radial-gradient(120% 90% at 50% 30%, transparent 60%, rgba(180,195,225,.45) 100%); }
 html[data-theme="light"] .au1 { opacity: .22; } html[data-theme="light"] .au2 { opacity: .2; } html[data-theme="light"] .au3 { opacity: .14; }
-html[data-theme="light"] .grain { opacity: .05; mix-blend-mode: multiply; }
-html[data-theme="light"] .cursor-glow { mix-blend-mode: multiply; background: radial-gradient(circle, rgba(56,140,248,.09), transparent 60%); }
+html[data-theme="light"] .grain { opacity: .035; }
+html[data-theme="light"] .cursor-glow { background: radial-gradient(circle, rgba(56,140,248,.07), transparent 60%); }
 html[data-theme="light"] .hero-bg { filter: saturate(.9) brightness(1.04); }
 html[data-theme="light"] .hero h1, html[data-theme="light"] .page h1 { color: #0b1220; }
 html[data-theme="light"] .nav.scrolled { box-shadow: 0 8px 30px -18px rgba(30,41,59,.35); }

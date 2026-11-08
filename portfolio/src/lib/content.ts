@@ -14,6 +14,7 @@ export const NAV = [
   { label: "Lab", href: "/lab" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
+  { label: "Hire", href: "/hire" },
 ];
 
 export const DOMAINS = ["AGENTIC AI", "LLMs", "EDA", "VERIFICATION", "RL", "EDGE AI", "SILICON", "DEVOPS", "QUANTUM"];
